@@ -2497,3 +2497,79 @@ body, button, input, select, textarea { font-family: var(--font-body); }
 .days-hero strong small { font-size: 1rem; font-weight: 700; letter-spacing: 0; }
 .swap-hint .sh-plus { min-width: 52px; font-size: .85rem; }
 .dish-above { display: inline-block; vertical-align: middle; margin-left: 6px; padding: 2px 8px; border-radius: 999px; font-size: .7rem; font-weight: 700; background: var(--sun-soft); color: var(--muted); border: 1px solid var(--line); }
+@media (max-width: 759px) {
+  .country-intro .hero-stats .hs-days dd { color: var(--orange-deep); }
+  .country-intro .hero-stats .hs-days dd small { color: var(--muted); }
+}
+
+/* Trip steps: Plan, Budget, Book, Track */
+.trip-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin: 14px 0 6px; counter-reset: ts; }
+.ts-step { position: relative; display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 14px; border: 1.5px solid var(--line); background: var(--bg); color: var(--ink); text-decoration: none; transition: border-color .2s, transform .2s, box-shadow .2s; }
+.ts-step:hover { border-color: var(--sun); transform: translateY(-1px); }
+.ts-step.on { border-color: var(--ink); background: var(--sun-soft); box-shadow: 3px 3px 0 var(--ink); }
+.ts-n { flex: none; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; font-weight: 800; font-size: .9rem; background: var(--line); color: var(--ink); }
+.ts-step.on .ts-n { background: var(--orange); color: var(--on-accent); }
+.ts-t { display: grid; min-width: 0; }
+.ts-t strong { font-size: .98rem; }
+.ts-t small { font-size: .78rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 640px) {
+  .trip-steps { gap: 6px; }
+  .ts-step { flex-direction: column; align-items: flex-start; gap: 4px; padding: 8px; }
+  .ts-n { width: 22px; height: 22px; font-size: .75rem; }
+  .ts-t strong { font-size: .86rem; }
+  .ts-t small { font-size: .7rem; white-space: normal; }
+}
+#page-track .trip-steps { margin-top: 0; margin-bottom: 18px; }
+.trip-alt { display: grid; gap: 20px; }
+.bk-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px 28px; }
+.bk-head h3 { font-family: var(--font-display); font-size: 1.6rem; margin: 2px 0 6px; }
+.bk-head .muted { max-width: 56ch; margin: 0; }
+.bk-prog { min-width: 240px; display: grid; gap: 6px; }
+.bk-prog p { margin: 0; }
+.bk-prog strong { font-size: 1.3rem; }
+.bk-prog small { color: var(--muted); }
+.book-step, .budget-step { display: grid; gap: 18px; }
+.bk-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.bk-row { display: grid; grid-template-columns: 40px minmax(0, 1fr) auto auto auto; align-items: center; gap: 8px 14px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--bg); transition: background .2s, opacity .2s; }
+.bk-row.is-booked { background: var(--surface); }
+.bk-row.is-booked .bk-what strong { text-decoration: line-through; text-decoration-color: var(--good); text-decoration-thickness: 2px; }
+.bk-ic { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; background: var(--sun-soft); color: var(--orange-deep); }
+.bk-row.is-booked .bk-ic { background: color-mix(in srgb, var(--good) 16%, var(--bg)); color: var(--good); }
+.bk-what { display: grid; min-width: 0; }
+.bk-what small { color: var(--muted); font-size: .84rem; }
+.bk-cost { font-weight: 700; }
+.bk-act { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
+.bk-done { font-weight: 700; color: var(--good); font-size: .88rem; }
+@media (max-width: 760px) {
+  .bk-row { grid-template-columns: 40px minmax(0, 1fr) auto; }
+  .bk-act { grid-column: 2 / -1; justify-content: flex-start; }
+  .bk-row .booked-check { grid-column: 2 / -1; }
+  .bk-cost { grid-row: 1; grid-column: 3; }
+}
+.step-next { display: flex; justify-content: flex-end; }
+.step-empty { padding: 28px; border: 1.5px dashed var(--line); border-radius: 16px; text-align: center; display: grid; gap: 12px; justify-items: center; }
+.bs-budget { min-width: 200px; }
+.bs-grid { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 20px; align-items: start; }
+@media (max-width: 900px) { .bs-grid { grid-template-columns: minmax(0, 1fr); } }
+.bs-table-wrap { overflow-x: auto; }
+.bs-table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+.bs-table th, .bs-table td { padding: 9px 8px; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
+.bs-table th:first-child { text-align: left; white-space: normal; }
+.bs-table thead th { font-size: .74rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 700; }
+.bs-table tbody th small { display: block; color: var(--muted); font-weight: 500; font-size: .78rem; }
+.bs-table tfoot th, .bs-table tfoot td { border-bottom: 0; border-top: 2px solid var(--ink); font-weight: 800; }
+.book-cta { margin-top: 4px; }
+
+/* Country pages end with the next step into a trip */
+.next-step { margin-top: 36px; padding: 24px; border-radius: 20px; background: var(--sun-soft); border: 1.5px solid var(--ink); box-shadow: 5px 5px 0 var(--ink); display: grid; gap: 18px; }
+.ns-path { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; font-size: .8rem; font-weight: 700; }
+.ns-path li { padding: 4px 10px; border-radius: 99px; background: var(--bg); color: var(--muted); border: 1px solid var(--line); }
+.ns-path li.done { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.ns-path li.next { background: var(--orange); color: var(--on-accent); border-color: var(--orange); }
+.ns-body { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px 28px; }
+.ns-body h2 { font-family: var(--font-display); margin: 2px 0 6px; }
+.ns-body p:not(.eyebrow) { margin: 0; max-width: 54ch; }
+.ns-act { display: flex; flex-wrap: wrap; gap: 10px; }
+.bk-row .bk-act a.btn.small { display: inline-flex; align-items: center; padding: 7px 14px; white-space: nowrap; }
+@media (max-width: 760px) { .bk-act { gap: 8px; } }
+@media (max-width: 640px) { #page-trip a.btn[data-partner] { display: inline-flex; align-items: center; padding: 7px 14px; } }

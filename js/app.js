@@ -151,7 +151,9 @@
       if (t) { r = "track"; trip = t; store.set("dc.current", t.id); } else r = "plan";
     }
     if (h.startsWith("trip-")) {
-      const t = trips.find(x => x.id === h.slice(5));
+      const [tid, st] = h.slice(5).split("/");
+      tripStep = st === "budget" || st === "book" ? st : "plan";
+      const t = trips.find(x => x.id === tid);
       if (t) { r = "trip"; trip = t; store.set("dc.current", t.id); } else r = "plan";
     }
     document.querySelectorAll("[data-page]").forEach(p => { p.hidden = p.dataset.page !== r; });
@@ -169,6 +171,7 @@
     if (aboutAnchor) requestAnimationFrame(() => { const el = document.getElementById("about-" + aboutAnchor); if (el) el.scrollIntoView(); });
     else window.scrollTo(0, 0);
   }
+  let tripStep = "plan";
   function go(r) { if (location.hash === "#" + r) route(); else location.hash = r; }
 
   /* ---------- Home ---------- */
@@ -298,6 +301,19 @@
         <div class="section-head"><div><p class="eyebrow">Similar budgets nearby</p><h2>If you like ${esc(c.name)}</h2></div></div>
         <div class="nearby-cards">${near.map(x => `<a class="nearby-card" href="#country-${x.id}">${art({ id: altPhotoId(x.id, [4, 5, 3]), tags: [] })}<span class="nc-text"><span>${esc(x.name)}</span><strong class="num">${money(typicalDay(x))}/day</strong></span></a>`).join("")}</div>
       </section>` : "";
+  }
+  // The end of every country page: where the journey goes next, from research into a trip.
+  function nextStepHtml(c) {
+    const inC = x => x.stops.reduce((a, [id, n]) => a + (byId[id].countryId === c.id ? n : 0), 0);
+    const r = ROUTE_LIST.filter(inC).sort((a, b) => inC(b) - inC(a))[0];
+    const steps = ["Discover", "Research", "Plan", "Book", "Track"];
+    return `<section class="next-step" aria-labelledby="ns-${c.id}">
+        <ol class="ns-path" aria-label="Your trip so far">${steps.map((l, i) => `<li class="${i < 2 ? "done" : i === 2 ? "next" : ""}">${l}</li>`).join("")}</ol>
+        <div class="ns-body"><div><p class="eyebrow">Next step</p><h2 id="ns-${c.id}">Turn ${esc(c.name)} into a trip</h2>
+          <p>We'll start you with the best-known places at three days each, the cheapest way between them, and a running cost per day. Change anything you like.</p></div>
+          <div class="ns-act"><button class="btn" type="button" data-plan-country="${c.id}">Plan a trip to ${esc(c.name)}</button>
+            ${r ? `<a class="btn ghost" href="#route-${r.id}">Or start from our ${esc(r.name)} route</a>` : ""}</div></div>
+      </section>`;
   }
   // Ready-made routes passing through a country, on its page.
   function countryRoutes(c) {
@@ -659,6 +675,7 @@
         </section>`)}
 
         ${guide ? (p => Object.keys(p).map(k => panel(k, p[k])).join("")) (guidePanels(c, popular, ovUsed)) : ""}
+        ${c.advisory ? "" : nextStepHtml(c)}
       </div>`;
     showCountryTab(on, false);
   }
@@ -1473,7 +1490,11 @@
     $("#t-budget").value = trip.budget || "";
     $("#t-flights").value = trip.flights || "";
     $("#plan-title").textContent = trip.name || "Untitled trip";
-    $("#plan-tabs").innerHTML = "";
+    $("#plan-tabs").innerHTML = tripSteps(trip, tripStep);
+    const onPlan = tripStep === "plan";
+    $(".plan-layout").hidden = !onPlan; $("#trip-bar").hidden = !onPlan; $(".plan-intro").hidden = !onPlan;
+    $("#trip-alt").hidden = onPlan;
+    if (tripStep === "budget") renderBudgetStep(); else if (tripStep === "book") renderBookStep();
     $("#t-from").value = trip.from || "";
     $("#t-from").placeholder = homeCity() || "Your home city";
     renderCountries();
@@ -1758,7 +1779,16 @@
       ${budget ? `<span class="status-pill ${over ? "over" : "ok"}">${over ? `${money(total - budget)} over` : `${money(budget - total)} left`}</span>` : ""}
       ${nights ? `<span class="trip-bar-days"><b class="num">${money(ground / nights)}</b> a day</span>` : ""}
       <span class="trip-bar-go">See breakdown <span aria-hidden="true">↓</span></span>`;
-    $("#summary").innerHTML = `
+    $("#summary").innerHTML = summaryHtml();
+  }
+  function summaryHtml(inStep) {
+    const { nights, ground, exps, travel, flights, total, budget, end, available } = totals(trip);
+    const over = budget && total > budget, cov = daysCovered(trip);
+    const pct = budget ? Math.min(100, total / budget * 100) : 0;
+    const days = available == null ? "" : nights > available
+      ? `<span class="status-pill over">${nights - available} day${nights - available === 1 ? "" : "s"} past your end date</span>`
+      : `<span class="status-pill ok">${nights} of ${available} days planned</span>`;
+    return `
       ${nights ? `<div class="days-hero ${over ? "short" : ""}"><span class="dh-k">Your trip costs about</span><strong class="num">${money(ground / nights)}<small> a day</small></strong>
         <span class="dh-sub">on the ground, across ${plural(nights, "day")}${budget ? `. Your budget allows ${money(Math.max(0, budget - flights - travel - exps) / nights)} a day${cov && cov.spare > 0 ? `, so there's room for ${plural(cov.spare, "more day")}` : ""}.` : "."}</span></div>` : ""}
       <div><p class="eyebrow">Trip total</p><p class="big">${money(total)}</p>
@@ -1780,7 +1810,7 @@
       <p class="note">Daily budgets are estimates until you set your own. Leave 10 to 15% spare for visas, laundry and the odd splurge.</p>
       <a class="track-cta" href="#track-${trip.id}"><strong>${spentOf(trip).length ? `${money(sumUsd(spentOf(trip)))} spent so far` : "On the road?"}</strong>
         <span>${spentOf(trip).length ? "Open Track to see if you're on budget" : "Set a daily budget in Track and log what you spend"} <span aria-hidden="true">→</span></span></a>
-      ${bookTrip()}`;
+      ${inStep ? "" : bookTrip()}`;
   }
   // Sharing: the trip's route travels in the link itself, so it works without accounts.
   // Opening a shared link copies the trip into the viewer's own trips.
@@ -1811,19 +1841,120 @@
     } catch (e) { if (e && e.name !== "AbortError") window.prompt("Copy this link to share your trip", url); }
   }
 
-  function bookTrip() {
-    const first = trip.stops.length && byId[trip.stops[0].id];
-    if (!first) return "";
-    const countries = [...new Map(trip.stops.map(s => byId[s.id]).filter(Boolean).map(d => [d.countryId, d])).values()];
-    return `<div class="book-trip">
-        <p class="eyebrow">Before you go</p>
-        <p class="search-links">Beds booked: ${trip.stops.filter(s => s.booked).length} of ${trip.stops.length} stop${trip.stops.length === 1 ? "" : "s"}</p>
-        <p class="search-links">Travel insurance: ${partnerLink("safetywing", first)}</p>
-        <p class="search-links">Mobile data: ${countries.slice(0, 6).map(d => partnerLink("airalo", d, null, `${esc(d.country)} eSIM`)).join(" · ")}</p>
-        ${anyTracked() ? `<p class="note">Some of these links earn us a small commission at no extra cost to you. <a href="#money">How we make money</a></p>` : ""}
+  /* ---------- Trip steps: Plan, Budget, Book, Track ---------- */
+  // One trip, four steps, one bar along the top of each. The Plan step is the planner; Budget is the
+  // money laid out stop by stop; Book is the checklist of everything to book; Track is spending on the road.
+  function tripSteps(t, cur) {
+    const items = trip === t ? bookItems() : [], done = items.filter(x => x.done).length;
+    const x = totals(t), spent = spentOf(t);
+    const steps = [
+      ["plan", "Plan", `#trip-${t.id}`, t.stops.length ? `${plural(t.stops.length, "stop")}, ${plural(x.nights, "day")}` : "Add your stops"],
+      ["budget", "Budget", `#trip-${t.id}/budget`, x.nights ? `${money(x.ground / x.nights)} a day` : "See the costs"],
+      ["book", "Book", `#trip-${t.id}/book`, items.length ? `${done} of ${items.length} booked` : "Your checklist"],
+      ["track", "Track", `#track-${t.id}`, spent.length ? `${money(sumUsd(spent))} spent` : "Log your spending"]];
+    return `<nav class="trip-steps" aria-label="Trip steps">${steps.map(([k, l, href, sub], i) =>
+      `<a href="${href}" class="ts-step${k === cur ? " on" : ""}"${k === cur ? ' aria-current="step"' : ""}><span class="ts-n" aria-hidden="true">${i + 1}</span><span class="ts-t"><strong>${l}</strong><small>${sub}</small></span></a>`).join("")}</nav>`;
+  }
+  const stepNext = (href, label) => `<div class="step-next"><a class="btn" href="${href}">${label} <span aria-hidden="true">→</span></a></div>`;
+  const stepEmpty = () => `<div class="step-empty"><p>Add a stop to your trip first. Then this step fills itself in.</p><a class="btn" href="#trip-${trip.id}">Add stops</a></div>`;
+
+  // Everything a trip needs booking, in the order it happens, with dates from the plan.
+  const BK_IC = { flight: PLANE_IC.replace(/14/g, "18"), bed: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18V7M3 14h18v4M21 14v-2a3 3 0 0 0-3-3h-7v5"/><circle cx="7" cy="11" r="1.6"/></svg>', leg: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="13" rx="3"/><path d="M4 11h16M8 20v-3M16 20v-3"/></svg>', exp: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8a2 2 0 0 0 0 4v4h16v-4a2 2 0 0 1 0-4V4H4z"/><path d="M14 4v12"/></svg>', data: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 18v-2M9.5 18v-5M14 18v-8M18.5 18V6"/></svg>', extra: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6z"/></svg>' };
+  function bookItems() {
+    const rows = stopRows(); if (!rows.length) return [];
+    const fb = trip.flightsBooked || {}, xb = trip.extrasBooked || {}, from = tripFrom();
+    const first = rows[0], last = rows[rows.length - 1], back = trip.end ? addDays(trip.end, 0) : last.to;
+    const half = trip.flights ? Math.round(trip.flights / 2) : 0, out = [];
+    const flightLinks = (to, opts) => partnersFor("flights", to).map(k => asButton(partnerLink(k, to, null, `Search ${PARTNER_NAMES[k]}`, opts))).join("");
+    out.push({ key: "fl:out", kind: "flight", title: `Flight to ${esc(first.d.name)}`, sub: `${from ? `From ${esc(from)}` : "From home"}${first.from ? `, ${fmtDate(first.from)}` : ""}`,
+      cost: half, done: !!fb.out, links: flightLinks(first.d, { fromName: from, date: first.from ? isoLocal(first.from) : "" }) });
+    rows.forEach(r => {
+      const { s, d, i } = r, prev = i > 0 ? byId[trip.stops[i - 1].id] : null;
+      if (prev) {
+        const o = (journey(prev.id, d.id).options || [])[0];
+        out.push({ key: `lg:${s.key}`, kind: "leg", title: `${esc(prev.name)} to ${esc(d.name)}`,
+          sub: `${o ? `${modeName(o.mode)}, ${hrs(o.hours)}` : "Compare ways to get there"}${r.from ? `, ${fmtDate(r.from)}` : ""}`,
+          cost: s.travel || (o ? fareMid(o) : 0), done: !!s.legBooked, links: o ? asButton(bookLinks(o, prev, d, r.from ? isoLocal(r.from) : "")) : "" });
+      }
+      const own = s.stay && s.stay.link && /^https?:\/\//.test(s.stay.link), max = bedBudget(s);
+      out.push({ key: `bd:${s.key}`, kind: "bed", title: `${s.stay && s.stay.name ? esc(s.stay.name) : "A bed"} in ${esc(d.name)}`,
+        sub: `${r.from ? `${fmtDate(r.from)} to ${fmtDate(r.to)}, ` : ""}${plural(s.nights, "night")}${own ? "" : `, up to ${money(max)} a night`}`,
+        cost: s.nights * (s.stay && s.stay.perNight ? s.stay.perNight : max), done: !!s.booked,
+        links: own ? `<a class="btn small soft" href="${esc(s.stay.link)}" target="_blank" rel="noopener">Book ${esc(s.stay.name || "your pick")}</a>`
+          : partnersFor("stays", d).map(k => asButton(partnerLink(k, d, null, PARTNER_NAMES[k], Object.assign({}, stayWhen(r), { maxPrice: max })))).join("") });
+      s.exps.forEach((e, j) => out.push({ key: `ex:${s.key}:${j}`, kind: "exp", title: esc(e.name), sub: `In ${esc(d.name)}`, cost: e.cost || 0, done: !!e.booked,
+        links: `<a class="btn small soft" href="${esc(productUrl("getyourguide", e.name, d))}" target="_blank" rel="${productRel("getyourguide")}">Find on GetYourGuide</a>` }));
+    });
+    out.push({ key: "fl:back", kind: "flight", title: from ? `Flight home to ${esc(from)}` : "Flight home", sub: `From ${esc(last.d.name)}${back ? `, ${fmtDate(back)}` : ""}`,
+      cost: half, done: !!fb.back, links: from ? flightLinks({ name: from, country: "", region: first.d.region }, { fromName: last.d.name, fromPlace: last.d, date: back ? isoLocal(back) : "" })
+        : `<span class="note">Add where you fly from in the Plan step to search this.</span>` });
+    const countries = [...new Map(rows.map(r => [r.d.countryId, r.d])).values()];
+    out.push({ key: "xt:insurance", kind: "extra", title: "Travel insurance", sub: "Covers you for the whole trip", cost: 0, done: !!xb.insurance,
+      links: asButton(partnerLink("safetywing", first.d, null, "Get a SafetyWing quote")) });
+    out.push({ key: "xt:esim", kind: "extra", title: "Mobile data", kind2: "data", sub: countries.length > 1 ? `An eSIM for ${countries.map(d => esc(d.country)).join(", ")}` : `An eSIM for ${esc(first.d.country)}`, cost: 0, done: !!xb.esim,
+      links: countries.slice(0, 4).map(d => asButton(partnerLink("airalo", d, null, `${esc(d.country)} eSIM`))).join("") });
+    return out;
+  }
+  function setBooked(key, on) {
+    const [k, a, b] = key.split(":"), st = trip.stops.find(x => x.key === a);
+    if (k === "fl") trip.flightsBooked = Object.assign({}, trip.flightsBooked, { [a]: on });
+    else if (k === "xt") trip.extrasBooked = Object.assign({}, trip.extrasBooked, { [a]: on });
+    else if (st && k === "lg") st.legBooked = on;
+    else if (st && k === "bd") st.booked = on;
+    else if (st && k === "ex" && st.exps[+b]) st.exps[+b].booked = on;
+  }
+  function renderBookStep() {
+    const box = $("#trip-alt"); if (!trip.stops.length) { box.innerHTML = stepEmpty(); return; }
+    const items = bookItems(), done = items.filter(x => x.done);
+    const sum = l => l.reduce((a, x) => a + (x.cost || 0), 0), pct = items.length ? done.length / items.length * 100 : 0;
+    box.innerHTML = `<div class="book-step">
+        <div class="bk-head"><div><p class="eyebrow">Step 3</p><h3>Book your trip</h3>
+          <p class="muted">Everything to book, in the order you'll need it. Dates come from your plan, so each link opens on the right days. Tick things off as you go.</p></div>
+          <div class="bk-prog"><p><strong class="num">${done.length} of ${items.length}</strong> booked</p><div class="meter"><i style="width:${pct.toFixed(1)}%"></i></div>
+            <small>${sum(done) ? `About ${money(sum(done))} of ${money(sum(items))} locked in` : `About ${money(sum(items))} to book in all`}</small></div></div>
+        <ol class="bk-list">${items.map(x => `<li class="bk-row${x.done ? " is-booked" : ""}">
+          <span class="bk-ic" aria-hidden="true">${BK_IC[x.kind2 || x.kind]}</span>
+          <div class="bk-what"><strong>${x.title}</strong><small>${x.sub}</small></div>
+          <span class="bk-cost num">${x.cost ? money(x.cost) : ""}</span>
+          <div class="bk-act">${x.done ? `<span class="bk-done">Booked</span>` : x.links}</div>
+          <label class="booked-check"><input type="checkbox" data-bk="${x.key}"${x.done ? " checked" : ""}> Booked</label></li>`).join("")}</ol>
+        <p class="note">Prices are our estimates from your plan. ${anyTracked() ? `Some links earn us a small commission at no extra cost to you. <a href="#money">How we make money</a>` : ""}</p>
+        ${stepNext(`#track-${trip.id}`, "Next: track your spending")}
+      </div>`;
+  }
+  function renderBudgetStep() {
+    const box = $("#trip-alt"); if (!trip.stops.length) { box.innerHTML = stepEmpty(); return; }
+    box.innerHTML = `<div class="budget-step">
+        <div class="bk-head"><div><p class="eyebrow">Step 2</p><h3>Your budget</h3>
+          <p class="muted">What each day costs, where the money goes, and how it splits stop by stop.</p></div>
+          <div class="field bs-budget"><label for="bs-budget">Total budget (USD)</label><input id="bs-budget" type="number" min="0" step="50" value="${trip.budget || ""}" placeholder="e.g. 1500"></div></div>
+        <div id="bs-body"></div>
+        ${stepNext(`#trip-${trip.id}/book`, "Next: book it")}
+      </div>`;
+    renderBudgetBody();
+  }
+  function renderBudgetBody() {
+    const el = $("#bs-body"); if (!el) return;
+    const x = totals(trip), rows = stopRows();
+    el.innerHTML = `<div class="bs-grid">
+        <section class="trip-panel bs-sum">${summaryHtml(true)}</section>
+        <section class="trip-panel"><h4>Stop by stop</h4>
+          <div class="bs-table-wrap"><table class="bs-table"><thead><tr><th scope="col">Stop</th><th scope="col">Days</th><th scope="col">A day</th><th scope="col">Things to do</th><th scope="col">Getting there</th><th scope="col">Total</th></tr></thead>
+          <tbody>${rows.map(({ s, d }) => `<tr><th scope="row">${esc(d.name)}<small>${esc(d.country)}</small></th><td class="num">${s.nights}</td><td class="num">${money(stopDaily(s))}</td>
+            <td class="num">${money(expTotal(s))}</td><td class="num">${money(s.travel || 0)}</td><td class="num"><strong>${money(s.nights * stopDaily(s) + expTotal(s) + (s.travel || 0))}</strong></td></tr>`).join("")}
+            <tr><th scope="row">Flights there and back</th><td></td><td></td><td></td><td></td><td class="num"><strong>${money(x.flights)}</strong></td></tr></tbody>
+          <tfoot><tr><th scope="row">Total</th><td class="num">${x.nights}</td><td class="num">${x.nights ? money(x.ground / x.nights) : ""}</td><td class="num">${money(x.exps)}</td><td class="num">${money(x.travel)}</td><td class="num"><strong>${money(x.total)}</strong></td></tr></tfoot></table></div>
+          <p class="note">Change days, beds or fares in the <a href="#trip-${trip.id}">Plan step</a>.</p></section>
       </div>`;
   }
 
+  function bookTrip() {
+    const first = trip.stops.length && byId[trip.stops[0].id];
+    if (!first) return "";
+    const items = bookItems(), done = items.filter(x => x.done).length;
+    return `<a class="track-cta book-cta" href="#trip-${trip.id}/book"><strong>${done ? `${done} of ${items.length} booked` : "Ready to book?"}</strong>
+        <span>${done ? "Open your booking checklist" : `Your checklist has ${items.length} things to book, with dates filled in`} <span aria-hidden="true">→</span></span></a>`;
+  }
   /* ---------- Profile ---------- */
   // A signed-in person can create a profile. From then on their trips save to it, so the
   // trips follow them to any device. Where they are saved depends on where the site runs:
@@ -2686,11 +2817,10 @@
     const left2day = allowance - spentToday;
     const tc = [...new Set(t.stops.map(s => byId[s.id].countryId))];
 
-    $("#track-view").innerHTML = `
+    $("#track-view").innerHTML = tripSteps(t, "track") + `
       <div class="track-top">
         <div><p class="eyebrow">Track</p><h2>Are you on budget?</h2>
           <p class="muted">Pick a trip, set what you want to spend a day, and log your spending as you go.</p></div>
-        <a class="btn ghost small" href="#trip-${t.id}">Open the plan</a>
       </div>
       ${trips.length > 1 ? `<div class="track-trips" role="tablist" aria-label="Your trips">${trips.map(z => `<button type="button" role="tab" data-track-trip="${z.id}" aria-selected="${z === t}">${esc(z.name || "Untitled trip")}${spentOf(z).length ? ` <span class="num">${money(sumUsd(spentOf(z)))}</span>` : ""}</button>`).join("")}</div>` : ""}
 
@@ -3048,6 +3178,16 @@
   renderHome();
   setupPlan();
   $("#tx-view").addEventListener("submit", e => { e.preventDefault(); submitGettingThere(); });
+  $("#trip-alt").addEventListener("change", e => {
+    const el = e.target.closest("[data-bk]"); if (!el || !trip) return;
+    setBooked(el.dataset.bk, el.checked); markEdited(); saveTrip(); renderPlan();
+    if (el.checked) toast("Ticked off. Nice.");
+  });
+  $("#trip-alt").addEventListener("input", e => {
+    if (e.target.id !== "bs-budget" || !trip) return;
+    trip.budget = Math.max(0, +e.target.value || 0); $("#t-budget").value = trip.budget || "";
+    markEdited(); saveTrip(); renderBudgetBody(); renderSummary(); $("#plan-tabs").innerHTML = tripSteps(trip, tripStep);
+  });
   $("#tx-view").addEventListener("click", e => {
     if (!e.target.closest("#tx-swap")) return;
     const f = $("#tx-from"), t = $("#tx-to"); [f.value, t.value] = [t.value, f.value];

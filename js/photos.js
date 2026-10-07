@@ -328,10 +328,11 @@ window.PHOTOS = {
  },
  "egypt": {
   "src": "images/egypt.webp",
-  "alt": "Egypt",
-  "credit": "Ricardo Liberato",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:All_Gizah_Pyramids.jpg",
+  "alt": "Camels resting before the Giza pyramids",
+  "credit": "Mustang Joe",
+  "license": "CC0 1.0",
+  "page": "https://www.flickr.com/photos/mustangjoe/53227964195/",
+  "source": "flickr",
   "hd": "images/hd/egypt.webp"
  },
  "jordan": {
@@ -591,10 +592,12 @@ window.PHOTOS = {
  },
  "israel": {
   "src": "images/israel.webp",
-  "alt": "Israel",
-  "credit": "Oren Rozen",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Masada_051013_Gate_01.jpg"
+  "alt": "Jerusalem Old City",
+  "credit": "Dennis Jarvis",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/archer10/34501570810/",
+  "source": "flickr",
+  "hd": "images/hd/israel.webp"
  },
  "palestine": {
   "src": "images/palestine.webp",
@@ -644,10 +647,11 @@ window.PHOTOS = {
  },
  "italy": {
   "src": "images/italy.webp",
-  "alt": "Italy",
-  "credit": "FeaturedPics",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Colosseo_2020.jpg",
+  "alt": "Manarola at dusk, Cinque Terre",
+  "credit": "Michael Kuhn",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/31176607@N05/30856429364/",
+  "source": "flickr",
   "hd": "images/hd/italy.webp"
  },
  "greece": {
@@ -828,10 +832,12 @@ window.PHOTOS = {
  },
  "denmark": {
   "src": "images/denmark.webp",
-  "alt": "Denmark",
-  "credit": "kallerna",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Nyhavn_Copenhagen_5.jpg"
+  "alt": "Nyhavn harbour, Copenhagen",
+  "credit": "Jens Cederskjold",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/184898381@N07/52260255956/",
+  "source": "flickr",
+  "hd": "images/hd/denmark.webp"
  },
  "iceland": {
   "src": "images/iceland.webp",
@@ -843,10 +849,12 @@ window.PHOTOS = {
  },
  "malta": {
   "src": "images/malta.webp",
-  "alt": "Malta",
-  "credit": "Frank Vincentz",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Malta_-_Mdina_(Triq_San_Oswald)_02_ies.jpg"
+  "alt": "Blue Lagoon, Comino",
+  "credit": "Ruben Holthuijsen",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/rubenholthuijsen/51835548280/",
+  "source": "flickr",
+  "hd": "images/hd/malta.webp"
  },
  "cyprus": {
   "src": "images/cyprus.webp",
@@ -921,10 +929,12 @@ window.PHOTOS = {
  },
  "botswana": {
   "src": "images/botswana.webp",
-  "alt": "Botswana",
-  "credit": "Diego Delso",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Traves%C3%ADa_del_delta_del_Okavango_en_makoro,_Botsuana,_2018-08-01,_DD_22.jpg"
+  "alt": "Elephants drinking at the Chobe River",
+  "credit": "Gregory \"Slobirdr\" Smith",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/slobirdr/21509351502/",
+  "source": "flickr",
+  "hd": "images/hd/botswana.webp"
  },
  "zimbabwe": {
   "src": "images/zimbabwe.webp",
@@ -1104,10 +1114,11 @@ window.PHOTOS = {
  },
  "portugal": {
   "src": "images/portugal.webp",
-  "alt": "Portugal",
-  "credit": "Berthold Werner",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Lisbon_Torre_de_Bel%C3%A9m_BW_2018-10-03_16-35-08.jpg",
+  "alt": "Benagil sea cave, Algarve",
+  "credit": "Daniel Gillaspia",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/bayareaag/16629788557/",
+  "source": "flickr",
   "hd": "images/hd/portugal.webp"
  },
  "latvia": {
@@ -1119,10 +1130,12 @@ window.PHOTOS = {
  },
  "sweden": {
   "src": "images/sweden.webp",
-  "alt": "Sweden",
-  "credit": "Roger W from Sarasota, Florida, U.S.A.",
+  "alt": "Stockholm old town across the water at dusk",
+  "credit": "Magnus Johansson",
   "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Stockhoim_-_Gamla_Stan_(3343920277).jpg"
+  "page": "https://www.flickr.com/photos/120374925@N06/22078903601/",
+  "source": "flickr",
+  "hd": "images/hd/sweden.webp"
  },
  "uganda": {
   "src": "images/uganda.webp",
@@ -8396,5 +8409,173 @@ window.PHOTOS = {
   "credit": "Berthold Werner",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Fatima_BW_2018-10-07_10-36-14.jpg"
+ },
+ "culture-spain-1": {
+  "src": "images/culture-spain-1.webp",
+  "alt": "Valencia's Fallas, where giant figures burn every March",
+  "credit": "Francesc Fort",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Natura_Mare_(2).jpg"
+ },
+ "culture-spain-2": {
+  "src": "images/culture-spain-2.webp",
+  "alt": "Catalan human towers, built at festivals across Catalonia",
+  "credit": "Colla Vella dels Xiquets de Valls",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Colla_Vella_dels_Xiquets_de_Valls_-_Primer_2de9_amb_folre_i_manilles_descarregat_de_la_hist%C3%B2ria_-_Diada_de_Santa_%C3%9Arsula_1994.jpg"
+ },
+ "culture-france-2": {
+  "src": "images/culture-france-2.webp",
+  "alt": "Pétanque, the boules game played in southern squares",
+  "credit": "Wikimedia Commons contributor",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Petanque_on_a_beach_of_Nice.jpg"
+ },
+ "culture-italy-0": {
+  "src": "images/culture-italy-0.webp",
+  "alt": "Masked revellers fill Venice before Lent",
+  "credit": "Frank Kovalchek from Anchorage, Alaska, USA",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Venice_Carnival_-_Masked_Lovers_(2010).jpg"
+ },
+ "culture-italy-1": {
+  "src": "images/culture-italy-1.webp",
+  "alt": "Siena's bareback horse race around the Piazza del Campo",
+  "credit": "Photojournalist Roberto Vicario",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Palio_di_Siena_2008_(2).jpg"
+ },
+ "culture-italy-2": {
+  "src": "images/culture-italy-2.webp",
+  "alt": "Venice's flat-bottomed boats, rowed standing up",
+  "credit": "Njsmith3",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gondola_Ride.jpg"
+ },
+ "culture-greece-0": {
+  "src": "images/culture-greece-0.webp",
+  "alt": "The Evzones, presidential guards in kilted fustanella uniforms",
+  "credit": "Panos Aravantinos (1886-1930)",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Evzones,_ca._1900.jpg"
+ },
+ "culture-greece-1": {
+  "src": "images/culture-greece-1.webp",
+  "alt": "Sirtaki, the dance made famous by Zorba the Greek",
+  "credit": "Simon Bonaventure",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sirtaki_at_Accroches_coeurs.jpg"
+ },
+ "culture-croatia-0": {
+  "src": "images/culture-croatia-0.webp",
+  "alt": "Klapa, Dalmatia's close-harmony a cappella singing groups",
+  "credit": "Roberta F.",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Klapa_Sagena_koncert_Kri%C5%BE_nek_ti_sa%C4%8Duva_ime_Vatroslav_Lisinski_7_rujna_2008.jpg"
+ },
+ "culture-croatia-1": {
+  "src": "images/culture-croatia-1.webp",
+  "alt": "Licitar, decorated red honey-dough hearts from Zagreb",
+  "credit": "Seanpu1",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Licitars2.jpg"
+ },
+ "culture-croatia-2": {
+  "src": "images/culture-croatia-2.webp",
+  "alt": "Sinjska alka, a knights' tournament held every August in Sinj",
+  "credit": "User:PJL",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Alkar_2_-_cropped.jpg"
+ },
+ "culture-uk-0": {
+  "src": "images/culture-uk-0.webp",
+  "alt": "London's huge Caribbean street party every August bank holiday",
+  "credit": "David Sedlecký",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Notting_Hill_Carnival_2018_(3).jpg"
+ },
+ "culture-uk-1": {
+  "src": "images/culture-uk-1.webp",
+  "alt": "Massed pipes and drums at Edinburgh Castle every August",
+  "credit": "xlibber",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Edinburgh_Tattoo_2010_(4946272332).jpg"
+ },
+ "culture-uk-2": {
+  "src": "images/culture-uk-2.webp",
+  "alt": "English folk dancing with bells, sticks and handkerchiefs",
+  "credit": "Tim Green from Bradford",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Morris_Dancers,_York_(26579460201).jpg"
+ },
+ "culture-ireland-0": {
+  "src": "images/culture-ireland-0.webp",
+  "alt": "Irish step dancing, with fast feet and still upper bodies",
+  "credit": "John Benson",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Trinity_Academy_of_Irish_Dance.jpg"
+ },
+ "culture-ireland-1": {
+  "src": "images/culture-ireland-1.webp",
+  "alt": "The Aran jumper, knitted on the islands off Galway",
+  "credit": "Lisa Dusseault from USA",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aran_cardigan.jpg"
+ },
+ "culture-ireland-2": {
+  "src": "images/culture-ireland-2.webp",
+  "alt": "Hurling, an ancient Gaelic sport played with sticks",
+  "credit": "Seaninryan",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:David_Collins_and_Eoin_Kelly_(Tipperary).jpg"
+ },
+ "culture-germany-0": {
+  "src": "images/culture-germany-0.webp",
+  "alt": "Oktoberfest in Munich, the world's biggest beer festival",
+  "credit": "Heribert Pohl --- Thanks for half a million clicks! from Germering bei München, ",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:O%27zapft_is!_M%C3%BCnchens_5_Jahreszeit_hat_begonnen_-_O%27zapft_is!_Munich_5_season,_the_Oktoberfest_has_begun_(9855483374).jpg"
+ },
+ "culture-germany-1": {
+  "src": "images/culture-germany-1.webp",
+  "alt": "Nuremberg's Christkindlesmarkt, a classic Christmas market",
+  "credit": "Roland Berger",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Christkindlesmarkt_nuernberg.jpg"
+ },
+ "culture-germany-2": {
+  "src": "images/culture-germany-2.webp",
+  "alt": "Cologne Cathedral, a Gothic landmark that took centuries to finish",
+  "credit": "Raimond Spekking",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:K%C3%B6lner_Dom_-_Westfassade_2022_ohne_Ger%C3%BCst-0968_b.jpg"
+ },
+ "culture-netherlands-1": {
+  "src": "images/culture-netherlands-1.webp",
+  "alt": "Traditional Dutch wooden clogs",
+  "credit": "OXLAEY.com",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Klompen_(Dutch_Clogs),_Wooden_Shoes_Museum_in_Drenthe.jpg"
+ },
+ "culture-netherlands-2": {
+  "src": "images/culture-netherlands-2.webp",
+  "alt": "Blue and white pottery made in Delft since the 1600s",
+  "credit": "Daderot",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Vase,_c._1680,_Delft,_Netherlands,_tin-glazed_earthenware_-_Art_Institute_of_Chicago_-_DSC09979.JPG"
+ },
+ "culture-czechia-0": {
+  "src": "images/culture-czechia-0.webp",
+  "alt": "Prague's medieval astronomical clock, still ticking since 1410",
+  "credit": "Steve Collis from Melbourne, Australia",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Astronomical_Clock_(8341899828).jpg"
+ },
+ "culture-czechia-1": {
+  "src": "images/culture-czechia-1.webp",
+  "alt": "The Sedlec Ossuary in Kutná Hora, decorated with human bones",
+  "credit": "Pudelek (Marcin Szala)",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kostnice_Sedlec.JPG"
  }
 };
