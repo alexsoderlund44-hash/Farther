@@ -1174,11 +1174,12 @@ window.PHOTOS = {
  },
  "gambia": {
   "src": "images/gambia.webp",
-  "alt": "The Gambia",
-  "credit": "Atamari",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Gambia_banjul_arch22.JPG",
-  "pos": "center top"
+  "alt": "Dawn over the mangroves, Makasutu",
+  "credit": "Forbes Johnston",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/ambabheg/53294300660/",
+  "source": "flickr",
+  "hd": "images/hd/gambia.webp"
  },
  "cape-verde": {
   "src": "images/cape-verde.webp",
