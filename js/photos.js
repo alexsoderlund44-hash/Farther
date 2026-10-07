@@ -9089,5 +9089,474 @@ window.PHOTOS = {
   "credit": "Wikimedia Commons contributor",
   "license": "Public domain",
   "page": "https://commons.wikimedia.org/wiki/File:Tanenuiarangi.jpg"
+ },
+ "dish-south-korea-0": {
+  "src": "images/dish-south-korea-0.webp",
+  "alt": "Bibimbap",
+  "credit": "Sous Chef",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dolsot-bibimbap.jpg"
+ },
+ "dish-south-korea-1": {
+  "src": "images/dish-south-korea-1.webp",
+  "alt": "Tteokbokki",
+  "credit": "Popo le Chien",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tteokbokki.JPG"
+ },
+ "dish-south-korea-2": {
+  "src": "images/dish-south-korea-2.webp",
+  "alt": "Kimchi jjigae",
+  "credit": "한국농수산식품유통공사",
+  "license": "KOGL Type 1",
+  "page": "https://commons.wikimedia.org/wiki/File:Korean_stew_dish_-_Kimchi-jjigae_Kimchi_Stew_2019_(01).jpg"
+ },
+ "dish-south-korea-3": {
+  "src": "images/dish-south-korea-3.webp",
+  "alt": "Korean fried chicken",
+  "credit": "KOREA.NET",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Iksan_City_48_Korean_Style_Fried_chicken.jpg"
+ },
+ "dish-south-korea-4": {
+  "src": "images/dish-south-korea-4.webp",
+  "alt": "Samgyeopsal",
+  "credit": "jinsoo jang",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Samgyeopsal-gui.jpg"
+ },
+ "dish-south-korea-5": {
+  "src": "images/dish-south-korea-5.webp",
+  "alt": "Hotteok",
+  "credit": "Korea.net / Korean Culture and Information Service",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hotteok.jpg"
+ },
+ "dish-china-0": {
+  "src": "images/dish-china-0.webp",
+  "alt": "Jiaozi",
+  "credit": "Yeepunchmen",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E7%81%A3%E5%8D%97%E6%8A%95%E8%8D%89%E5%B1%AF%E6%B0%B4%E9%A4%83Nantou,_Taiwan_Caotun_dumplings.jpg"
+ },
+ "dish-china-1": {
+  "src": "images/dish-china-1.webp",
+  "alt": "Jianbing",
+  "credit": "Amazingloong",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E7%85%8E%E9%A5%BC%E9%A6%83%E5%AD%90%E5%88%B6%E4%BD%9C%E8%BF%87%E7%A8%8B5.jpg"
+ },
+ "dish-china-2": {
+  "src": "images/dish-china-2.webp",
+  "alt": "Lanzhou beef noodles",
+  "credit": "Super koikeyuriko",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E8%98%AD%E5%B7%9E%E7%89%9B%E8%82%89%E6%8B%89%E9%BA%BA.jpg"
+ },
+ "dish-china-3": {
+  "src": "images/dish-china-3.webp",
+  "alt": "Mapo tofu",
+  "credit": "ZhengZhou",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chen_Mapo_Tofu.jpg"
+ },
+ "dish-china-4": {
+  "src": "images/dish-china-4.webp",
+  "alt": "Hot pot",
+  "credit": "Praneeth Thalla",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hot_Pot.jpg"
+ },
+ "dish-china-5": {
+  "src": "images/dish-china-5.webp",
+  "alt": "Baozi",
+  "credit": "Popo le Chien",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Baozi_Chengdu.JPG"
+ },
+ "dish-taiwan-0": {
+  "src": "images/dish-taiwan-0.webp",
+  "alt": "Beef noodle soup",
+  "credit": "MDRX",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lanzhou_La_Mian.jpg"
+ },
+ "dish-taiwan-1": {
+  "src": "images/dish-taiwan-1.webp",
+  "alt": "Xiaolongbao",
+  "credit": "Peachyeung316",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:A_Xiaolongbao_from_The_Modern_Shanghai.jpg"
+ },
+ "dish-taiwan-2": {
+  "src": "images/dish-taiwan-2.webp",
+  "alt": "Lu rou fan",
+  "credit": "Jzest",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Lurou_fan(Taiwanese_cuisine).jpg"
+ },
+ "dish-taiwan-3": {
+  "src": "images/dish-taiwan-3.webp",
+  "alt": "Gua bao",
+  "credit": "LeoAlmighty",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Steamed_Sandwich,taken_by_LeoAlmighty.jpg"
+ },
+ "dish-taiwan-4": {
+  "src": "images/dish-taiwan-4.webp",
+  "alt": "Stinky tofu",
+  "credit": "Pilzland",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Stinkender_Tofu_1.JPG"
+ },
+ "dish-singapore-0": {
+  "src": "images/dish-singapore-0.webp",
+  "alt": "Hainanese chicken rice",
+  "credit": "No machine-readable author provided. Terence assumed (based on copyright claims)",
+  "license": "CC BY 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Hainanese_Chicken_Rice.jpg"
+ },
+ "dish-singapore-3": {
+  "src": "images/dish-singapore-3.webp",
+  "alt": "Chilli crab",
+  "credit": "megawatts86",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chilli_crab-02.jpg"
+ },
+ "dish-singapore-5": {
+  "src": "images/dish-singapore-5.webp",
+  "alt": "Kaya toast",
+  "credit": "Pinklily08",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kaya_toast_on_a_plate.jpg"
+ },
+ "dish-portugal-0": {
+  "src": "images/dish-portugal-0.webp",
+  "alt": "Pastel de nata",
+  "credit": "Mon Œil",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pasteis_de_Belem.jpg"
+ },
+ "dish-portugal-1": {
+  "src": "images/dish-portugal-1.webp",
+  "alt": "Bacalhau à Brás",
+  "credit": "Fpenteado at en.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bacalhau_a_Bras.jpg"
+ },
+ "dish-portugal-2": {
+  "src": "images/dish-portugal-2.webp",
+  "alt": "Francesinha",
+  "credit": "TheRealDapperDan",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Francesinha_Sandwich_(cropped).jpg"
+ },
+ "dish-portugal-3": {
+  "src": "images/dish-portugal-3.webp",
+  "alt": "Bifana",
+  "credit": "Siliconred",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Porto-style_Bifana_sandwich_with_egg.jpg"
+ },
+ "dish-portugal-4": {
+  "src": "images/dish-portugal-4.webp",
+  "alt": "Caldo verde",
+  "credit": "Mateus Hidalgo",
+  "license": "CC BY-SA 2.5 br",
+  "page": "https://commons.wikimedia.org/wiki/File:Caldo_verde.jpg"
+ },
+ "dish-portugal-5": {
+  "src": "images/dish-portugal-5.webp",
+  "alt": "Ginjinha",
+  "credit": "MiguelAlanCS",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ginjinha_2020.jpg"
+ },
+ "dish-spain-0": {
+  "src": "images/dish-spain-0.webp",
+  "alt": "Tortilla española",
+  "credit": "Kent Wang",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tortilla_de_patata_-_San_Sebasti%C3%A1n.jpg"
+ },
+ "dish-spain-1": {
+  "src": "images/dish-spain-1.webp",
+  "alt": "Patatas bravas",
+  "credit": "Krista",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Patatas_bravas_madrid.jpg"
+ },
+ "dish-spain-2": {
+  "src": "images/dish-spain-2.webp",
+  "alt": "Churros con chocolate",
+  "credit": "Joy",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chocolate_con_churros_(27343655726).jpg"
+ },
+ "dish-spain-3": {
+  "src": "images/dish-spain-3.webp",
+  "alt": "Paella",
+  "credit": "Jan Harenburg",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:01_Paella_Valenciana_original.jpg"
+ },
+ "dish-spain-4": {
+  "src": "images/dish-spain-4.webp",
+  "alt": "Jamón ibérico",
+  "credit": "Cantabrucu",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jamon_iberico_de_bellota_2_(cinco_jotas).jpg"
+ },
+ "dish-spain-5": {
+  "src": "images/dish-spain-5.webp",
+  "alt": "Gazpacho",
+  "credit": "Haydn Blackey",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gazpacho_Malague%C3%B1o_con_su_%E2%80%9Cpica%C3%ADto%E2%80%9D_-_Moreno,_Playa_Burriana_(cropped).jpg"
+ },
+ "dish-france-0": {
+  "src": "images/dish-france-0.webp",
+  "alt": "Croissant",
+  "credit": "Petr Kratochvil",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Croissant-Petr_Kratochvil.jpg"
+ },
+ "dish-france-1": {
+  "src": "images/dish-france-1.webp",
+  "alt": "Baguette",
+  "credit": "Nick Thweatt",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Baguettes,_Paris,_France_-_panoramio.jpg"
+ },
+ "dish-france-2": {
+  "src": "images/dish-france-2.webp",
+  "alt": "Croque monsieur",
+  "credit": "Michael Brewer",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Croque_monsieur.jpg"
+ },
+ "dish-france-3": {
+  "src": "images/dish-france-3.webp",
+  "alt": "Crêpe",
+  "credit": "David Monniaux",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Crepes_dsc07085.jpg"
+ },
+ "dish-france-4": {
+  "src": "images/dish-france-4.webp",
+  "alt": "Steak frites",
+  "credit": "Missvain",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Reel_and_Brand_-_September_2021_-_Sarah_Stierch_05.jpg"
+ },
+ "dish-france-5": {
+  "src": "images/dish-france-5.webp",
+  "alt": "Ratatouille",
+  "credit": "Jack145945",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ratatouille_home_cooked.jpg"
+ },
+ "dish-italy-0": {
+  "src": "images/dish-italy-0.webp",
+  "alt": "Pizza napoletana",
+  "credit": "Bex Walton from London, England",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Neapolitan_pizza_at_Trappica_(48701940197).jpg"
+ },
+ "dish-italy-1": {
+  "src": "images/dish-italy-1.webp",
+  "alt": "Cacio e pepe",
+  "credit": "Popo le Chien",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cacio_e_pepe.jpg"
+ },
+ "dish-italy-2": {
+  "src": "images/dish-italy-2.webp",
+  "alt": "Arancini",
+  "credit": "No machine-readable author provided. Gmelfi assumed (based on copyright claims).",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Arancini_002.jpg"
+ },
+ "dish-italy-3": {
+  "src": "images/dish-italy-3.webp",
+  "alt": "Pizza al taglio",
+  "credit": "Shoebill2",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Pizza_al_taglio.jpg"
+ },
+ "dish-italy-4": {
+  "src": "images/dish-italy-4.webp",
+  "alt": "Gelato",
+  "credit": "EquipmentAndConcepts",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Delicious_Gelato_on_display.jpg"
+ },
+ "dish-italy-5": {
+  "src": "images/dish-italy-5.webp",
+  "alt": "Spritz",
+  "credit": "JIP",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aperol_Spritz_aboard_Viking_Mariella.jpg"
+ },
+ "dish-greece-0": {
+  "src": "images/dish-greece-0.webp",
+  "alt": "Souvlaki",
+  "credit": "EntaXoyas",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CF%8C_%CE%A3%CE%BF%CF%85%CE%B2%CE%BB%CE%AC%CE%BA%CE%B9_-_panoramio.jpg"
+ },
+ "dish-greece-1": {
+  "src": "images/dish-greece-1.webp",
+  "alt": "Gyros",
+  "credit": "Antonio Fajardo i López",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pita_giros.JPG"
+ },
+ "dish-greece-2": {
+  "src": "images/dish-greece-2.webp",
+  "alt": "Spanakopita",
+  "credit": "Alpha",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Spanakopita.jpg"
+ },
+ "dish-greece-3": {
+  "src": "images/dish-greece-3.webp",
+  "alt": "Moussaka",
+  "credit": "Robert Kindermann aka RobertK",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:MussakasMeMelitsanesKePatates01.JPG"
+ },
+ "dish-greece-4": {
+  "src": "images/dish-greece-4.webp",
+  "alt": "Greek salad",
+  "credit": "User:Jpatokal",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Greece_Food_Horiatiki.JPG"
+ },
+ "dish-greece-5": {
+  "src": "images/dish-greece-5.webp",
+  "alt": "Loukoumades",
+  "credit": "elif ayse",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sam%27dan_lokma_tatlisi.jpg"
+ },
+ "dish-croatia-0": {
+  "src": "images/dish-croatia-0.webp",
+  "alt": "Ćevapi",
+  "credit": "Christian Paul from Vancouver, Canada",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cevapi_s_kajmakom.jpg"
+ },
+ "dish-croatia-3": {
+  "src": "images/dish-croatia-3.webp",
+  "alt": "Zagorski štrukli",
+  "credit": "Bonč",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%C5%A0trukli_iz_Okrugljaka.jpg"
+ },
+ "dish-croatia-4": {
+  "src": "images/dish-croatia-4.webp",
+  "alt": "Pašticada",
+  "credit": "Imbehind",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pa%C5%A1ticada_-_Dalmatinska_pa%C5%A1ticada.jpg"
+ },
+ "dish-croatia-5": {
+  "src": "images/dish-croatia-5.webp",
+  "alt": "Fritule",
+  "credit": "Simone Coletta",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Carnival_Frittelle_(250677305).jpeg"
+ },
+ "dish-uk-0": {
+  "src": "images/dish-uk-0.webp",
+  "alt": "Fish and chips",
+  "credit": "Matthias Meckel",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fish_and_chips_blackpool.jpg"
+ },
+ "dish-uk-2": {
+  "src": "images/dish-uk-2.webp",
+  "alt": "Sunday roast",
+  "credit": "Acabashi",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sunday_roast_lamb_Cock_Inn_Henham_Essex_England_01.jpg"
+ },
+ "dish-uk-3": {
+  "src": "images/dish-uk-3.webp",
+  "alt": "Chicken tikka masala",
+  "credit": "Michael Hays",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chicken_tikka_masala_(cropped).jpg"
+ },
+ "dish-uk-4": {
+  "src": "images/dish-uk-4.webp",
+  "alt": "Pasty",
+  "credit": "David Johnson [1]",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cornish_Pasty_(cropped).jpeg"
+ },
+ "dish-uk-5": {
+  "src": "images/dish-uk-5.webp",
+  "alt": "Haggis",
+  "credit": "Chris Brown",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Scotland_Haggis.jpg"
+ },
+ "dish-ireland-0": {
+  "src": "images/dish-ireland-0.webp",
+  "alt": "Irish stew",
+  "credit": "A Healthier Michigan from Detroit, United States",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Irish_Beef_Stew_(34046928633).jpg"
+ },
+ "dish-ireland-1": {
+  "src": "images/dish-ireland-1.webp",
+  "alt": "Full Irish breakfast",
+  "credit": "Joadl",
+  "license": "CC BY-SA 3.0 at",
+  "page": "https://commons.wikimedia.org/wiki/File:Full_English_breakfast_(cropped).jpg"
+ },
+ "dish-ireland-2": {
+  "src": "images/dish-ireland-2.webp",
+  "alt": "Soda bread",
+  "credit": "w:en:User:Canterbury Tail",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ben_W_Bell_Soda_Bread_Farl_05_June_2007.jpg"
+ },
+ "dish-ireland-3": {
+  "src": "images/dish-ireland-3.webp",
+  "alt": "Boxty",
+  "credit": "さえぼー",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Boxty_triangle.jpg"
+ },
+ "dish-ireland-4": {
+  "src": "images/dish-ireland-4.webp",
+  "alt": "Spice bag",
+  "credit": "Sean Zissou",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Spice_Bag_(cropped).jpg"
+ },
+ "dish-ireland-5": {
+  "src": "images/dish-ireland-5.webp",
+  "alt": "Guinness",
+  "credit": "55belgianbeerfan",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:A_Pint_of_English_Imperial_Stout.png"
+ },
+ "dish-germany-1": {
+  "src": "images/dish-germany-1.webp",
+  "alt": "Currywurst",
+  "credit": "Ziko van Dijk",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:20220430_currywurst.jpg"
+ },
+ "dish-germany-2": {
+  "src": "images/dish-germany-2.webp",
+  "alt": "Brezel",
+  "credit": "Sundar1",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:BrezelnSalz02_(cropped).JPG"
  }
 };
