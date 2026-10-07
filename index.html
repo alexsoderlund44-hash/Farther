@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Farther: travel longer for less</title>
+<meta name="description" content="What a day of travel really costs in 150+ countries, the best time to go, and a trip planner that keeps your budget on track.">
+<meta property="og:title" content="Farther: travel longer for less">
+<meta property="og:description" content="What a day of travel really costs in 150+ countries, the best time to go, and a trip planner that keeps your budget on track.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#ffd23f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='18' fill='%23ffd23f' stroke='%232a1608' stroke-width='2.5'/%3E%3Cpath d='M9 21.5 31 12 24.5 30 20.5 23.5Z' fill='%23ff6a1a' stroke='%232a1608' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Figtree:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#home" aria-label="Farther home"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" style="fill:var(--sun)" stroke="#2a1608" stroke-width="2.5"/><path d="M9 21.5 31 12 24.5 30 20.5 23.5Z" style="fill:var(--orange)" stroke="#2a1608" stroke-width="2" stroke-linejoin="round"/><path d="M20.5 23.5 31 12" stroke="#2a1608" stroke-width="2" stroke-linecap="round"/></svg><span class="brand-word">Farther</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#home" data-route="home"><svg class="nav-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5 12 5l8 6.5V20a1 1 0 0 1-1 1h-4.5v-5.5h-5V21H5a1 1 0 0 1-1-1z"/></svg>Home</a>
+      <a href="#explore" data-route="explore" data-also="country"><svg class="nav-ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></svg>Explore</a>
+      <a href="#itineraries" data-route="itineraries"><svg class="nav-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 19c3-1 4-4 6-7s4-5 6-6"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="6" r="2"/></svg><span class="nav-long">Trip ideas</span><span class="nav-short">Ideas</span></a>
+      <a href="#plan" data-route="plan" data-also="trip"><svg class="nav-ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg><span class="nav-long">Plan</span><span class="nav-short">Plan</span></a>
+      <a href="#track" data-route="track"><svg class="nav-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Track</a>
+    </nav>
+    <button class="settings-btn" type="button" id="settings-btn" data-open-settings aria-label="Settings" title="Settings">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M19.4 13a7.6 7.6 0 0 0 0-2l2-1.6-2-3.4-2.4 1a7.4 7.4 0 0 0-1.7-1L15 3.5h-4l-.4 2.5a7.4 7.4 0 0 0-1.7 1l-2.4-1-2 3.4L6.6 11a7.6 7.6 0 0 0 0 2l-2 1.6 2 3.4 2.4-1a7.4 7.4 0 0 0 1.7 1l.4 2.5h4l.4-2.5a7.4 7.4 0 0 0 1.7-1l2.4 1 2-3.4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      <span class="settings-cur" id="settings-cur"></span>
+    </button>
+    <a class="profile-link" href="#profile" id="profile-link" aria-label="Your profile"></a>
+  </div>
+</header>
+
+<main>
+  <!-- HOME -->
+  <section class="page" id="page-home" data-page="home">
+    <div class="hero">
+      <div class="hero-copy">
+        <p class="hero-kicker"><span class="kick-dot" aria-hidden="true"></span>157 countries, 2,254 places, real daily costs</p>
+        <h1 class="hero-title">Travel longer for&nbsp;less.</h1>
+        <p class="lede">Find where your money stretches, plan the route, book the cheap beds, and keep your spending on track.</p>
+        <form class="hero-search" id="hero-search" role="search">
+          <svg class="hs-ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+          <input id="hero-q" type="search" placeholder="Peru, trekking, Southeast Asia…" aria-label="Search destinations">
+          <button class="btn" type="submit">Explore</button>
+        </form>
+        <div class="hero-chips" id="hero-chips">
+          <button type="button" data-q="offbeat">Off the beaten path</button>
+          <button type="button" data-q="trekking">Trekking</button>
+          <button type="button" data-q="Southeast Asia">Southeast Asia</button>
+          <button type="button" data-q="South America">South America</button>
+          <button type="button" data-budget="25">Under $25/day</button>
+        </div>
+      </div>
+      <div class="hero-stage">
+        <div class="hero-cards" id="hero-cards"></div>
+        <div class="hero-ticket money-ticket" id="hero-stretch" aria-roledescription="carousel" aria-label="How long your money lasts"></div>
+      </div>
+    </div>
+
+    <section class="home-season">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Best time to go</p>
+          <h2 id="season-title">Countries in season this month</h2>
+        </div>
+        <a class="btn ghost small" href="#explore">See all countries</a>
+      </div>
+      <div class="grid snap-row" id="home-featured"></div>
+      <nav class="month-chips" id="home-months" aria-label="Where to go in another month"></nav>
+    </section>
+
+    <section class="qb" id="quick-book" aria-labelledby="qb-title">
+      <figure class="qb-photo" id="qb-photo" aria-hidden="true"></figure>
+      <form class="qb-form" id="qb-form" novalidate>
+        <div class="qb-head">
+          <h2 id="qb-title">Lock in the cheap stuff</h2>
+          <p>Pick a place and your dates. Flights, beds and things to do open with your dates already filled in.</p>
+        </div>
+        <div class="qb-fields">
+          <div class="field qb-where"><label for="qb-where">Where to</label><input id="qb-where" list="qb-places" autocomplete="off" placeholder="Hoi An, Cusco, Tbilisi…"><datalist id="qb-places"></datalist></div>
+          <div class="field"><label for="qb-in">Arrive</label><input id="qb-in" type="date"></div>
+          <div class="field"><label for="qb-out">Leave</label><input id="qb-out" type="date"></div>
+          <button class="btn ghost" type="submit">Open the country guide</button>
+        </div>
+        <div class="qb-tabs" role="tablist" aria-label="What to book">
+          <button type="button" role="tab" data-qb-tab="flights" aria-selected="true">Flights</button>
+          <button type="button" role="tab" data-qb-tab="stays" aria-selected="false">Beds</button>
+          <button type="button" role="tab" data-qb-tab="exp" aria-selected="false">Things to do</button>
+        </div>
+        <div class="qb-results" id="qb-results" aria-live="polite">
+          <div class="qb-card" data-kind="flights">
+            <span class="qb-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.5 13.5 21 5l-5 15-4.2-6.3z"/><path d="m11.8 13.7 9.2-8.7"/></svg></span>
+            <h3>Flights</h3><p class="qb-sub" id="qb-flights-sub"></p><div class="qb-links" id="qb-flights"></div>
+          </div>
+          <div class="qb-card" data-kind="stays" hidden>
+            <span class="qb-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 18V7m0 7h18v4M21 14v-2.5A3.5 3.5 0 0 0 17.5 8H11v6"/><circle cx="7" cy="10.5" r="1.8"/></svg></span>
+            <h3>Hostels and beds</h3><p class="qb-sub" id="qb-stays-sub"></p><div class="qb-links" id="qb-stays"></div>
+          </div>
+          <div class="qb-card" data-kind="exp" hidden>
+            <span class="qb-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 0 0 4 2 2 0 0 1 0 4v2h18v-2a2 2 0 0 1 0-4 2 2 0 0 0 0-4V5H3z"/><path d="M14 5v12" stroke-dasharray="2 2"/></svg></span>
+            <h3>Things to do</h3><p class="qb-sub" id="qb-exp-sub"></p><div class="qb-links" id="qb-exp"></div>
+          </div>
+        </div>
+        <p class="qb-msg" id="qb-msg" role="status"></p>
+        <p class="qb-total" id="qb-total"></p>
+        <p class="qb-fine">Links open the booking site in a new tab. You pay the same price either way. <a href="#money">How we make money</a></p>
+      </form>
+    </section>
+
+    <section id="home-routes-wrap" hidden>
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Trip ideas</p>
+          <h2>Steal a ready-made trip</h2>
+        </div>
+        <div class="head-actions"><a class="btn ghost small" href="#itineraries" id="routes-all">See all</a><a class="btn small" href="#itineraries">Build me one</a></div>
+      </div>
+      <div class="route-grid snap-row" id="home-routes"></div>
+    </section>
+
+    <section class="home-vibes">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Start with a feeling</p>
+          <h2>What kind of trip?</h2>
+        </div>
+      </div>
+      <div class="vibes snap-row" id="home-vibes"></div>
+    </section>
+  </section>
+
+  <!-- EXPLORE -->
+  <section class="page" id="page-explore" data-page="explore" hidden>
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Explore</p>
+        <h2>Pick a country</h2>
+        <p class="muted">Cheapest daily cost per person, by country.</p>
+      </div>
+    </div>
+    <div class="explore-layout">
+      <aside class="filters" aria-label="Filters">
+        <div class="field">
+          <label for="f-q">Search</label>
+          <input id="f-q" type="search" placeholder="Country, city or activity">
+        </div>
+        <button class="btn ghost small filters-toggle" type="button" id="f-toggle" aria-expanded="false" aria-controls="f-more">More filters</button>
+        <div class="filters-more" id="f-more">
+        <div class="field">
+          <label for="f-budget">Max per day: <span class="num" id="f-budget-out">Any</span></label>
+          <input id="f-budget" type="range" min="20" max="150" step="5" value="150">
+        </div>
+        <div class="field">
+          <label for="f-region">Region</label>
+          <select id="f-region"><option value="">All regions</option></select>
+        </div>
+        <div class="field">
+          <label for="f-month">Travelling in</label>
+          <select id="f-month"><option value="">Any month</option></select>
+        </div>
+        <div class="field">
+          <span class="label">Trip style</span>
+          <div class="chip-row" id="f-tags"></div>
+        </div>
+        <button class="btn ghost small" type="button" id="f-reset">Clear filters</button>
+        </div>
+      </aside>
+      <div style="min-width:0; display:grid; gap:16px; align-content:start">
+        <div class="cont-chips" id="f-cont" role="group" aria-label="Continent"></div>
+        <div class="result-bar">
+          <p class="result-count" id="result-count"></p>
+          <div class="field sort-field"><label for="f-sort">Sort by</label>
+            <select id="f-sort">
+              <option value="cost">Cheapest first</option>
+              <option value="popular">Most popular</option>
+              <option value="season">Best right now</option>
+              <option value="places">Most places</option>
+              <option value="cost-desc">Priciest first</option>
+              <option value="name">A to Z</option>
+            </select></div>
+        </div>
+        <div class="grid" id="explore-grid"></div>
+        <div class="see-all"><button class="btn ghost" type="button" id="explore-more" hidden>Show all countries</button></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTRY -->
+  <section class="page" id="page-country" data-page="country" hidden>
+    <div id="country-view"></div>
+  </section>
+
+  <!-- PLAN -->
+  <section class="page" id="page-itineraries" data-page="itineraries" hidden>
+    <div id="itin-view"></div>
+  </section>
+  <section class="page" id="page-plan" data-page="plan" hidden>
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Plan</p>
+        <h2>Your trips</h2>
+        <p class="muted" id="plan-saved-note">Start a new trip, or open one to keep planning. Trips are saved in this browser.</p>
+      </div>
+      <div class="head-actions"><a class="btn ghost" href="#getting-there">Compare buses and trains</a><button class="btn" type="button" id="new-trip-btn"><span aria-hidden="true">+</span> Add new trip</button></div>
+    </div>
+    <form class="new-trip" id="new-trip-form" hidden novalidate>
+      <div><p class="eyebrow">New trip</p><h3>Start with your budget</h3><p class="muted">Everything else in the plan works back from this number.</p></div>
+      <div class="nt-budget">
+        <label for="nt-budget">How much can you spend in total, flights included?</label>
+        <div class="nt-amount"><span class="nt-cur" id="nt-cur">$</span><input id="nt-budget" type="number" inputmode="numeric" min="0" step="50" placeholder="1500" required></div>
+        <div class="nt-quick" role="group" aria-label="Quick budgets"><button type="button" data-nt-budget="800">$800</button><button type="button" data-nt-budget="1500">$1,500</button><button type="button" data-nt-budget="2500">$2,500</button><button type="button" data-nt-budget="4000">$4,000</button></div>
+      </div>
+      <div class="new-trip-fields">
+        <div class="field"><label for="nt-start">Start date</label><input id="nt-start" type="date"></div>
+        <div class="field"><label for="nt-end">End date (optional)</label><input id="nt-end" type="date"></div>
+        <div class="field"><label for="nt-name">Trip name (optional)</label><input id="nt-name" type="text" placeholder="e.g. Balkans in September" autocomplete="off"></div>
+      </div>
+      <div class="nt-hint" id="nt-hint" aria-live="polite"></div>
+      <p class="form-error" id="nt-error" hidden></p>
+      <div class="card-foot">
+        <button class="btn" type="submit">Create trip</button>
+        <button class="btn ghost" type="button" id="nt-cancel">Cancel</button>
+      </div>
+    </form>
+    <div class="trip-list" id="trip-list"></div>
+  </section>
+
+  <!-- PROFILE -->
+  <section class="page" id="page-profile" data-page="profile" hidden>
+    <div id="profile-view"></div>
+  </section>
+
+  <!-- ABOUT (with how we make money and privacy) -->
+  <section class="page about" id="page-about" data-page="about" hidden>
+    <div class="about-hero" id="about-hero">
+      <div class="about-hero-text"><p class="eyebrow">About Farther</p><h2>Built for travelling longer on less</h2>
+      <p>A free planner with real daily costs, ready-made routes and a budget tracker. No ads and no paywall.</p></div>
+    </div>
+    <nav class="about-jump" aria-label="On this page"><a href="#about">How costs work</a><a href="#money">How we make money</a><a href="#privacy">Privacy</a></nav>
+    <div class="about-prose" id="about-costs">
+      <h2>How we work out costs</h2>
+      <p>Each place has a typical daily budget for one person: a bed in a hostel dorm or simple guesthouse, eating where locals eat, local buses and trains, and the usual entry fees, permits or tours.</p>
+      <p>The figures are checked against recent prices and reviewed once a year. They are starting points for planning, so check live prices before you book, especially in peak season and during festivals.</p>
+      <h3>Travel warnings</h3>
+      <p>Countries marked with a travel warning have current government advice against some or all travel. We summarise that advice, but it changes quickly, so always check your own government's travel advice and your insurance cover before you go.</p>
+    </div>
+    <div class="about-prose" id="about-money">
+      <h2>How we make money</h2>
+      <h3>Booking links</h3>
+      <p>Some links on Farther go to booking sites for hostels, hotels, flights, buses and trains, car hire, tours, travel insurance and mobile data. Many of these are affiliate links. When you book through one, the company you book with may pay us a small commission.</p>
+      <h3>You pay the same price</h3>
+      <p>The commission comes out of the booking site's own share. You pay exactly what you would pay going to that site directly, and you can always book anywhere you like.</p>
+      <h3>What commissions never change</h3>
+      <ul>
+        <li>The daily costs we show. They come from real prices, not from who pays us.</li>
+        <li>Which countries and places we list, and the order we list them in.</li>
+        <li>Budget tips that tell you how to spend less, including ways to skip paid tours.</li>
+      </ul>
+      <h3>Who we link to</h3>
+      <p>We link to well-known sites budget travellers already use, such as Hostelworld, Booking.com, Agoda, Skyscanner, Kiwi.com, 12Go, Omio, FlixBus, Busbud, DiscoverCars, GetYourGuide, Viator, SafetyWing and Airalo. We only earn from the ones we have an agreement with, and the list may change.</p>
+      <h3>How you can tell</h3>
+      <p>Booking links open the partner's site in a new tab. Where a link can earn us a commission, a note next to it says so.</p>
+    </div>
+    <div class="about-prose" id="about-privacy">
+      <h2>Your privacy</h2>
+      <h3>Without a profile</h3>
+      <p>Your trips are saved in your own browser on this device. Nothing is sent to us. Clearing your browser data deletes them.</p>
+      <h3>With a profile</h3>
+      <p>If you create a profile, we save your display name, home city, usual budget, travel styles and your trips to your account, so you can open them on any device. You can delete any trip at any time.</p>
+      <h3>What we never do</h3>
+      <p>We do not sell your data or share your trips with anyone.</p>
+      <h3>Booking sites</h3>
+      <p>When you follow a link to a booking site, that site's own privacy policy applies. It may set a cookie so the booking can be credited to us. See <a href="#money">how we make money</a>.</p>
+    </div>
+  </section>
+
+  <!-- TRIP -->
+  <section class="page" id="page-getting-there" data-page="getting-there" hidden>
+    <div id="tx-view"></div>
+  </section>
+  <section class="page" id="page-track" data-page="track" hidden>
+    <div id="track-view"></div>
+  </section>
+  <section class="page" id="page-trip" data-page="trip" hidden>
+    <div class="section-head">
+      <div>
+        <a class="back-link" href="#plan"><span aria-hidden="true">←</span> All trips</a>
+        <h2 id="plan-title">Your route</h2>
+        <div id="plan-tabs"></div>
+        <p class="muted plan-intro">Add your stops and how many days in each. That is a plan. Open any stop when you want to pick a bed, things to do or how to get there. Changes save as you type.</p>
+      </div>
+      <div class="trip-flags"><div id="plan-flag"></div><button class="btn ghost small" type="button" id="share-trip">Share trip</button><p class="save-status" id="save-status" role="status"></p></div>
+    </div>
+    <div class="plan-layout">
+      <div style="min-width:0; display:grid; gap:24px">
+        <div class="trip-panel">
+        <p class="eyebrow">Trip details</p>
+        <div class="trip-meta">
+          <div class="field"><label for="t-name">Trip name</label><input id="t-name" type="text"></div>
+          <div class="field"><label for="t-start">Start date</label><input id="t-start" type="date"></div>
+          <div class="field"><label for="t-end">End date (optional)</label><input id="t-end" type="date"></div>
+          <div class="field"><label for="t-budget">Total budget (USD)</label><input id="t-budget" type="number" min="0" step="50"></div>
+          <div class="field"><label for="t-flights">Flights (USD)</label><input id="t-flights" type="number" min="0" step="10"></div>
+        </div>
+        <details class="trip-more">
+          <summary>Countries on this trip</summary>
+          <div class="trip-countries" id="trip-countries">
+            <div class="field"><label for="tc-add">Add a country</label>
+              <select id="tc-add"></select></div>
+            <div class="tc-chips" id="tc-chips"></div>
+          </div>
+        </details>
+        </div>
+        <section class="stops-wrap" aria-labelledby="stops-title">
+          <div class="stops-head"><div><p class="eyebrow">Your stops</p><h3 id="stops-title">Where you're going</h3></div>
+            <div class="stops-head-act"><button type="button" class="btn ghost small" id="expand-all">Open all stops</button></div></div>
+          <div class="add-stop">
+            <div class="field add-q"><label for="add-q">Add a stop</label><input id="add-q" type="search" list="add-places" placeholder="Search a place, e.g. Hoi An" autocomplete="off"><datalist id="add-places"></datalist></div>
+            <div class="field add-days"><label for="add-days">Days</label><input id="add-days" type="number" min="1" max="90" value="3"></div>
+            <button class="btn" type="button" id="add-btn">Add stop</button>
+            <details class="add-browse"><summary>Or browse by country</summary>
+              <div class="add-browse-row">
+                <div class="field"><label for="add-country">Country</label><select id="add-country"></select></div>
+                <div class="field"><label for="add-select">Place</label><select id="add-select"></select></div>
+              </div>
+            </details>
+          </div>
+          <div class="stops" id="stops"></div>
+        </section>
+        <div class="trip-panel trip-map-panel" id="trip-map-panel" hidden>
+          <div class="tm-head"><p class="eyebrow">Route map</p><p class="muted small" id="trip-km"></p></div>
+          <div class="trip-map" id="trip-map"></div>
+        </div>
+        <details class="trip-panel trip-flights-panel" id="flights-panel">
+        <summary><span class="eyebrow">Flights</span><span class="muted small">Optional. Search your flight out and home.</span></summary>
+        <div class="trip-flights">
+          <div class="field"><label for="t-from">Flying from</label><input id="t-from" type="text" placeholder="Your home city"></div>
+          <div id="flight-legs"></div>
+        </div>
+        </details>
+      </div>
+      <aside class="summary" aria-label="Trip summary" id="summary"></aside>
+    </div>
+    <button class="trip-bar" type="button" id="trip-bar" aria-controls="summary"></button>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner footer-main">
+    <div class="footer-about">
+      <a class="brand footer-logo" href="#home"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" style="fill:var(--sun)" stroke="#2a1608" stroke-width="2.5"/><path d="M9 21.5 31 12 24.5 30 20.5 23.5Z" style="fill:var(--orange)" stroke="#2a1608" stroke-width="2" stroke-linejoin="round"/><path d="M20.5 23.5 31 12" stroke="#2a1608" stroke-width="2" stroke-linecap="round"/></svg><span>Farther</span></a>
+      <p>Daily costs, ready-made itineraries and a budget tracker for 157 countries, so your money lasts longer on the road.</p>
+      <a class="btn small" href="#plan">Start planning a trip</a>
+    </div>
+    <nav class="footer-col" aria-label="Plan">
+      <h2>Plan</h2>
+      <a href="#explore">Explore countries</a>
+      <a href="#itineraries">Trip ideas</a>
+      <a href="#plan">Your trips</a>
+      <a href="#getting-there">Buses, trains and flights</a>
+      <a href="#track">Track</a>
+      <a href="#profile">Your profile</a>
+    </nav>
+    <nav class="footer-col" aria-label="Popular destinations">
+      <h2>Popular</h2>
+      <a href="#country-thailand">Thailand</a>
+      <a href="#country-vietnam">Vietnam</a>
+      <a href="#country-mexico">Mexico</a>
+      <a href="#country-portugal">Portugal</a>
+      <a href="#country-peru">Peru</a>
+      <a href="#country-japan">Japan</a>
+    </nav>
+    <nav class="footer-col static-only" aria-label="Guides">
+      <h2>Guides</h2>
+      <a href="destinations/index.html">All destinations</a>
+      <a href="destinations/cheapest-countries-to-travel.html">Cheapest countries</a>
+      <a href="destinations/best-places-to-travel-in-january.html">Where to go by month</a>
+      <a href="destinations/thailand-vs-vietnam.html">Thailand vs Vietnam</a>
+    </nav>
+    <nav class="footer-col" aria-label="Farther">
+      <h2>Farther</h2>
+      <a href="#about">About</a>
+      <a href="#money">How we make money</a>
+      <a href="#privacy">Privacy</a>
+      <button type="button" class="footer-linkbtn" data-open-settings>Settings</button>
+    </nav>
+  </div>
+  <div class="footer-inner footer-legal">
+    <p>© 2026 Farther. Costs are estimates for planning, per person in US dollars unless you pick another currency. Check prices before you book.</p>
+    <p class="footer-disclose" hidden>Some links to booking sites earn us a small commission at no extra cost to you. <a href="#money">Learn more</a></p>
+    <button type="button" class="footer-linkbtn footer-top" data-to-top>Back to top <span aria-hidden="true">↑</span></button>
+  </div>
+</footer>
+
+<dialog id="detail"></dialog>
+<dialog id="lightbox" class="lightbox" aria-label="Photo"></dialog>
+<dialog id="route-dlg" class="route-dlg" aria-labelledby="route-dlg-title"></dialog>
+<dialog id="settings" aria-labelledby="settings-title">
+  <div class="settings-body" id="settings-body"></div>
+</dialog>
+<div class="toast" id="toast" hidden></div>
+
+<script src="js/data.js"></script>
+<script src="js/world/asia.js"></script>
+<script src="js/world/europe.js"></script>
+<script src="js/world/africa.js"></script>
+<script src="js/world/americas-oceania.js"></script>
+<script src="js/places/asia.js"></script>
+<script src="js/places/europe.js"></script>
+<script src="js/places/africa.js"></script>
+<script src="js/places/americas.js"></script>
+<script src="js/places/oceania-middle-east.js"></script>
+<script src="js/popular.js"></script>
+<script src="js/guides.js"></script>
+<script src="js/routes.js"></script>
+<script src="js/rates.js"></script>
+<script src="js/coords.js"></script>
+<script src="js/map.js"></script>
+<script src="js/hubs.js"></script>
+<script src="js/affiliates.js"></script>
+<script src="js/photos.js"></script>
+<script src="js/products.js"></script>
+<script src="js/transport.js"></script>
+<script src="js/account-config.js"></script>
+<script src="js/app.js"></script>
+<script src="js/farther.js"></script>
+</body>
+</html>
