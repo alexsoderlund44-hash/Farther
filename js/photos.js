@@ -8830,5 +8830,264 @@ window.PHOTOS = {
   "credit": "Almaddy2022",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Lamu_Old_Town.jpg"
+ },
+ "culture-tanzania-0": {
+  "src": "images/culture-tanzania-0.webp",
+  "alt": "Kanga, printed cloths with Swahili proverbs",
+  "credit": "Gavrosh",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kanga,_Tanzania,_2011.jpg"
+ },
+ "culture-tanzania-1": {
+  "src": "images/culture-tanzania-1.webp",
+  "alt": "The Maasai, herders of northern Tanzania's plains",
+  "credit": "Wikimedia Commons contributor",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Maasai_tribe.jpg"
+ },
+ "culture-tanzania-2": {
+  "src": "images/culture-tanzania-2.webp",
+  "alt": "Taarab, Zanzibar's blend of Arabic and Swahili music",
+  "credit": "Jean-Pierre Dalbéra from Paris, France",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Musique_de_Zanzibar_(Institut_du_monde_arabe,_Paris)_(11227343546).jpg"
+ },
+ "culture-mexico-0": {
+  "src": "images/culture-mexico-0.webp",
+  "alt": "Mariachi bands in charro suits, born in Jalisco",
+  "credit": "Milton Martínez / Secretaría de Cultura de la Ciudad de México from México",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:MX_MM_CANTEMOS_A_MAM%C3%81_DESDE_CASA_(49864889988).jpg"
+ },
+ "culture-mexico-1": {
+  "src": "images/culture-mexico-1.webp",
+  "alt": "Oaxaca's July festival of Indigenous dances and costumes",
+  "credit": "S Pakhrin from NYC, USA",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Guelaguetza_Festival_2019_(49747768726).jpg"
+ },
+ "culture-mexico-2": {
+  "src": "images/culture-mexico-2.webp",
+  "alt": "Brightly painted fantasy creatures carved in Oaxaca",
+  "credit": "Nsaum75",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Alebrijes_in_Oaxaca,_Mexico_2009.jpg"
+ },
+ "culture-guatemala-0": {
+  "src": "images/culture-guatemala-0.webp",
+  "alt": "The huipil, a woven blouse whose patterns identify each village",
+  "credit": "Daderot",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Huipil,_skirt,_belt_(c.1950),_shawl,_Ixil_Maya,_Nebaj,_mid_to_late_20th_century,_cotton_-_Textile_Museum_of_Canada_-_DSC01351.JPG"
+ },
+ "culture-guatemala-1": {
+  "src": "images/culture-guatemala-1.webp",
+  "alt": "Maximón, the cigar-smoking folk saint of the highlands",
+  "credit": "Aydinphotos",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Maximon_in_Santiago_Atitlan,_Guatemala.jpg"
+ },
+ "culture-costa-rica-0": {
+  "src": "images/culture-costa-rica-0.webp",
+  "alt": "Painted oxcarts, a national symbol made in Sarchí",
+  "credit": "Crsoccer08",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:World%27s_Largest_Oxcart_Sarchi_Costa_Rica.JPG"
+ },
+ "culture-costa-rica-1": {
+  "src": "images/culture-costa-rica-1.webp",
+  "alt": "Cartago's basilica, goal of the yearly August pilgrimage",
+  "credit": "Bernard Gagnon",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Basilica_of_Our_Lady_of_the_Angels,_Cartago_02.jpg"
+ },
+ "culture-cuba-0": {
+  "src": "images/culture-cuba-0.webp",
+  "alt": "Rumba, Afro-Cuban drumming and dance born in Havana and Matanzas",
+  "credit": "Manuel Díaz Reyes",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bailarines_de_rumba_cubana_en_la_plaza_de_los_trabajadores_de_Camag%C3%BCey,_Cuba.jpg"
+ },
+ "culture-cuba-2": {
+  "src": "images/culture-cuba-2.webp",
+  "alt": "An Afro-Haitian drum and dance tradition from eastern Cuba",
+  "credit": "Christian Pirkl",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Guant%C3%A1namo_CF9A1071.jpg"
+ },
+ "culture-colombia-0": {
+  "src": "images/culture-colombia-0.webp",
+  "alt": "The sombrero vueltiao, woven from cane fibre, a national symbol",
+  "credit": "Jdvillalobos",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Sombrero_vueltiao.jpg"
+ },
+ "culture-colombia-1": {
+  "src": "images/culture-colombia-1.webp",
+  "alt": "Barranquilla Carnival, one of the biggest street parties anywhere",
+  "credit": "Alex22Ortega",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Carnaval_de_barranquilla.png"
+ },
+ "culture-colombia-2": {
+  "src": "images/culture-colombia-2.webp",
+  "alt": "Las Lajas, a basilica built across a gorge near Ecuador",
+  "credit": "Diego Delso",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Santuario_de_Las_Lajas,_Ipiales,_Colombia,_2015-07-21,_DD_26-27_HDR.JPG"
+ },
+ "culture-peru-0": {
+  "src": "images/culture-peru-0.webp",
+  "alt": "Inti Raymi, the Inca sun festival held in Cusco each June",
+  "credit": "Cyntia Motta",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Inti_Raymi.jpg"
+ },
+ "culture-peru-1": {
+  "src": "images/culture-peru-1.webp",
+  "alt": "Marinera, a graceful dance performed with handkerchiefs",
+  "credit": "Tomas Sobek",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Marinera_dance_with_Peruvian_Paso_horse.jpg"
+ },
+ "culture-bolivia-0": {
+  "src": "images/culture-bolivia-0.webp",
+  "alt": "Devil dancers in giant masks at Oruro's carnival",
+  "credit": "Elemaki",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Carnaval_de_Oruro_dia_I_(60).JPG"
+ },
+ "culture-bolivia-2": {
+  "src": "images/culture-bolivia-2.webp",
+  "alt": "La Paz fair of miniature wishes, blessed for good luck",
+  "credit": "Carlillasa",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Alasitas_desde_el_telef%C3%A9rico.jpg"
+ },
+ "culture-ecuador-0": {
+  "src": "images/culture-ecuador-0.webp",
+  "alt": "The toquilla straw hat, actually made in Ecuador",
+  "credit": "Hex",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Panama_hat.jpg"
+ },
+ "culture-ecuador-2": {
+  "src": "images/culture-ecuador-2.webp",
+  "alt": "Ingapirca, Ecuador's largest Inca and Cañari site",
+  "credit": "Delphine Ménard",
+  "license": "CC BY-SA 2.0 fr",
+  "page": "https://commons.wikimedia.org/wiki/File:Ecuador_ingapirca_inca_ruins.jpg"
+ },
+ "culture-argentina-0": {
+  "src": "images/culture-argentina-0.webp",
+  "alt": "Tango, born in the port bars of Buenos Aires",
+  "credit": "Coquimbo58",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tango_dancers_in_Montevideo.png"
+ },
+ "culture-argentina-2": {
+  "src": "images/culture-argentina-2.webp",
+  "alt": "Fileteado, the curly painted lettering of Buenos Aires",
+  "credit": "Sara&lain of London UK",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fileteado_puro.jpg"
+ },
+ "culture-chile-0": {
+  "src": "images/culture-chile-0.webp",
+  "alt": "The cueca, Chile's national dance, with handkerchiefs",
+  "credit": "Osmar Valdebenito",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cueca_en_La_Moneda.jpg"
+ },
+ "culture-chile-1": {
+  "src": "images/culture-chile-1.webp",
+  "alt": "Painted wooden churches built by Chiloé islanders",
+  "credit": "Rodrigo Basaure",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Iglesia_de_Achao-fachada.jpg"
+ },
+ "culture-chile-2": {
+  "src": "images/culture-chile-2.webp",
+  "alt": "The giant stone moai of Rapa Nui, Easter Island",
+  "credit": "Ian Sewell",
+  "license": "CC BY 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:AhuTongariki.JPG"
+ },
+ "culture-brazil-0": {
+  "src": "images/culture-brazil-0.webp",
+  "alt": "Samba school floats parading in Rio's Sambadrome",
+  "credit": "Agência Brasil/Marco Antonio Cavalcanti",
+  "license": "CC BY 3.0 br",
+  "page": "https://commons.wikimedia.org/wiki/File:Mangueira_2013_130211.jpg"
+ },
+ "culture-brazil-1": {
+  "src": "images/culture-brazil-1.webp",
+  "alt": "Capoeira, a mix of martial art, music and dance",
+  "credit": "Johann Moritz Rugendas",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Rugendasroda.jpg"
+ },
+ "culture-usa-1": {
+  "src": "images/culture-usa-1.webp",
+  "alt": "Rodeo, a cowboy sport big in Texas and the West",
+  "credit": "Wikimedia Commons contributor",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:StampedeRodeo2002.JPG"
+ },
+ "culture-usa-2": {
+  "src": "images/culture-usa-2.webp",
+  "alt": "A powwow grand entry, a Native American dance gathering",
+  "credit": "Wikimedia Commons contributor",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Grand_Entry_Omaha.jpg"
+ },
+ "culture-canada-0": {
+  "src": "images/culture-canada-0.webp",
+  "alt": "Carved poles of First Nations on the Pacific coast",
+  "credit": "H at English Wikipedia",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Totem_RMBC_1.jpg"
+ },
+ "culture-canada-1": {
+  "src": "images/culture-canada-1.webp",
+  "alt": "Stone landmarks built by the Inuit across the Arctic",
+  "credit": "Ansgar Walk",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Inuksukjuaq_Foxe-PI_2002-07-26.jpg"
+ },
+ "culture-canada-2": {
+  "src": "images/culture-canada-2.webp",
+  "alt": "Quebec's maple sugar shacks, busy every spring",
+  "credit": "Wikimedia Commons contributor",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sugar_house.jpg"
+ },
+ "culture-australia-2": {
+  "src": "images/culture-australia-2.webp",
+  "alt": "Anzac Day, with dawn services across the country each April",
+  "credit": "Gnangarra",
+  "license": "CC BY 2.5 au",
+  "page": "https://commons.wikimedia.org/wiki/File:Dawn_service_gnangarra_03.jpg"
+ },
+ "culture-new-zealand-0": {
+  "src": "images/culture-new-zealand-0.webp",
+  "alt": "The haka, a Māori challenge and ceremonial dance",
+  "credit": "Merrett, Joseph Jenner, 1816-1854.",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:MaoriWardanceKahuroa.jpg"
+ },
+ "culture-new-zealand-1": {
+  "src": "images/culture-new-zealand-1.webp",
+  "alt": "Tā moko, traditional Māori tattooing of face and body",
+  "credit": "Thomas Chambers / After Sydney Parkinson",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:MaoriChief1784.jpg"
+ },
+ "culture-new-zealand-2": {
+  "src": "images/culture-new-zealand-2.webp",
+  "alt": "A wharenui, the carved meeting house on a marae",
+  "credit": "Wikimedia Commons contributor",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Tanenuiarangi.jpg"
  }
 };
