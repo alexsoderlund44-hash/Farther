@@ -8578,5 +8578,257 @@ window.PHOTOS = {
   "credit": "Pudelek (Marcin Szala)",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Kostnice_Sedlec.JPG"
+ },
+ "culture-hungary-0": {
+  "src": "images/culture-hungary-0.webp",
+  "alt": "Busójárás, the masked carnival in Mohács to chase off winter",
+  "credit": "User:Themightyquill",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Busojaras-Buso_and_Son.jpg"
+ },
+ "culture-hungary-2": {
+  "src": "images/culture-hungary-2.webp",
+  "alt": "Csárdás, Hungary's fast, foot-stamping folk dance",
+  "credit": "Lipót Strelisky",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Cs%C3%A1rd%C3%A1s.tif"
+ },
+ "culture-austria-0": {
+  "src": "images/culture-austria-0.webp",
+  "alt": "The dirndl, traditional Alpine dress worn at festivals",
+  "credit": "High Contrast",
+  "license": "CC BY 3.0 de",
+  "page": "https://commons.wikimedia.org/wiki/File:Volksfestumzug_in_Vilshofen_a.d._Donau_2012_(3).JPG"
+ },
+ "culture-austria-1": {
+  "src": "images/culture-austria-1.webp",
+  "alt": "Horned Krampus figures chasing crowds in early December",
+  "credit": "Naturpuur",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hl._Nikolaus_in_Begleitung_des_Krampus_und_Engeln.jpg"
+ },
+ "culture-austria-2": {
+  "src": "images/culture-austria-2.webp",
+  "alt": "Vienna's grand ball season, with waltzes in the State Opera",
+  "credit": "infraredhorsebite",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wiener_Staatsoper.jpg"
+ },
+ "culture-switzerland-0": {
+  "src": "images/culture-switzerland-0.webp",
+  "alt": "The alphorn, a long wooden horn once used by herders",
+  "credit": "Harald Fritz",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Musikinstrumenten-Museum_Berlin_-_Alphorn_in_Fis_-_1108187.jpg"
+ },
+ "culture-switzerland-1": {
+  "src": "images/culture-switzerland-1.webp",
+  "alt": "Schwingen, Swiss wrestling in sawdust rings",
+  "credit": "Quejaytee",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Swiss_Wrestlers_Rigi_Schwinget_2025_05.jpg"
+ },
+ "culture-switzerland-2": {
+  "src": "images/culture-switzerland-2.webp",
+  "alt": "Basel Fasnacht, three days of masks, pipes and drums",
+  "credit": "Sparrow (2019)",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Five_Gugge_at_Fasnacht_Basel_2024_on_Mittlere_Br%C3%BCcke_03.jpg"
+ },
+ "culture-iceland-0": {
+  "src": "images/culture-iceland-0.webp",
+  "alt": "The lopapeysa, a wool sweater with a patterned yoke",
+  "credit": "Freimut Bahlo",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Islandpullover_004.jpg"
+ },
+ "culture-iceland-1": {
+  "src": "images/culture-iceland-1.webp",
+  "alt": "Hallgrímskirkja, Reykjavik's church inspired by basalt columns",
+  "credit": "Steinninn",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hallgrimskirkja_mai_2026.jpg"
+ },
+ "culture-iceland-2": {
+  "src": "images/culture-iceland-2.webp",
+  "alt": "Icelandic national costume, worn on National Day, 17 June",
+  "credit": "Kjallakr (talk)",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Icelandic_mens_national_costume.PNG"
+ },
+ "culture-norway-0": {
+  "src": "images/culture-norway-0.webp",
+  "alt": "Regional folk costumes worn on Constitution Day",
+  "credit": "Wikimedia Commons contributor",
+  "license": "Copyrighted free use",
+  "page": "https://commons.wikimedia.org/wiki/File:KinsarvikBunad.jpg"
+ },
+ "culture-norway-1": {
+  "src": "images/culture-norway-1.webp",
+  "alt": "Medieval wooden churches with dragon-head roofs",
+  "credit": "Micha L. Rieser",
+  "license": "Attribution",
+  "page": "https://commons.wikimedia.org/wiki/File:Stavechurch-heddal.jpg"
+ },
+ "culture-norway-2": {
+  "src": "images/culture-norway-2.webp",
+  "alt": "Rosemaling, flowing folk painting on wooden bowls and chests",
+  "credit": "Erik A. Drabløs",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Rosemaling.jpg"
+ },
+ "culture-poland-0": {
+  "src": "images/culture-poland-0.webp",
+  "alt": "Wieliczka, where miners carved chapels out of salt",
+  "credit": "C messier",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%CE%91%CE%BB%CE%B1%CF%84%CF%89%CF%81%CF%85%CF%87%CE%B5%CE%AF%CE%B1_%CE%92%CE%B9%CE%B5%CE%BB%CE%AF%CF%84%CF%83%CE%BA%CE%B1_5021.jpg"
+ },
+ "culture-poland-1": {
+  "src": "images/culture-poland-1.webp",
+  "alt": "Wycinanki, colourful Polish folk paper cutting",
+  "credit": "Unknown authorUnknown author",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wycinanka_lubelska,_1915.jpg"
+ },
+ "culture-poland-2": {
+  "src": "images/culture-poland-2.webp",
+  "alt": "Jasna Góra, Poland's great pilgrimage shrine in Częstochowa",
+  "credit": "Jerzy Szota",
+  "license": "CC BY-SA 3.0 pl",
+  "page": "https://commons.wikimedia.org/wiki/File:Cz%C4%99stochowa_klasztor_Jasna_G%C3%B3ra-2162.jpg"
+ },
+ "culture-albania-0": {
+  "src": "images/culture-albania-0.webp",
+  "alt": "The xhubleta, a bell-shaped wool skirt from the northern highlands",
+  "credit": "Pjetër Marubi (1834-1903)",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Marubi_photograph_woman_from_Grud%C3%AB.jpg"
+ },
+ "culture-albania-1": {
+  "src": "images/culture-albania-1.webp",
+  "alt": "The qeleshe, the white felt cap worn by Albanian men",
+  "credit": "Arbenllapashtica",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Old_man_of_Has_of_Prizren.jpg"
+ },
+ "culture-albania-2": {
+  "src": "images/culture-albania-2.webp",
+  "alt": "Iso-polyphony, the layered folk singing of southern Albania",
+  "credit": "A_traditional_male_folk_group_from_Skrapar.JPG: Gerd 72 (talk). The original upl",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Fustanela_001.jpg"
+ },
+ "culture-georgia-0": {
+  "src": "images/culture-georgia-0.webp",
+  "alt": "The chokha, a wool coat with cartridge pockets",
+  "credit": "Pyotr Gankevich",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD_%D0%93%D0%B5%D0%BB%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8_(A).JPG"
+ },
+ "culture-georgia-1": {
+  "src": "images/culture-georgia-1.webp",
+  "alt": "Mtskheta's ancient cathedral, the heart of Georgian Orthodoxy",
+  "credit": "This Photo was taken by Supanut Arunoprayote. Feel free to use any of my images,",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Svetitskhoveli_Cathedral_09.23_(3).jpg"
+ },
+ "culture-turkey-0": {
+  "src": "images/culture-turkey-0.webp",
+  "alt": "Whirling dervishes performing the sema ceremony",
+  "credit": "myself",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Whirlingdervishes.JPG"
+ },
+ "culture-turkey-1": {
+  "src": "images/culture-turkey-1.webp",
+  "alt": "Istanbul's Blue Mosque, still used for daily prayers",
+  "credit": "Pedro Szekely from Los Angeles, USA",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Istanbul_(34223582516)_(cropped).jpg"
+ },
+ "culture-turkey-2": {
+  "src": "images/culture-turkey-2.webp",
+  "alt": "The blue nazar bead, hung up to ward off the evil eye",
+  "credit": "Alev Akın",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kapadokya%27dan_Nazar_Boncu%C4%9Fu.jpg"
+ },
+ "culture-morocco-0": {
+  "src": "images/culture-morocco-0.webp",
+  "alt": "The djellaba, a hooded robe worn by men and women",
+  "credit": "Daderot",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Morocco,_djellaba,_end_of_20th_century_-_Bunka_Gakuen_Costume_Museum_-_DSC05317.JPG"
+ },
+ "culture-morocco-1": {
+  "src": "images/culture-morocco-1.webp",
+  "alt": "Gnawa music, trance rhythms with roots in West Africa",
+  "credit": "Sambasoccer27",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%D9%85%D8%B9%D9%84%D9%85_%D8%A7%D9%84%DA%AF%D9%86%D8%A7%D9%88%D8%A9.jpg"
+ },
+ "culture-morocco-2": {
+  "src": "images/culture-morocco-2.webp",
+  "alt": "Zellij, hand cut geometric tilework in palaces and madrasas",
+  "credit": "إيان",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%D9%86%D8%B8%D8%B1%D8%A9_%D9%85%D9%82%D8%B1%D8%A8%D8%A9_%D9%84%D9%84%D8%B2%D9%84%D9%8A%D8%AC_%D9%81%D9%8A_%D9%85%D8%AF%D8%B1%D8%B3%D8%A9_%D8%A7%D8%A8%D9%86_%D9%8A%D9%88%D8%B3%D9%81.jpeg"
+ },
+ "culture-egypt-0": {
+  "src": "images/culture-egypt-0.webp",
+  "alt": "Tahtib, the stick dance of Upper Egypt",
+  "credit": "Yasser Elrasoul",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%D8%B1%D8%AC%D8%A7%D9%84_%D9%85%D8%B5%D8%B1%D9%8A%D9%88%D9%86_%D9%85%D9%86_%D8%B5%D8%B9%D9%8A%D8%AF_%D9%85%D8%B5%D8%B1_%D9%8A%D9%85%D8%A7%D8%B1%D8%B3%D9%88%D9%86_%D9%84%D8%B9%D8%A8%D8%A9_%D8%A7%D9%84%D8%AA%D8%AD%D8%B7%D9%8A%D8%A8.jpg"
+ },
+ "culture-egypt-2": {
+  "src": "images/culture-egypt-2.webp",
+  "alt": "Cairo's centuries-old bazaar in the Islamic quarter",
+  "credit": "Heba otefy",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%D8%AE%D8%A7%D9%86_%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D9%84%D9%8A_1.jpg"
+ },
+ "culture-uae-2": {
+  "src": "images/culture-uae-2.webp",
+  "alt": "Yowlah, a dance where performers spin and toss rifles",
+  "credit": "Kalashae",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Yowlah.jpg"
+ },
+ "culture-south-africa-0": {
+  "src": "images/culture-south-africa-0.webp",
+  "alt": "Kaapse Klopse troupes parading Cape Town in early January",
+  "credit": "Olga Ernst",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cape_Minstrel_at_Cape_Town_Minstrel_Carnival_(2017).jpg"
+ },
+ "culture-south-africa-1": {
+  "src": "images/culture-south-africa-1.webp",
+  "alt": "Cape Town's colourful Cape Malay neighbourhood",
+  "credit": "SkyPixels",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Boe-Kaap.jpg"
+ },
+ "culture-south-africa-2": {
+  "src": "images/culture-south-africa-2.webp",
+  "alt": "A stomping dance born in South Africa's gold mines",
+  "credit": "Laura SA at English Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bootsa.jpg"
+ },
+ "culture-kenya-0": {
+  "src": "images/culture-kenya-0.webp",
+  "alt": "Nairobi's matatus, minibuses painted with wild art",
+  "credit": "Lebu Ayiga",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Blue_Hot_Wheels_themed_matatu_in_Nairobi.jpg"
+ },
+ "culture-kenya-1": {
+  "src": "images/culture-kenya-1.webp",
+  "alt": "Lamu Old Town, the oldest living Swahili settlement",
+  "credit": "Almaddy2022",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lamu_Old_Town.jpg"
  }
 };
