@@ -377,14 +377,16 @@ window.PHOTOS = {
   "alt": "Madagascar",
   "credit": "Gavinevans",
   "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Walking_the_Avenue_of_the_Baobabs.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Walking_the_Avenue_of_the_Baobabs.jpg",
+  "hd": "images/hd/madagascar.webp"
  },
  "malawi": {
   "src": "images/malawi.webp",
   "alt": "Malawi",
   "credit": "Paul venter at English Wikipedia",
   "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Lake_Malawi00.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Lake_Malawi00.jpg",
+  "hd": "images/hd/malawi.webp"
  },
  "philippines": {
   "src": "images/philippines.webp",
@@ -415,14 +417,16 @@ window.PHOTOS = {
   "alt": "Mongolia",
   "credit": "Bernard Gagnon",
   "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Khongoryn_Els_04.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Khongoryn_Els_04.jpg",
+  "hd": "images/hd/mongolia.webp"
  },
  "uzbekistan": {
   "src": "images/uzbekistan.webp",
   "alt": "Uzbekistan",
   "credit": "Gustavo Jeronimo, MrPanyGoff",
   "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:RegistanSquare_Samarkand.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:RegistanSquare_Samarkand.jpg",
+  "hd": "images/hd/uzbekistan.webp"
  },
  "tajikistan": {
   "src": "images/tajikistan.webp",
@@ -456,7 +460,8 @@ window.PHOTOS = {
   "alt": "Armenia",
   "credit": "Maks Karochkin",
   "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Khor_Virap.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Khor_Virap.jpg",
+  "hd": "images/hd/armenia.webp"
  },
  "bosnia": {
   "src": "images/bosnia.webp",
@@ -481,21 +486,24 @@ window.PHOTOS = {
   "alt": "North Macedonia",
   "credit": "kallerna",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Church_of_St._John_at_Kaneo_12.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Church_of_St._John_at_Kaneo_12.jpg",
+  "hd": "images/hd/north-macedonia.webp"
  },
  "romania": {
   "src": "images/romania.webp",
   "alt": "Romania",
   "credit": "Dobre Cezar",
   "license": "CC BY-SA 3.0 ro",
-  "page": "https://commons.wikimedia.org/wiki/File:Castelul_Bran2.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Castelul_Bran2.jpg",
+  "hd": "images/hd/romania.webp"
  },
  "bulgaria": {
   "src": "images/bulgaria.webp",
   "alt": "Bulgaria",
   "credit": "Daniel Petrov",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Rila_Monastery,_Main_Church_%22Nativity_of_the_Virgin_Mother%22.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Rila_Monastery,_Main_Church_%22Nativity_of_the_Virgin_Mother%22.jpg",
+  "hd": "images/hd/bulgaria.webp"
  },
  "turkey": {
   "src": "images/turkey.webp",
@@ -511,7 +519,8 @@ window.PHOTOS = {
   "alt": "Myanmar",
   "credit": "Vyacheslav Argenberg",
   "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Bagan,_Myanmar,_Ancient_temples_at_sunset.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Bagan,_Myanmar,_Ancient_temples_at_sunset.jpg",
+  "hd": "images/hd/myanmar.webp"
  },
  "singapore": {
   "src": "images/singapore.webp",
@@ -550,28 +559,32 @@ window.PHOTOS = {
   "alt": "Bangladesh",
   "credit": "মোয়ায মাহমুদ",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Sixty_Dome_Mosque,Bagerhat.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Sixty_Dome_Mosque,Bagerhat.jpg",
+  "hd": "images/hd/bangladesh.webp"
  },
  "bhutan": {
   "src": "images/bhutan.webp",
   "alt": "Bhutan",
   "credit": "Nina R, UnpetitproleX",
   "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Paro_Taktsang,_Bhutan_(edited).jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Paro_Taktsang,_Bhutan_(edited).jpg",
+  "hd": "images/hd/bhutan.webp"
  },
  "maldives": {
   "src": "images/maldives.webp",
   "alt": "Maldives",
   "credit": "Gzzz",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Bathala_(Maldives)_8.JPG"
+  "page": "https://commons.wikimedia.org/wiki/File:Bathala_(Maldives)_8.JPG",
+  "hd": "images/hd/maldives.webp"
  },
  "afghanistan": {
   "src": "images/afghanistan.webp",
   "alt": "Afghanistan",
   "credit": "Employee of U.S. Department of State",
   "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Band-e-Amir_National_Park-11.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Band-e-Amir_National_Park-11.jpg",
+  "hd": "images/hd/afghanistan.webp"
  },
  "azerbaijan": {
   "src": "images/azerbaijan.webp",
@@ -586,21 +599,24 @@ window.PHOTOS = {
   "credit": "Nicolas Hadjisavvas",
   "license": "CC BY 2.5",
   "page": "https://commons.wikimedia.org/wiki/File:Sheikh_Lotfallah_Esfahan.JPG",
-  "pos": "center top"
+  "pos": "center top",
+  "hd": "images/hd/iran.webp"
  },
  "lebanon": {
   "src": "images/lebanon.webp",
   "alt": "Lebanon",
   "credit": "Lodo from Moscow, Russia",
   "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Temple_of_Bacchus,_Baalbek,_Lebanon_(49890013476).jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Temple_of_Bacchus,_Baalbek,_Lebanon_(49890013476).jpg",
+  "hd": "images/hd/lebanon.webp"
  },
  "syria": {
   "src": "images/syria.webp",
   "alt": "Syria",
   "credit": "Vyacheslav Argenberg",
   "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Syria,_Damascus,_The_Umayyad_Mosque.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Syria,_Damascus,_The_Umayyad_Mosque.jpg",
+  "hd": "images/hd/syria.webp"
  },
  "israel": {
   "src": "images/israel.webp",
@@ -616,7 +632,8 @@ window.PHOTOS = {
   "alt": "Palestine",
   "credit": "Jamal Aruri",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:2012%D8%AF%D9%8A%D8%B1_%D9%85%D8%A7%D8%B1%D8%B3%D8%A7%D8%A8%D8%A7.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:2012%D8%AF%D9%8A%D8%B1_%D9%85%D8%A7%D8%B1%D8%B3%D8%A7%D8%A8%D8%A7.jpg",
+  "hd": "images/hd/palestine.webp"
  },
  "uae": {
   "src": "images/uae.webp",
@@ -632,14 +649,16 @@ window.PHOTOS = {
   "alt": "Saudi Arabia",
   "credit": "Ahmad AlHasanat",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Mada%27in_Saleh_2017.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Mada%27in_Saleh_2017.jpg",
+  "hd": "images/hd/saudi-arabia.webp"
  },
  "yemen": {
   "src": "images/yemen.webp",
   "alt": "Yemen",
   "credit": "Hexli98",
   "license": "CC BY 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Sokotra.JPG"
+  "page": "https://commons.wikimedia.org/wiki/File:Sokotra.JPG",
+  "hd": "images/hd/yemen.webp"
  },
  "spain": {
   "src": "images/spain.webp",
@@ -746,7 +765,8 @@ window.PHOTOS = {
   "alt": "Slovakia",
   "credit": "kallerna",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Frozen_Morskie_Oko_2019.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Frozen_Morskie_Oko_2019.jpg",
+  "hd": "images/hd/slovakia.webp"
  },
  "hungary": {
   "src": "images/hungary.webp",
@@ -761,7 +781,8 @@ window.PHOTOS = {
   "alt": "Slovenia",
   "credit": "Arne Müseler",
   "license": "CC BY-SA 3.0 de",
-  "page": "https://commons.wikimedia.org/wiki/File:Lake_bled_2021.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Lake_bled_2021.jpg",
+  "hd": "images/hd/slovenia.webp"
  },
  "croatia": {
   "src": "images/croatia.webp",
@@ -776,28 +797,32 @@ window.PHOTOS = {
   "alt": "Serbia",
   "credit": "Ivanbuki",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:DJI_0259-12.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:DJI_0259-12.jpg",
+  "hd": "images/hd/serbia.webp"
  },
  "kosovo": {
   "src": "images/kosovo.webp",
   "alt": "Kosovo",
   "credit": "ShkelzenRexha",
   "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:37_Prizreni_-_Xhamia_e_Sinan_Pash%C3%ABs_-_The_Sinan_Pasha_Moscue.JPG"
+  "page": "https://commons.wikimedia.org/wiki/File:37_Prizreni_-_Xhamia_e_Sinan_Pash%C3%ABs_-_The_Sinan_Pasha_Moscue.JPG",
+  "hd": "images/hd/kosovo.webp"
  },
  "moldova": {
   "src": "images/moldova.webp",
   "alt": "Moldova",
   "credit": "Alex Prodan md",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Stanca_deasupra_Rautului_Butuceni.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Stanca_deasupra_Rautului_Butuceni.jpg",
+  "hd": "images/hd/moldova.webp"
  },
  "ukraine": {
   "src": "images/ukraine.webp",
   "alt": "Ukraine",
   "credit": "Rbrechko",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:80-391-0151_Kyiv_St.Sophia%27s_Cathedral_RB_18_2_(cropped).jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:80-391-0151_Kyiv_St.Sophia%27s_Cathedral_RB_18_2_(cropped).jpg",
+  "hd": "images/hd/ukraine.webp"
  },
  "russia": {
   "src": "images/russia.webp",
@@ -2853,22 +2878,26 @@ window.PHOTOS = {
   "hd": "images/hd/gallery-iceland-1.webp"
  },
  "gallery-iceland-3": {
-  "src": "images/gallery-iceland-3.webp",
-  "alt": "Iceland's South Coast, Iceland",
-  "credit": "Andreas Tille",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:IceBlockNearJoekullsarlon.jpg",
   "place": "south-coast",
-  "caption": "Iceland's South Coast"
+  "caption": "Iceland's South Coast",
+  "src": "images/gallery-iceland-3.webp",
+  "alt": "Skógafoss, Iceland",
+  "credit": "Davide Russo",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/daverusso88/35167195322/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-iceland-3.webp"
  },
  "gallery-norway-1": {
-  "src": "images/gallery-norway-1.webp",
-  "alt": "Oslo, Norway",
-  "credit": "Orjanarvola",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Nationaltheatret_evening.jpg",
   "place": "oslo",
-  "caption": "Oslo"
+  "caption": "Oslo",
+  "src": "images/gallery-norway-1.webp",
+  "alt": "Oslo Opera House, Norway",
+  "credit": "Jens Cederskjold",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/184898381@N07/52388000761/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-norway-1.webp"
  },
  "gallery-norway-3": {
   "src": "images/gallery-norway-3.webp",
@@ -2930,13 +2959,14 @@ window.PHOTOS = {
   "caption": "Gdańsk"
  },
  "gallery-poland-4": {
-  "src": "images/gallery-poland-4.webp",
-  "alt": "Zakopane, Poland",
-  "credit": "Jerzy Opioła",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Zakopane_T58.jpg",
   "place": "zakopane",
   "caption": "Zakopane",
+  "src": "images/gallery-poland-4.webp",
+  "alt": "Tatra Mountains, Zakopane, Poland",
+  "credit": "Marcin Jędrzejczak",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/138828629@N03/35000756310/",
+  "source": "flickr",
   "hd": "images/hd/gallery-poland-4.webp"
  },
  "gallery-poland-5": {
@@ -3016,24 +3046,15 @@ window.PHOTOS = {
   "caption": "Mestia",
   "hd": "images/hd/gallery-georgia-3.webp"
  },
- "gallery-georgia-4": {
-  "src": "images/gallery-georgia-4.webp",
-  "alt": "Batumi, Georgia",
-  "credit": "Commander, U.S. Naval Forces Europe-Africa/U.S. 6th Fleet",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:USS_Oak_Hill,_26th_MEU_Marines_Visit_Batumi,_Georgia_(40817303032).jpg",
-  "place": "batumi",
-  "caption": "Batumi",
-  "hd": "images/hd/gallery-georgia-4.webp"
- },
  "gallery-georgia-5": {
-  "src": "images/gallery-georgia-5.webp",
-  "alt": "Kutaisi, Georgia",
-  "credit": "Kober",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Downtown_Kutaisi_%26_White_Bridge_as_seen_from_Mt_Gora_(August_2011)-cropped.jpg",
   "place": "kutaisi",
   "caption": "Kutaisi",
+  "src": "images/gallery-georgia-5.webp",
+  "alt": "Bagrati Cathedral, Kutaisi, Georgia",
+  "credit": "Arian Zwegers",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/azwegers/35702146540/",
+  "source": "flickr",
   "hd": "images/hd/gallery-georgia-5.webp"
  },
  "gallery-turkey-1": {
@@ -3067,13 +3088,14 @@ window.PHOTOS = {
   "hd": "images/hd/gallery-turkey-3.webp"
  },
  "gallery-turkey-4": {
-  "src": "images/gallery-turkey-4.webp",
-  "alt": "Ephesus, Turkey",
-  "credit": "Jordan Klein from San Francisco, United States",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Ephesos_amphitheatre.jpg",
   "place": "ephesus",
   "caption": "Ephesus",
+  "src": "images/gallery-turkey-4.webp",
+  "alt": "Library of Celsus, Ephesus, Turkey",
+  "credit": "lensnmatter",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/lensnmatter/20017181915/",
+  "source": "flickr",
   "hd": "images/hd/gallery-turkey-4.webp"
  },
  "gallery-turkey-5": {
@@ -3107,13 +3129,15 @@ window.PHOTOS = {
   "hd": "images/hd/gallery-morocco-2.webp"
  },
  "gallery-morocco-4": {
-  "src": "images/gallery-morocco-4.webp",
-  "alt": "Merzouga, Morocco",
-  "credit": "bachmont",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Merzouga,_Morocco.jpg",
   "place": "merzouga",
-  "caption": "Merzouga"
+  "caption": "Merzouga",
+  "src": "images/gallery-morocco-4.webp",
+  "alt": "Erg Chebbi, Merzouga, Morocco",
+  "credit": "16:9clue",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/53255320@N07/5297457763/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-morocco-4.webp"
  },
  "gallery-morocco-5": {
   "src": "images/gallery-morocco-5.webp",
@@ -3155,23 +3179,25 @@ window.PHOTOS = {
   "hd": "images/hd/gallery-egypt-3.webp"
  },
  "gallery-egypt-4": {
-  "src": "images/gallery-egypt-4.webp",
-  "alt": "Aswan, Egypt",
-  "credit": "Unknown",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Aswan,_Elephantine,_west_bank,_Egypt,_Oct_2004.jpg",
   "place": "aswan",
   "caption": "Aswan",
+  "src": "images/gallery-egypt-4.webp",
+  "alt": "Nile at Aswan, Egypt",
+  "credit": "cattan2011",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/68166820@N08/50057485222/",
+  "source": "flickr",
   "hd": "images/hd/gallery-egypt-4.webp"
  },
  "gallery-egypt-5": {
-  "src": "images/gallery-egypt-5.webp",
-  "alt": "Dahab, Egypt",
-  "credit": "Grand Parc - Bordeaux, France from France",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Dahab_-_Egypte_07-2012_(7614814042).jpg",
   "place": "dahab",
   "caption": "Dahab",
+  "src": "images/gallery-egypt-5.webp",
+  "alt": "Blue Hole, Dahab, Egypt",
+  "credit": "Matt Kieffer",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/mattkieffer/2375663872/",
+  "source": "flickr",
   "hd": "images/hd/gallery-egypt-5.webp"
  },
  "gallery-jordan-1": {
@@ -3184,13 +3210,14 @@ window.PHOTOS = {
   "caption": "Petra"
  },
  "gallery-jordan-2": {
-  "src": "images/gallery-jordan-2.webp",
-  "alt": "Wadi Rum, Jordan",
-  "credit": "Lunaloop",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Camp_in_jordan.jpg",
   "place": "wadi-rum",
   "caption": "Wadi Rum",
+  "src": "images/gallery-jordan-2.webp",
+  "alt": "Wadi Rum, Jordan",
+  "credit": "Lawrence Murray",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/lawmurray/22740533860/",
+  "source": "flickr",
   "hd": "images/hd/gallery-jordan-2.webp"
  },
  "gallery-jordan-3": {
@@ -3214,13 +3241,14 @@ window.PHOTOS = {
   "hd": "images/hd/gallery-jordan-4.webp"
  },
  "gallery-jordan-5": {
-  "src": "images/gallery-jordan-5.webp",
-  "alt": "Aqaba, Jordan",
-  "credit": "Jean Housen",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:20100927_aqaba023.JPG",
   "place": "aqaba",
   "caption": "Aqaba",
+  "src": "images/gallery-jordan-5.webp",
+  "alt": "Aqaba, Jordan",
+  "credit": "Edgardo W. Olivera",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/ewolivera/29013651420/",
+  "source": "flickr",
   "hd": "images/hd/gallery-jordan-5.webp"
  },
  "gallery-uae-1": {
@@ -3244,13 +3272,14 @@ window.PHOTOS = {
   "hd": "images/hd/gallery-uae-2.webp"
  },
  "gallery-south-africa-1": {
-  "src": "images/gallery-south-africa-1.webp",
-  "alt": "Cape Town, South Africa",
-  "credit": "Danie van der Merwe from Cape Town, South Africa",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Table_Mountain_DanieVDM.jpg",
   "place": "cape-town",
   "caption": "Cape Town",
+  "src": "images/gallery-south-africa-1.webp",
+  "alt": "Table Mountain, Cape Town, South Africa",
+  "credit": "Dennis Sylvester Hurd",
+  "license": "CC0 1.0",
+  "page": "https://www.flickr.com/photos/dennissylvesterhurd/54269954581/",
+  "source": "flickr",
   "hd": "images/hd/gallery-south-africa-1.webp"
  },
  "gallery-south-africa-2": {
@@ -3274,13 +3303,15 @@ window.PHOTOS = {
   "hd": "images/hd/gallery-south-africa-3.webp"
  },
  "gallery-south-africa-4": {
+  "place": "johannesburg",
+  "caption": "Johannesburg",
   "src": "images/gallery-south-africa-4.webp",
   "alt": "Johannesburg, South Africa",
-  "credit": "Ryanj93",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:A_Johannesburg_Summers_Day.jpg",
-  "place": "johannesburg",
-  "caption": "Johannesburg"
+  "credit": "Media Club",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/mediaclubsouthafrica/39587800952/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-south-africa-4.webp"
  },
  "gallery-south-africa-5": {
   "src": "images/gallery-south-africa-5.webp",
@@ -3313,23 +3344,25 @@ window.PHOTOS = {
   "hd": "images/hd/gallery-kenya-2.webp"
  },
  "gallery-kenya-3": {
-  "src": "images/gallery-kenya-3.webp",
-  "alt": "Diani Beach, Kenya",
-  "credit": "Lebu Ayiga",
-  "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Diani_Beach_Ukunda.jpg",
   "place": "diani",
   "caption": "Diani Beach",
+  "src": "images/gallery-kenya-3.webp",
+  "alt": "Diani Beach, Kenya",
+  "credit": "Ninara",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/ninara/51998680685/",
+  "source": "flickr",
   "hd": "images/hd/gallery-kenya-3.webp"
  },
  "gallery-kenya-4": {
-  "src": "images/gallery-kenya-4.webp",
-  "alt": "Lamu, Kenya",
-  "credit": "FredD",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Bord_de_mer_de_Lamu.JPG",
   "place": "lamu",
   "caption": "Lamu",
+  "src": "images/gallery-kenya-4.webp",
+  "alt": "Lamu, Kenya",
+  "credit": "VinceTraveller",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/vincetraveller/51822400782/",
+  "source": "flickr",
   "hd": "images/hd/gallery-kenya-4.webp"
  },
  "gallery-tanzania-1": {
@@ -3343,33 +3376,37 @@ window.PHOTOS = {
   "hd": "images/hd/gallery-tanzania-1.webp"
  },
  "gallery-tanzania-2": {
-  "src": "images/gallery-tanzania-2.webp",
-  "alt": "Serengeti, Tanzania",
-  "credit": "Stefan Swanepoel",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Serengeti_-_Stefan_Swanepoel.jpg",
   "place": "serengeti",
   "caption": "Serengeti",
+  "src": "images/gallery-tanzania-2.webp",
+  "alt": "Serengeti, Tanzania",
+  "credit": "Wajahat Mahmood",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/26116471@N03/6362329323/",
+  "source": "flickr",
   "hd": "images/hd/gallery-tanzania-2.webp"
  },
  "gallery-tanzania-3": {
-  "src": "images/gallery-tanzania-3.webp",
-  "alt": "Ngorongoro Crater, Tanzania",
-  "credit": "SajjadF",
-  "license": "CC BY 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Lion_Serengeti.JPG",
   "place": "ngorongoro",
   "caption": "Ngorongoro Crater",
+  "src": "images/gallery-tanzania-3.webp",
+  "alt": "Ngorongoro Crater, Tanzania",
+  "credit": "epcp",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/epcprince/4085295155/",
+  "source": "flickr",
   "hd": "images/hd/gallery-tanzania-3.webp"
  },
  "gallery-tanzania-4": {
+  "place": "kilimanjaro",
+  "caption": "Kilimanjaro",
   "src": "images/gallery-tanzania-4.webp",
   "alt": "Kilimanjaro, Tanzania",
-  "credit": "Unknown",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Uhuru_Peak_Mt._Kilimanjaro_1.JPG",
-  "place": "kilimanjaro",
-  "caption": "Kilimanjaro"
+  "credit": "Ninara",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/ninara/53459996874/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-tanzania-4.webp"
  },
  "gallery-tanzania-5": {
   "src": "images/gallery-tanzania-5.webp",
@@ -3411,22 +3448,25 @@ window.PHOTOS = {
   "hd": "images/hd/gallery-mexico-3.webp"
  },
  "gallery-mexico-4": {
+  "place": "san-cristobal",
+  "caption": "San Cristóbal de las Casas",
   "src": "images/gallery-mexico-4.webp",
   "alt": "San Cristóbal de las Casas, Mexico",
-  "credit": "Kauderwelsch",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Huitepec.jpg",
-  "place": "san-cristobal",
-  "caption": "San Cristóbal de las Casas"
+  "credit": "Rod Waddington",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/rod_waddington/50995920351/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-mexico-4.webp"
  },
  "gallery-mexico-5": {
-  "src": "images/gallery-mexico-5.webp",
-  "alt": "Holbox, Mexico",
-  "credit": "Dr Marin",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Isla_Hol-Box.jpeg",
   "place": "holbox",
   "caption": "Holbox",
+  "src": "images/gallery-mexico-5.webp",
+  "alt": "Isla Holbox, Mexico",
+  "credit": "Steven Zwerink",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/stevenzwerink/15082061941/",
+  "source": "flickr",
   "hd": "images/hd/gallery-mexico-5.webp"
  },
  "gallery-guatemala-1": {
@@ -3440,13 +3480,14 @@ window.PHOTOS = {
   "hd": "images/hd/gallery-guatemala-1.webp"
  },
  "gallery-guatemala-2": {
-  "src": "images/gallery-guatemala-2.webp",
-  "alt": "Lake Atitlán, Guatemala",
-  "credit": "Uspn",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Atitlan-Volcan-San-Pedro.jpg",
   "place": "atitlan",
   "caption": "Lake Atitlán",
+  "src": "images/gallery-guatemala-2.webp",
+  "alt": "Lake Atitlán, Guatemala",
+  "credit": "Juan Francisco",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/190923371@N05/51296313282/",
+  "source": "flickr",
   "hd": "images/hd/gallery-guatemala-2.webp"
  },
  "gallery-guatemala-3": {
@@ -3479,32 +3520,25 @@ window.PHOTOS = {
   "hd": "images/hd/gallery-guatemala-5.webp"
  },
  "gallery-costa-rica-1": {
-  "src": "images/gallery-costa-rica-1.webp",
-  "alt": "La Fortuna, Costa Rica",
-  "credit": "Matthias Prinke (User:Mprinke)",
-  "license": "CC BY-SA 2.5",
-  "page": "https://commons.wikimedia.org/wiki/File:Costa_rica_arenal_fortuna_2001_12.jpg",
   "place": "la-fortuna",
-  "caption": "La Fortuna"
- },
- "gallery-costa-rica-2": {
-  "src": "images/gallery-costa-rica-2.webp",
-  "alt": "Monteverde, Costa Rica",
-  "credit": "Haakon S. Krohn",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Monteverde_bosque.jpg",
-  "place": "monteverde",
-  "caption": "Monteverde",
-  "hd": "images/hd/gallery-costa-rica-2.webp"
+  "caption": "La Fortuna",
+  "src": "images/gallery-costa-rica-1.webp",
+  "alt": "Arenal Volcano, Costa Rica",
+  "credit": "Adam Baker",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/atbaker/398485603/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-costa-rica-1.webp"
  },
  "gallery-cuba-1": {
-  "src": "images/gallery-cuba-1.webp",
-  "alt": "Havana, Cuba",
-  "credit": "RenaatPeeters",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:DJI_0197_crp_wiki.jpg",
   "place": "havana",
   "caption": "Havana",
+  "src": "images/gallery-cuba-1.webp",
+  "alt": "Havana, Cuba",
+  "credit": "Michael Kuhn",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/31176607@N05/42236033882/",
+  "source": "flickr",
   "hd": "images/hd/gallery-cuba-1.webp"
  },
  "gallery-cuba-2": {
@@ -3527,23 +3561,25 @@ window.PHOTOS = {
   "hd": "images/hd/gallery-cuba-3.webp"
  },
  "gallery-cuba-4": {
-  "src": "images/gallery-cuba-4.webp",
-  "alt": "Cienfuegos, Cuba",
-  "credit": "Dan Lundberg",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Cuba_20160320_4849_Cienfuegos_sRGB.jpg",
   "place": "cienfuegos",
   "caption": "Cienfuegos",
+  "src": "images/gallery-cuba-4.webp",
+  "alt": "Cienfuegos, Cuba",
+  "credit": "Guillaume Baviere",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/84554176@N00/8532250868/",
+  "source": "flickr",
   "hd": "images/hd/gallery-cuba-4.webp"
  },
  "gallery-colombia-1": {
-  "src": "images/gallery-colombia-1.webp",
-  "alt": "Cartagena, Colombia",
-  "credit": "Sgonzalezb",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Museo_Naval_del_Caribe.JPG",
   "place": "cartagena",
   "caption": "Cartagena",
+  "src": "images/gallery-colombia-1.webp",
+  "alt": "Cartagena, Colombia",
+  "credit": "RB Photo",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/romanboed/53059664053/",
+  "source": "flickr",
   "hd": "images/hd/gallery-colombia-1.webp"
  },
  "gallery-colombia-3": {
@@ -3586,13 +3622,15 @@ window.PHOTOS = {
   "hd": "images/hd/gallery-peru-1.webp"
  },
  "gallery-peru-2": {
+  "place": "machu-picchu",
+  "caption": "Machu Picchu",
   "src": "images/gallery-peru-2.webp",
   "alt": "Machu Picchu, Peru",
-  "credit": "bobistraveling",
+  "credit": "psinderbrand",
   "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:143_Intiwatana_Machu_Picchu_Peru_2406_(14977268637).jpg",
-  "place": "machu-picchu",
-  "caption": "Machu Picchu"
+  "page": "https://www.flickr.com/photos/26491899@N04/46651811935/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-peru-2.webp"
  },
  "gallery-peru-3": {
   "src": "images/gallery-peru-3.webp",
@@ -3664,13 +3702,14 @@ window.PHOTOS = {
   "hd": "images/hd/gallery-bolivia-4.webp"
  },
  "gallery-ecuador-1": {
-  "src": "images/gallery-ecuador-1.webp",
-  "alt": "Quito, Ecuador",
-  "credit": "Asamblea Nacional del Ecuador",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:FACHADA_ASAMBLEA_NACIONAL._QUITO,_20_DE_FEBRERO_2020._01.jpg",
   "place": "quito",
   "caption": "Quito",
+  "src": "images/gallery-ecuador-1.webp",
+  "alt": "Quito, Ecuador",
+  "credit": "Francisco Anzola",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/fran001/52065025115/",
+  "source": "flickr",
   "hd": "images/hd/gallery-ecuador-1.webp"
  },
  "gallery-ecuador-2": {
@@ -3712,13 +3751,14 @@ window.PHOTOS = {
   "caption": "Quilotoa Loop"
  },
  "gallery-argentina-1": {
-  "src": "images/gallery-argentina-1.webp",
-  "alt": "Buenos Aires, Argentina",
-  "credit": "Hernán Piñera",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Caminito_-_Entrada.jpg",
   "place": "buenos-aires",
   "caption": "Buenos Aires",
+  "src": "images/gallery-argentina-1.webp",
+  "alt": "La Boca, Buenos Aires, Argentina",
+  "credit": "Hernán Piñera",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/hernanpc/17285153656/",
+  "source": "flickr",
   "hd": "images/hd/gallery-argentina-1.webp"
  },
  "gallery-argentina-2": {
@@ -3732,13 +3772,14 @@ window.PHOTOS = {
   "hd": "images/hd/gallery-argentina-2.webp"
  },
  "gallery-argentina-3": {
-  "src": "images/gallery-argentina-3.webp",
-  "alt": "Bariloche, Argentina",
-  "credit": "enzofloyd",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Catedral_desde_el_Lago_Nahuel_Huapi_-_panoramio.jpg",
   "place": "bariloche",
   "caption": "Bariloche",
+  "src": "images/gallery-argentina-3.webp",
+  "alt": "Bariloche, Argentina",
+  "credit": "Danielle  Pereira",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/galeria_miradas/5303154437/",
+  "source": "flickr",
   "hd": "images/hd/gallery-argentina-3.webp"
  },
  "gallery-argentina-4": {
@@ -3771,23 +3812,25 @@ window.PHOTOS = {
   "hd": "images/hd/gallery-chile-1.webp"
  },
  "gallery-chile-2": {
-  "src": "images/gallery-chile-2.webp",
-  "alt": "Valparaíso, Chile",
-  "credit": "Javier Rubilar from Santiago, Chile",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Ascensor_Artiller%C3%ADa.jpg",
   "place": "valparaiso",
   "caption": "Valparaíso",
+  "src": "images/gallery-chile-2.webp",
+  "alt": "Valparaíso, Chile",
+  "credit": "Francisco Anzola",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/fran001/52078383518/",
+  "source": "flickr",
   "hd": "images/hd/gallery-chile-2.webp"
  },
  "gallery-chile-3": {
-  "src": "images/gallery-chile-3.webp",
-  "alt": "San Pedro de Atacama, Chile",
-  "credit": "Pierre cb",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:San_Pedro_de_Atacama_oasis.jpg",
   "place": "atacama",
   "caption": "San Pedro de Atacama",
+  "src": "images/gallery-chile-3.webp",
+  "alt": "San Pedro de Atacama, Chile",
+  "credit": "Rogerio Camboim S A",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/rcamboim/33284882004/",
+  "source": "flickr",
   "hd": "images/hd/gallery-chile-3.webp"
  },
  "gallery-chile-4": {
@@ -3820,13 +3863,15 @@ window.PHOTOS = {
   "hd": "images/hd/gallery-brazil-1.webp"
  },
  "gallery-brazil-2": {
+  "place": "iguacu",
+  "caption": "Iguaçu Falls",
   "src": "images/gallery-brazil-2.webp",
   "alt": "Iguaçu Falls, Brazil",
-  "credit": "Nataliaeconomia2008",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:CATARATAS_DEL_IGUAZU._GARGANTA_DEL_DIABLO.jpg",
-  "place": "iguacu",
-  "caption": "Iguaçu Falls"
+  "credit": "Dennis Jarvis",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/archer10/48989409668/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-brazil-2.webp"
  },
  "gallery-brazil-3": {
   "src": "images/gallery-brazil-3.webp",
@@ -3869,23 +3914,25 @@ window.PHOTOS = {
   "hd": "images/hd/gallery-usa-1.webp"
  },
  "gallery-usa-2": {
-  "src": "images/gallery-usa-2.webp",
-  "alt": "San Francisco, United States",
-  "credit": "Craig Howell from San Carlos, CA, USA",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Zeppelin-ride-020100925-195_(5029394846).jpg",
   "place": "san-francisco",
   "caption": "San Francisco",
+  "src": "images/gallery-usa-2.webp",
+  "alt": "Golden Gate Bridge, San Francisco, USA",
+  "credit": "Dale Cruse - 12M views",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/dalecruse/54310011393/",
+  "source": "flickr",
   "hd": "images/hd/gallery-usa-2.webp"
  },
  "gallery-usa-3": {
-  "src": "images/gallery-usa-3.webp",
-  "alt": "New Orleans, United States",
-  "credit": "Chris Litherland",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:French_Quarter,_looking_north_with_Mississippi_River_to_the_right_2011.jpg",
   "place": "new-orleans",
   "caption": "New Orleans",
+  "src": "images/gallery-usa-3.webp",
+  "alt": "French Quarter, New Orleans, USA",
+  "credit": "Ka!zen",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/kaizendo/12120171385/",
+  "source": "flickr",
   "hd": "images/hd/gallery-usa-3.webp"
  },
  "gallery-usa-4": {
@@ -3948,13 +3995,14 @@ window.PHOTOS = {
   "hd": "images/hd/gallery-canada-4.webp"
  },
  "gallery-canada-5": {
-  "src": "images/gallery-canada-5.webp",
-  "alt": "Quebec City, Canada",
-  "credit": "Quintin Soloviev",
-  "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Quebec_City_skyline_from_L%C3%A9vis.jpg",
   "place": "quebec-city",
   "caption": "Quebec City",
+  "src": "images/gallery-canada-5.webp",
+  "alt": "Quebec City, Canada",
+  "credit": "a.canvas.of.light",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/jhlau/14735795494/",
+  "source": "flickr",
   "hd": "images/hd/gallery-canada-5.webp"
  },
  "gallery-australia-1": {
@@ -4008,23 +4056,26 @@ window.PHOTOS = {
   "hd": "images/hd/gallery-new-zealand-2.webp"
  },
  "gallery-new-zealand-3": {
-  "src": "images/gallery-new-zealand-3.webp",
-  "alt": "Rotorua, New Zealand",
-  "credit": "Krzysztof Golik",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Government_Gardens_in_Rotorua_01.jpg",
   "place": "rotorua",
   "caption": "Rotorua",
+  "src": "images/gallery-new-zealand-3.webp",
+  "alt": "Wai-O-Tapu, Rotorua, New Zealand",
+  "credit": "Tom Hall",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/tom_hall_nz/15770465035/",
+  "source": "flickr",
   "hd": "images/hd/gallery-new-zealand-3.webp"
  },
  "gallery-new-zealand-4": {
+  "place": "tongariro",
+  "caption": "Tongariro Crossing",
   "src": "images/gallery-new-zealand-4.webp",
   "alt": "Tongariro Crossing, New Zealand",
-  "credit": "Follash",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Mt_Ngauruhoe.JPG",
-  "place": "tongariro",
-  "caption": "Tongariro Crossing"
+  "credit": "russellstreet",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/russellstreet/4690129411/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-new-zealand-4.webp"
  },
  "gallery-new-zealand-5": {
   "src": "images/gallery-new-zealand-5.webp",
@@ -4173,13 +4224,15 @@ window.PHOTOS = {
   "place": "song-kul"
  },
  "gallery-kyrgyzstan-3": {
-  "src": "images/gallery-kyrgyzstan-3.webp",
-  "alt": "Osh",
   "caption": "Osh",
-  "credit": "No machine-readable author provided. Christian Gawron assumed (based on copyright claims).",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Kyrgyzstan_Osh_with_Suleiman_Hill.jpg",
-  "place": "osh"
+  "place": "osh",
+  "src": "images/gallery-kyrgyzstan-3.webp",
+  "alt": "Sulaiman-Too, Osh, Kyrgyzstan",
+  "credit": "xiquinhosilva",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/xiquinho/54509904423/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-kyrgyzstan-3.webp"
  },
  "gallery-tunisia-1": {
   "src": "images/gallery-tunisia-1.webp",
@@ -4191,13 +4244,15 @@ window.PHOTOS = {
   "place": "tunis"
  },
  "gallery-tunisia-2": {
-  "src": "images/gallery-tunisia-2.webp",
-  "alt": "Sidi Bou Said",
   "caption": "Sidi Bou Said",
-  "credit": "Hajotthu 14:41, 22. Feb. 2009 (CET)",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:SidBS_(47).JPG",
-  "place": "sidi-bou-said"
+  "place": "sidi-bou-said",
+  "src": "images/gallery-tunisia-2.webp",
+  "alt": "Sidi Bou Said, Tunisia",
+  "credit": "grolli77",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/grolli77/8322023210/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-tunisia-2.webp"
  },
  "gallery-tunisia-3": {
   "src": "images/gallery-tunisia-3.webp",
@@ -4209,13 +4264,15 @@ window.PHOTOS = {
   "place": "el-jem"
  },
  "gallery-tunisia-4": {
-  "src": "images/gallery-tunisia-4.webp",
-  "alt": "Tozeur",
   "caption": "Tozeur",
-  "credit": "Touzrimounir",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Gare_de_chemin_de_fer_de_Tozeur_007.jpg",
-  "place": "tozeur"
+  "place": "tozeur",
+  "src": "images/gallery-tunisia-4.webp",
+  "alt": "Chebika Oasis, Tunisia",
+  "credit": "Munea Viajes",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/munea/31794219373/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-tunisia-4.webp"
  },
  "gallery-ethiopia-1": {
   "src": "images/gallery-ethiopia-1.webp",
@@ -4245,22 +4302,26 @@ window.PHOTOS = {
   "place": "gondar"
  },
  "gallery-madagascar-1": {
-  "src": "images/gallery-madagascar-1.webp",
-  "alt": "Antananarivo",
   "caption": "Antananarivo",
-  "credit": "Lemurbaby",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Antananarivo_Madagascar_andohalo_plaza.JPG",
-  "place": "antananarivo"
+  "place": "antananarivo",
+  "src": "images/gallery-madagascar-1.webp",
+  "alt": "Antananarivo, Madagascar",
+  "credit": "Rod Waddington",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/rod_waddington/53473347373/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-madagascar-1.webp"
  },
  "gallery-madagascar-2": {
-  "src": "images/gallery-madagascar-2.webp",
-  "alt": "Andasibe",
   "caption": "Andasibe",
-  "credit": "Smiley.toerist",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Andasibe-Mantadia_National_Park_2013_24.jpg",
-  "place": "andasibe"
+  "place": "andasibe",
+  "src": "images/gallery-madagascar-2.webp",
+  "alt": "Andasibe, Madagascar",
+  "credit": "David Dennis",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/davidden/3238458514/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-madagascar-2.webp"
  },
  "gallery-madagascar-3": {
   "src": "images/gallery-madagascar-3.webp",
@@ -4281,13 +4342,15 @@ window.PHOTOS = {
   "place": "isalo"
  },
  "gallery-malawi-1": {
-  "src": "images/gallery-malawi-1.webp",
-  "alt": "Cape Maclear",
   "caption": "Cape Maclear",
-  "credit": "Hans Hillewaert",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Otter_Point,_Cape_Maclear_(Malawi).jpg",
-  "place": "cape-maclear"
+  "place": "cape-maclear",
+  "src": "images/gallery-malawi-1.webp",
+  "alt": "Cape Maclear, Malawi",
+  "credit": "Global Panorama",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/121483302@N02/14276351286/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-malawi-1.webp"
  },
  "gallery-malawi-2": {
   "src": "images/gallery-malawi-2.webp",
@@ -4308,22 +4371,26 @@ window.PHOTOS = {
   "place": "mulanje"
  },
  "gallery-mongolia-1": {
-  "src": "images/gallery-mongolia-1.webp",
-  "alt": "Ulaanbaatar",
   "caption": "Ulaanbaatar",
-  "credit": "Chongkian",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Gandantegchinlen_Monastery_(2024).jpg",
-  "place": "ulaanbaatar"
+  "place": "ulaanbaatar",
+  "src": "images/gallery-mongolia-1.webp",
+  "alt": "Gandan Monastery, Ulaanbaatar, Mongolia",
+  "credit": "Chelsea Marie Hicks",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/seafaringwoman/8124273933/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-mongolia-1.webp"
  },
  "gallery-mongolia-2": {
-  "src": "images/gallery-mongolia-2.webp",
-  "alt": "Gobi Desert",
   "caption": "Gobi Desert",
-  "credit": "Unknown",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Gobi_Desert.jpg",
-  "place": "gobi"
+  "place": "gobi",
+  "src": "images/gallery-mongolia-2.webp",
+  "alt": "Gobi Desert, Mongolia",
+  "credit": "Richard Mortel",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/prof_richard/42724848060/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-mongolia-2.webp"
  },
  "gallery-mongolia-3": {
   "src": "images/gallery-mongolia-3.webp",
@@ -4389,13 +4456,15 @@ window.PHOTOS = {
   "place": "fann"
  },
  "gallery-kazakhstan-1": {
-  "src": "images/gallery-kazakhstan-1.webp",
-  "alt": "Almaty",
   "caption": "Almaty",
-  "credit": "Dauren Nabijan",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Almaty_K%C3%B6k_T%C3%B6be.jpg",
-  "place": "almaty"
+  "place": "almaty",
+  "src": "images/gallery-kazakhstan-1.webp",
+  "alt": "Big Almaty Lake, Kazakhstan",
+  "credit": "Martin de Lusenet",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/martindelusenet/30064026530/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-kazakhstan-1.webp"
  },
  "gallery-kazakhstan-2": {
   "src": "images/gallery-kazakhstan-2.webp",
@@ -4578,22 +4647,15 @@ window.PHOTOS = {
   "place": "ohrid"
  },
  "gallery-north-macedonia-3": {
-  "src": "images/gallery-north-macedonia-3.webp",
-  "alt": "Mavrovo",
   "caption": "Mavrovo",
-  "credit": "Novica Nakov",
+  "place": "mavrovo",
+  "src": "images/gallery-north-macedonia-3.webp",
+  "alt": "Mavrovo Lake, North Macedonia",
+  "credit": "marguerite",
   "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B0%D0%B2%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%BE_%D0%B5%D0%B7%D0%B5%D1%80%D0%BE.jpg",
-  "place": "mavrovo"
- },
- "gallery-north-macedonia-4": {
-  "src": "images/gallery-north-macedonia-4.webp",
-  "alt": "Bitola",
-  "caption": "Bitola",
-  "credit": "Tommyy882",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Ambientalna_ulica_Marsal_Tito-Bitola_(10).jpg",
-  "place": "bitola"
+  "page": "https://www.flickr.com/photos/33683401@N07/14278328379/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-north-macedonia-3.webp"
  },
  "gallery-north-macedonia-5": {
   "src": "images/gallery-north-macedonia-5.webp",
@@ -4623,13 +4685,15 @@ window.PHOTOS = {
   "place": "brasov"
  },
  "gallery-romania-3": {
-  "src": "images/gallery-romania-3.webp",
-  "alt": "Sibiu",
   "caption": "Sibiu",
-  "credit": "Ymblanter",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Brukenthal_Palace_Sibiu.jpg",
-  "place": "sibiu"
+  "place": "sibiu",
+  "src": "images/gallery-romania-3.webp",
+  "alt": "Sibiu, Romania",
+  "credit": "Pedro",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/pedrocaetano/46674355684/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-romania-3.webp"
  },
  "gallery-romania-4": {
   "src": "images/gallery-romania-4.webp",
@@ -4641,13 +4705,15 @@ window.PHOTOS = {
   "place": "cluj-napoca"
  },
  "gallery-romania-5": {
-  "src": "images/gallery-romania-5.webp",
-  "alt": "Sighișoara",
   "caption": "Sighișoara",
-  "credit": "Fridolin68",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Casa_cu_cerbi.JPG",
-  "place": "sighisoara"
+  "place": "sighisoara",
+  "src": "images/gallery-romania-5.webp",
+  "alt": "Sighișoara, Romania",
+  "credit": "Juanje Orío",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/juanjeorio/44620475065/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-romania-5.webp"
  },
  "gallery-bulgaria-1": {
   "src": "images/gallery-bulgaria-1.webp",
@@ -4704,13 +4770,15 @@ window.PHOTOS = {
   "place": "leon"
  },
  "gallery-nicaragua-3": {
-  "src": "images/gallery-nicaragua-3.webp",
-  "alt": "Ometepe",
   "caption": "Ometepe",
-  "credit": "David Ansley",
-  "license": "CC BY 2.5",
-  "page": "https://commons.wikimedia.org/wiki/File:Concepcion_from_finca.JPG",
-  "place": "ometepe"
+  "place": "ometepe",
+  "src": "images/gallery-nicaragua-3.webp",
+  "alt": "Ometepe Island, Nicaragua",
+  "credit": "Adam Jones",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/adam_jones/31712521586/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-nicaragua-3.webp"
  },
  "gallery-nicaragua-4": {
   "src": "images/gallery-nicaragua-4.webp",
@@ -4731,31 +4799,26 @@ window.PHOTOS = {
   "place": "utila"
  },
  "gallery-honduras-2": {
-  "src": "images/gallery-honduras-2.webp",
-  "alt": "Roatán",
   "caption": "Roatán",
-  "credit": "Pi3.124",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Roatan_looking_north_towards_West_End.jpg",
-  "place": "roatan"
+  "place": "roatan",
+  "src": "images/gallery-honduras-2.webp",
+  "alt": "West Bay, Roatán, Honduras",
+  "credit": "Daniel N Chinchilla",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/112849397@N03/32858780543/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-honduras-2.webp"
  },
  "gallery-honduras-3": {
-  "src": "images/gallery-honduras-3.webp",
-  "alt": "Lago de Yojoa",
   "caption": "Lago de Yojoa",
-  "credit": "Frank Domínguez 15",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Yojoa_Lake.jpg",
-  "place": "lago-yojoa"
- },
- "gallery-honduras-4": {
-  "src": "images/gallery-honduras-4.webp",
-  "alt": "Gracias",
-  "caption": "Gracias",
-  "credit": "William Fish",
+  "place": "lago-yojoa",
+  "src": "images/gallery-honduras-3.webp",
+  "alt": "Lago de Yojoa, Honduras",
+  "credit": "Mario A. Torres",
   "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Iglesia_de_la_Merced_(288008760).jpg",
-  "place": "gracias"
+  "page": "https://www.flickr.com/photos/supremier/8661267988/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-honduras-3.webp"
  },
  "gallery-myanmar-1": {
   "src": "images/gallery-myanmar-1.webp",
@@ -4794,13 +4857,15 @@ window.PHOTOS = {
   "place": "mandalay"
  },
  "gallery-timor-leste-1": {
-  "src": "images/gallery-timor-leste-1.webp",
-  "alt": "Dili",
   "caption": "Dili",
-  "credit": "Bahnfrend",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Government_Palace,_Dili,_2023_(02).jpg",
-  "place": "dili"
+  "place": "dili",
+  "src": "images/gallery-timor-leste-1.webp",
+  "alt": "Cristo Rei, Dili, Timor-Leste",
+  "credit": "COMSEVENTHFLT",
+  "license": "CC BY-SA 2.0",
+  "page": "https://www.flickr.com/photos/us7thfleet/5895731242/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-timor-leste-1.webp"
  },
  "gallery-timor-leste-2": {
   "src": "images/gallery-timor-leste-2.webp",
@@ -4810,15 +4875,6 @@ window.PHOTOS = {
   "license": "CC0",
   "page": "https://commons.wikimedia.org/wiki/File:Hato_Builico_Village.jpg",
   "place": "ramelau"
- },
- "gallery-timor-leste-3": {
-  "src": "images/gallery-timor-leste-3.webp",
-  "alt": "Baucau",
-  "caption": "Baucau",
-  "credit": "Bahnfrend",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Mercado_Municipal,_Baucau,_2018_(05).jpg",
-  "place": "baucau"
  },
  "gallery-bangladesh-1": {
   "src": "images/gallery-bangladesh-1.webp",
@@ -4857,13 +4913,15 @@ window.PHOTOS = {
   "place": "punakha"
  },
  "gallery-bhutan-3": {
-  "src": "images/gallery-bhutan-3.webp",
-  "alt": "Thimphu",
   "caption": "Thimphu",
-  "credit": "Christopher J. Fynn",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Tashich%C3%B6dzong_Thimphu-2008-01-23.jpg",
-  "place": "thimphu"
+  "place": "thimphu",
+  "src": "images/gallery-bhutan-3.webp",
+  "alt": "Tashichho Dzong, Thimphu, Bhutan",
+  "credit": "Nina R",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/150102727@N06/49690801713/",
+  "source": "flickr",
+  "hd": "images/hd/gallery-bhutan-3.webp"
  },
  "gallery-afghanistan-1": {
   "src": "images/gallery-afghanistan-1.webp",
@@ -9166,5 +9224,27 @@ window.PHOTOS = {
   "page": "https://www.flickr.com/photos/51110738@N04/52546982006/",
   "source": "flickr",
   "hd": "images/hd/vibe-city.webp"
+ },
+ "gallery-norway-2": {
+  "src": "images/gallery-norway-2.webp",
+  "alt": "Bryggen, Bergen, Norway",
+  "credit": "abbilder",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/abbilder/54471990443/",
+  "source": "flickr",
+  "caption": "Bergen",
+  "place": "bergen",
+  "hd": "images/hd/gallery-norway-2.webp"
+ },
+ "gallery-albania-3": {
+  "src": "images/gallery-albania-3.webp",
+  "alt": "Ksamil Islands, Albania",
+  "credit": "Piotr Rokita",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/129412214@N05/29708915406/",
+  "source": "flickr",
+  "caption": "Ksamil",
+  "place": "ksamil",
+  "hd": "images/hd/gallery-albania-3.webp"
  }
 };
