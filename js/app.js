@@ -130,10 +130,10 @@
   }
 
   /* ---------- Routing ---------- */
-  const ROUTES = ["home", "explore", "itineraries", "plan", "profile", "about", "money", "privacy"];
+  const ROUTES = ["home", "explore", "where", "itineraries", "plan", "profile", "about", "money", "privacy"];
   const TITLES = { home: "Farther: travel longer for less", explore: "Explore destinations and daily costs · Farther",
     plan: "Your trips · Farther", itineraries: "Itineraries and trip generator · Farther", profile: "Your profile · Farther", about: "About · Farther",
-    money: "How we make money · Farther", privacy: "Privacy · Farther", "getting-there": "Buses, trains and flights compared · Farther" };
+    money: "How we make money · Farther", where: "How far can my money take me? · Farther", privacy: "Privacy · Farther", "getting-there": "Buses, trains and flights compared · Farther" };
   function route() {
     const h = location.hash.slice(1);
     let r = ROUTES.includes(h) ? h : "home";
@@ -144,6 +144,7 @@
     if (cid && countryById[cid]) { r = "country"; renderCountry(countryById[cid], countryAll.id === cid, ctab || "overview"); }
     if (h.startsWith("route-")) { const rt = ROUTE_LIST.find(x => x.id === h.slice(6)); if (rt) { useRoute(rt); return; } }
     if (h.startsWith("share-")) { const t = importShared(h.slice(6)); if (t) { location.replace("#trip-" + t.id); return; } }
+    if (h === "where" || h.startsWith("where/")) { r = "where"; renderWhere(h.slice(6)); }
     if (h === "getting-there" || h.startsWith("getting-there/")) { r = "getting-there"; const [, ga, gb] = h.split("/"); renderGettingThere(ga, gb); }
     if (h === "track") { r = "track"; if (!trip || !trips.includes(trip)) trip = trips.find(x => x.id === store.get("dc.current", null)) || trips[0] || null; }
     if (h.startsWith("track-")) {
@@ -220,19 +221,116 @@
       syncFilterInputs(); renderExplore(); go("explore");
     });
 
-    $("#hero-search").addEventListener("submit", e => {
-      e.preventDefault();
-      filters.q = $("#hero-q").value.trim();
-      syncFilterInputs(); renderExplore(); go("explore");
+    initFinder();
+  }
+  /* ---------- How far can my money take me? ---------- */
+  // The traveller's budget (on the ground, in their currency), days and interests in; every country that
+  // fits out, daily cost first. The last search is remembered so country pages and new trips can use it.
+  const FINDER_TAGS = [["trekking", "Treks and hikes"], ["beach", "Beaches"], ["food", "Food"], ["culture", "Culture"], ["history", "History"],
+    ["nature", "Nature"], ["mountains", "Mountains"], ["city", "Cities"], ["offbeat", "Off the beaten path"]];
+  const finderLabel = t => (FINDER_TAGS.find(x => x[0] === t) || [t, tagLabel(t)])[1];
+  let finder = Object.assign({ budget: 0, days: 0, tags: [], month: "", cont: "" }, store.get("dc.finder", {}));
+  const finderReady = () => finder.budget > 0 && finder.days > 0;
+  const finderHash = f => `#where/${Math.round(f.budget)}/${f.days}${f.tags.length ? "/" + f.tags.join(",") : ""}`;
+  // A country's cost for the trip: typical days on the ground plus about $15 of buses for every four days.
+  const tripCostIn = (c, days) => typicalDay(c) * days + Math.ceil(days / 4) * 15;
+  const tagShare = (c, t) => { const p = placesOf(c); return p.filter(d => d.tags.includes(t)).length / Math.max(1, p.length); };
+  function finderTagChips(sel, attr) {
+    return FINDER_TAGS.map(([k, l]) => `<button type="button" class="chip" ${attr}="${k}" aria-pressed="${sel.includes(k)}">${l}</button>`).join("");
+  }
+  function initFinder() {
+    const f = $("#finder-form"); if (!f || f.dataset.ready) return;
+    f.dataset.ready = "1";
+    $(".fd-cur", f).textContent = CUR === "USD" ? "$" : CUR;
+    if (finderReady()) { $("#fd-budget").value = Math.round(finder.budget); $("#fd-days").value = finder.days; }
+    const tags = new Set(finder.tags);
+    $("#fd-tags").innerHTML = `<span class="finder-into">Into:</span>` + finderTagChips([...tags], "data-fd-tag");
+    $("#fd-tags").addEventListener("click", e => {
+      const b = e.target.closest("[data-fd-tag]"); if (!b) return;
+      const t = b.dataset.fdTag; tags.has(t) ? tags.delete(t) : tags.add(t); b.setAttribute("aria-pressed", tags.has(t));
     });
-    $("#hero-chips").addEventListener("click", e => {
-      const b = e.target.closest("button"); if (!b) return;
-      resetFilters();
-      if (b.dataset.q) filters.q = b.dataset.q;
-      if (b.dataset.budget) filters.max = +b.dataset.budget;
-      syncFilterInputs(); renderExplore(); go("explore");
+    f.addEventListener("submit", e => {
+      e.preventDefault();
+      const budget = +$("#fd-budget").value || 1500, days = Math.max(3, Math.min(180, +$("#fd-days").value || 21));
+      setFinder({ budget, days, tags: [...tags] });
+      location.hash = finderHash(finder);
     });
   }
+  function setFinder(o) { finder = Object.assign({}, finder, o); store.set("dc.finder", finder); }
+  function renderWhere(arg) {
+    const [b, d, t] = (arg || "").split("/");
+    if (+b > 0 && +d > 0) setFinder({ budget: +b, days: Math.max(3, Math.min(180, +d)), tags: (t || "").split(",").filter(x => TAGS.includes(x)) });
+    const f = finderReady() ? finder : Object.assign({}, finder, { budget: 1500, days: 21 });
+    const budgetUsd = f.budget / curRate(), perDayUsd = budgetUsd / f.days, month = +f.month || 0;
+    const rows = C.filter(c => !c.advisory && placesOf(c).length && (!f.cont || contOfRegion(c.region) === f.cont)).map(c => {
+      const cost = tripCostIn(c, f.days), spare = budgetUsd - cost;
+      const hits = f.tags.filter(x => tagShare(c, x) >= 0.2);
+      const score = hits.length * 3 + (c.best.includes(month || new Date().getMonth() + 1) ? 1.2 : 0) + (POPULAR.has(c.id) ? 1.5 : 0);
+      return { c, cost, spare, hits, score, day: typicalDay(c) };
+    });
+    const fits = rows.filter(r => r.spare >= 0).sort((x, y) => (f.tags.length ? y.hits.length - x.hits.length : 0) || y.score - x.score || x.day - y.day);
+    const close = rows.filter(r => r.spare < 0 && r.spare >= -budgetUsd * 0.15).sort((x, y) => y.spare - x.spare);
+    const shown = finderShowAll ? fits : fits.slice(0, 12);
+    const routes = ROUTE_LIST.map(r => ({ r, n: r.stops.reduce((a, [, x]) => a + x, 0), ground: routeCost(r) - (r.flights || 0) }))
+      .filter(x => x.n <= f.days * 1.25 && x.n >= f.days * 0.6 && x.ground <= budgetUsd && (!f.cont || contOfRegion(byId[x.r.stops[0][0]].region) === f.cont))
+      .sort((x, y) => Math.abs(x.n - f.days) - Math.abs(y.n - f.days)).slice(0, 3);
+    const card = r => `<article class="fit-card${r.spare < 0 ? " tight" : ""}">
+        <a class="fit-photo" href="#country-${r.c.id}" tabindex="-1" aria-hidden="true">${art({ id: r.c.id, tags: [] })}</a>
+        <div class="fit-body">
+          <div class="fit-top"><div><h3><a href="#country-${r.c.id}">${esc(r.c.name)}</a></h3><p class="muted small">${esc(r.c.region)}${r.c.best.includes(new Date().getMonth() + 1) ? ` · <span class="fit-season">In season now</span>` : ""}</p></div>
+            <div class="fit-day"><strong class="num">${money(r.day)}</strong><span>a day</span></div></div>
+          <p class="fit-line">${r.spare >= 0 ? `About <b class="num">${money(r.cost)}</b> for ${plural(f.days, "day")}, so <b class="num">${money(r.spare)}</b> spare.` : `About <b class="num">${money(r.cost)}</b> for ${plural(f.days, "day")}, <b class="num">${money(-r.spare)}</b> more than you have.`}</p>
+          ${r.hits.length ? `<p class="fit-tags">${r.hits.map(x => `<span class="tag">${finderLabel(x)}</span>`).join("")}</p>` : ""}
+          <div class="fit-act"><button class="btn small" type="button" data-fit-plan="${r.c.id}">Plan ${f.days} days here</button><a class="btn small ghost" href="#country-${r.c.id}">Learn more</a></div>
+        </div></article>`;
+    $("#where-view").innerHTML = `
+      <div class="where-head">
+        <div><p class="eyebrow">How far can my money take me?</p>
+          <h2>${money(budgetUsd)} for ${plural(f.days, "day")}</h2>
+          <p class="lede-sm">That's <strong class="num">${money(perDayUsd)}</strong> a day on the ground, before flights. <strong>${fits.length}</strong> ${fits.length === 1 ? "country fits" : "countries fit"}${f.tags.length ? `, best matches for ${f.tags.map(finderLabel).map(x => x.toLowerCase()).join(" and ")} first` : ", most popular first"}.</p></div>
+        <form class="where-form" id="where-form" novalidate>
+          <div class="field"><label for="wf-budget">Budget (${CUR})</label><input id="wf-budget" type="number" min="100" step="50" value="${Math.round(f.budget)}"></div>
+          <div class="field"><label for="wf-days">Days</label><input id="wf-days" type="number" min="3" max="180" value="${f.days}"></div>
+          <div class="field"><label for="wf-cont">Region</label><select id="wf-cont"><option value="">Anywhere</option>${CONTINENTS.map(([k]) => `<option${k === f.cont ? " selected" : ""}>${k}</option>`).join("")}</select></div>
+          <div class="field"><label for="wf-month">Going in</label><select id="wf-month"><option value="">Any time</option>${MONTHS_LONG.map((m, i) => `<option value="${i + 1}"${String(i + 1) === String(f.month) ? " selected" : ""}>${m}</option>`).join("")}</select></div>
+          <div class="where-tags" role="group" aria-label="What you're into">${finderTagChips(f.tags, "data-wf-tag")}</div>
+          <button class="btn" type="submit">Update</button>
+        </form>
+      </div>
+      ${fits.length ? `<div class="fit-grid">${shown.map(card).join("")}</div>
+        ${fits.length > shown.length ? `<div class="see-all"><button class="btn ghost" type="button" id="fit-more">See all ${fits.length} countries that fit</button></div>` : ""}`
+        : `<div class="empty">Nothing fits ${money(perDayUsd)} a day yet. Try fewer days or a bigger budget, or look at the near misses below.</div>`}
+      ${routes.length ? `<section class="where-routes"><div class="section-head"><div><p class="eyebrow">Ready-made trips that fit</p><h2>Or take a route that's already worked out</h2></div><a class="btn ghost small" href="#itineraries">All trip ideas</a></div>
+        <div class="route-grid">${routes.map(x => routeCard(x.r)).join("")}</div></section>` : ""}
+      ${close.length ? `<section class="where-close"><h3>Just out of reach</h3><p class="muted">A little more money, or a few fewer days, and these work too.</p><div class="fit-grid compact">${close.slice(0, 4).map(card).join("")}</div></section>` : ""}
+      <p class="note">Costs are a typical day in each country's best-known places: a bed, food, local transport and a little fun, plus buses between stops. Flights aren't included.</p>`;
+  }
+  let finderShowAll = false;
+  // Turn a finder pick into a trip: the generator lays out stops in that country for the traveller's days,
+  // budget and interests, then the trip opens in the planner.
+  function planFromFinder(cid) {
+    const c = countryById[cid]; if (!c) return;
+    const f = finderReady() ? finder : { budget: 1500, days: 21, tags: [], month: "" };
+    const g = generateItinerary({ days: f.days, budget: f.budget, tags: new Set(f.tags), pace: "normal", month: f.month || "", cont: "", only: cid });
+    if (!g) { planCountry(c); return; }
+    gen.result = g; useGenerated();
+  }
+  document.addEventListener("click", e => {
+    if (!e.target.closest("#where-view")) return;
+    const p = e.target.closest("[data-fit-plan]"); if (p) { planFromFinder(p.dataset.fitPlan); return; }
+    if (e.target.closest("#fit-more")) { finderShowAll = true; renderWhere(""); return; }
+    const t = e.target.closest("[data-wf-tag]"); if (t) { t.setAttribute("aria-pressed", t.getAttribute("aria-pressed") !== "true"); return; }
+    const u = e.target.closest("[data-use-route]"); if (u) useRoute(ROUTE_LIST.find(x => x.id === u.dataset.useRoute));
+  });
+  document.addEventListener("submit", e => {
+    if (e.target.id !== "where-form") return;
+    e.preventDefault();
+    const tags = [...document.querySelectorAll("#where-form [data-wf-tag][aria-pressed=true]")].map(b => b.dataset.wfTag);
+    setFinder({ budget: Math.max(100, +$("#wf-budget").value || 1500), days: Math.max(3, Math.min(180, +$("#wf-days").value || 21)),
+      cont: $("#wf-cont").value, month: $("#wf-month").value, tags });
+    finderShowAll = false;
+    if (location.hash === finderHash(finder)) renderWhere(""); else location.hash = finderHash(finder);
+  });
 
   // Ready-made routes (js/routes.js): each card loads its stops into a new trip in the planner.
   const ROUTE_LIST = (window.ROUTES || []).filter(r => r.stops.every(([id]) => byId[id]));
@@ -1241,6 +1339,7 @@
     });
 
     $("#new-trip-btn").addEventListener("click", () => openNewTrip(true));
+    $("#start-blank").addEventListener("click", () => { openNewTrip(true); $("#new-trip-form").scrollIntoView({ behavior: "smooth", block: "start" }); });
     $("#nt-cancel").addEventListener("click", () => openNewTrip(false));
     $("#new-trip-form").addEventListener("submit", e => {
       e.preventDefault();
@@ -2402,7 +2501,8 @@
     const f = itinFilters;
     if (!gen.init) { gen.init = true; gen.tags = new Set(pref("styles") || []); }
     $("#itin-view").innerHTML = `
-      <div class="section-head"><div><p class="eyebrow">Trip ideas</p><h2>Ready-made trips, or roll your own</h2>
+      <a class="back-link" href="#plan"><span aria-hidden="true">←</span> Plan</a>
+      <div class="section-head"><div><p class="eyebrow">Plan · Trip ideas</p><h2>Ready-made trips, or roll your own</h2>
         <p class="muted">Pick a ready-made route, or let us build one around your month, budget and style.</p></div></div>
       <section class="gen-panel" aria-labelledby="gen-title">
         <div class="gen-head"><span class="gen-dice" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="9" cy="9" r="1.2" fill="currentColor"/><circle cx="15" cy="15" r="1.2" fill="currentColor"/><circle cx="15" cy="9" r="1.2" fill="currentColor"/><circle cx="9" cy="15" r="1.2" fill="currentColor"/></svg></span><div><h3 id="gen-title">Surprise me with an itinerary</h3><p class="muted">Set what matters, and we'll build a trip from places that fit.</p></div></div>
@@ -2506,7 +2606,7 @@
     const nStops = Math.max(1, Math.min(12, Math.round(o.days / per)));
     const month = +o.month || 0, budgetUsd = o.budget ? o.budget / curRate() : 0;
     const tagHit = d => [...o.tags].filter(t => d.tags.includes(t)).length;
-    const countries = C.filter(c => !c.advisory && (!o.cont || contOfRegion(c.region) === o.cont) && (!month || c.best.includes(month)) && placesOf(c).length >= 2);
+    const countries = C.filter(c => !c.advisory && (!o.only || c.id === o.only) && (!o.cont || contOfRegion(c.region) === o.cont) && (!month || c.best.includes(month)) && placesOf(c).length >= 2);
     if (!countries.length) return null;
     const scoreCountry = c => 1 + placesOf(c).reduce((a, d) => a + tagHit(d), 0) / Math.max(4, placesOf(c).length) * 6 + (POPULAR.has(c.id) ? 3 : 0);
     const pickW = (arr, w) => { const ws = arr.map(w), sum = ws.reduce((a, b) => a + b, 0); let r = Math.random() * sum; for (let i = 0; i < arr.length; i++) { r -= ws[i]; if (r <= 0) return arr[i]; } return arr[arr.length - 1]; };

@@ -154,6 +154,9 @@
       ["offbeat", "Off the beaten path", ["theth", "mestia", "merzouga", "nong-khiaw"]], ["city", "Big cities", ["tokyo", "istanbul", "lisbon"]]];
     const pool = F.C.filter(c => F.POPULAR.has(c.id) && !c.advisory).flatMap(c => F.popularOf(c)).filter(d => P[d.id]);
     vibes.innerHTML = STYLES.map(([tag, label, prefer]) => {
+      // A signature photo per trip type (vibe-<tag> in PHOTOS) beats a place photo when there is one.
+      const v = P["vibe-" + tag];
+      if (v) return `<button type="button" class="vibe" data-vibe="${tag}">${F.art({ id: "vibe-" + tag, tags: [] })}<span class="vibe-text"><strong>${label}</strong><span>Like ${F.esc(v.alt)}</span></span></button>`;
       const d = prefer.map(id => F.byId[id]).find(x => x && P[x.id] && !used.has(x.countryId))
         || pool.find(x => x.tags.includes(tag) && !used.has(x.id) && !used.has(x.countryId)); if (!d) return "";
       used.add(d.id); used.add(d.countryId);

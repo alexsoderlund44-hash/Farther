@@ -21,9 +21,8 @@
     <a class="brand" href="#home" aria-label="Farther home"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" style="fill:var(--sun)" stroke="#2a1608" stroke-width="2.5"/><path d="M9 21.5 31 12 24.5 30 20.5 23.5Z" style="fill:var(--orange)" stroke="#2a1608" stroke-width="2" stroke-linejoin="round"/><path d="M20.5 23.5 31 12" stroke="#2a1608" stroke-width="2" stroke-linecap="round"/></svg><span class="brand-word">Farther</span></a>
     <nav class="nav" aria-label="Main">
       <a href="#home" data-route="home"><svg class="nav-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5 12 5l8 6.5V20a1 1 0 0 1-1 1h-4.5v-5.5h-5V21H5a1 1 0 0 1-1-1z"/></svg>Home</a>
-      <a href="#explore" data-route="explore" data-also="country"><svg class="nav-ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></svg>Explore</a>
-      <a href="#itineraries" data-route="itineraries"><svg class="nav-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 19c3-1 4-4 6-7s4-5 6-6"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="6" r="2"/></svg><span class="nav-long">Trip ideas</span><span class="nav-short">Ideas</span></a>
-      <a href="#plan" data-route="plan" data-also="trip"><svg class="nav-ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg><span class="nav-long">Plan</span><span class="nav-short">Plan</span></a>
+      <a href="#explore" data-route="explore" data-also="country where"><svg class="nav-ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></svg>Explore</a>
+      <a href="#plan" data-route="plan" data-also="trip itineraries"><svg class="nav-ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg><span class="nav-long">Plan</span><span class="nav-short">Plan</span></a>
       <a href="#track" data-route="track"><svg class="nav-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Track</a>
     </nav>
     <button class="settings-btn" type="button" id="settings-btn" data-open-settings aria-label="Settings" title="Settings">
@@ -41,19 +40,17 @@
       <div class="hero-copy">
         <p class="hero-kicker"><span class="kick-dot" aria-hidden="true"></span>157 countries, 2,254 places, real daily costs</p>
         <h1 class="hero-title">Travel longer for&nbsp;less.</h1>
-        <p class="lede">Find where your money stretches, plan the route, book the cheap beds, and keep your spending on track.</p>
-        <form class="hero-search" id="hero-search" role="search">
-          <svg class="hs-ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
-          <input id="hero-q" type="search" placeholder="Peru, trekking, Southeast Asia…" aria-label="Search destinations">
-          <button class="btn" type="submit">Explore</button>
+        <p class="lede">Explore 157 countries, learn what a day really costs, plan your route and track your spending, all in one place.</p>
+        <form class="finder" id="finder-form" novalidate aria-labelledby="finder-title">
+          <p class="finder-title" id="finder-title">How far can my money take me?</p>
+          <div class="finder-row">
+            <div class="field fd-budget"><label for="fd-budget">Budget <span class="muted">(<span class="fd-cur">$</span>, not counting flights)</span></label><input id="fd-budget" type="number" inputmode="numeric" min="100" step="50" placeholder="1500"></div>
+            <div class="field fd-days"><label for="fd-days">Days</label><input id="fd-days" type="number" inputmode="numeric" min="3" max="180" placeholder="21"></div>
+            <button class="btn" type="submit">Show me where</button>
+          </div>
+          <div class="finder-tags" role="group" aria-label="What you're into (optional)" id="fd-tags"></div>
+          <p class="finder-alt">Know where you're going? <a href="#explore">Browse all 157 countries</a></p>
         </form>
-        <div class="hero-chips" id="hero-chips">
-          <button type="button" data-q="offbeat">Off the beaten path</button>
-          <button type="button" data-q="trekking">Trekking</button>
-          <button type="button" data-q="Southeast Asia">Southeast Asia</button>
-          <button type="button" data-q="South America">South America</button>
-          <button type="button" data-budget="25">Under $25/day</button>
-        </div>
       </div>
       <div class="hero-stage">
         <div class="hero-cards" id="hero-cards"></div>
@@ -73,11 +70,41 @@
       <nav class="month-chips" id="home-months" aria-label="Where to go in another month"></nav>
     </section>
 
+
+
+    <section class="home-vibes">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Start with a feeling</p>
+          <h2>What kind of trip?</h2>
+        </div>
+      </div>
+      <div class="vibes snap-row" id="home-vibes"></div>
+    </section>
+    <section id="home-routes-wrap" hidden>
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Trip ideas</p>
+          <h2>Steal a ready-made trip</h2>
+        </div>
+        <div class="head-actions"><a class="btn ghost small" href="#itineraries" id="routes-all">See all</a><a class="btn small" href="#itineraries">Build me one</a></div>
+      </div>
+      <div class="route-grid snap-row" id="home-routes"></div>
+    </section>
+    <section class="how-band" aria-labelledby="how-title">
+      <div class="section-head"><div><p class="eyebrow">One place for the whole trip</p><h2 id="how-title">From "where?" to "how much did I spend?"</h2></div></div>
+      <ol class="how-steps">
+        <li><a href="#explore"><span class="how-n">1</span><strong>Explore</strong><span>Every country with what a day really costs, cheapest first.</span></a></li>
+        <li><a href="#country-vietnam"><span class="how-n">2</span><strong>Learn</strong><span>Places, food, culture, safety and how to get around, country by country.</span></a></li>
+        <li><a href="#plan"><span class="how-n">3</span><strong>Plan and book</strong><span>Build your route, see the budget stop by stop, then book it with dates filled in.</span></a></li>
+        <li><a href="#track"><span class="how-n">4</span><strong>Track</strong><span>Log what you spend on the road and see if you're on budget each day.</span></a></li>
+      </ol>
+    </section>
     <section class="qb" id="quick-book" aria-labelledby="qb-title">
       <figure class="qb-photo" id="qb-photo" aria-hidden="true"></figure>
       <form class="qb-form" id="qb-form" novalidate>
         <div class="qb-head">
-          <h2 id="qb-title">Lock in the cheap stuff</h2>
+          <h2 id="qb-title">Already know where? Lock in the cheap stuff</h2>
           <p>Pick a place and your dates. Flights, beds and things to do open with your dates already filled in.</p>
         </div>
         <div class="qb-fields">
@@ -110,27 +137,6 @@
         <p class="qb-fine">Links open the booking site in a new tab. You pay the same price either way. <a href="#money">How we make money</a></p>
       </form>
     </section>
-
-    <section id="home-routes-wrap" hidden>
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Trip ideas</p>
-          <h2>Steal a ready-made trip</h2>
-        </div>
-        <div class="head-actions"><a class="btn ghost small" href="#itineraries" id="routes-all">See all</a><a class="btn small" href="#itineraries">Build me one</a></div>
-      </div>
-      <div class="route-grid snap-row" id="home-routes"></div>
-    </section>
-
-    <section class="home-vibes">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Start with a feeling</p>
-          <h2>What kind of trip?</h2>
-        </div>
-      </div>
-      <div class="vibes snap-row" id="home-vibes"></div>
-    </section>
   </section>
 
   <!-- EXPLORE -->
@@ -141,6 +147,7 @@
         <h2>Pick a country</h2>
         <p class="muted">Cheapest daily cost per person, by country.</p>
       </div>
+      <a class="finder-link" href="#where"><span>Got a budget and a number of days?</span><strong>See where it works <span aria-hidden="true">→</span></strong></a>
     </div>
     <div class="explore-layout">
       <aside class="filters" aria-label="Filters">
@@ -194,6 +201,11 @@
     <div id="country-view"></div>
   </section>
 
+  <!-- WHERE: how far can my money take me -->
+  <section class="page" id="page-where" data-page="where" hidden>
+    <div id="where-view"></div>
+  </section>
+
   <!-- PLAN -->
   <section class="page" id="page-itineraries" data-page="itineraries" hidden>
     <div id="itin-view"></div>
@@ -206,6 +218,11 @@
         <p class="muted" id="plan-saved-note">Start a new trip, or open one to keep planning. Trips are saved in this browser.</p>
       </div>
       <div class="head-actions"><a class="btn ghost" href="#getting-there">Compare buses and trains</a><button class="btn" type="button" id="new-trip-btn"><span aria-hidden="true">+</span> Add new trip</button></div>
+    </div>
+    <div class="start-ways" id="start-ways">
+      <a class="start-way" href="#where"><span class="sw-k">Not sure where yet?</span><strong>How far can my money take me?</strong><span class="sw-s">Budget and days in, countries that fit out.</span></a>
+      <a class="start-way" href="#itineraries"><span class="sw-k">Want a head start?</span><strong>Start from a trip idea</strong><span class="sw-s">Ready-made routes, or let us build one for you.</span></a>
+      <button class="start-way" type="button" id="start-blank"><span class="sw-k">Know the plan?</span><strong>Start a blank trip</strong><span class="sw-s">Set your budget and add stops yourself.</span></button>
     </div>
     <form class="new-trip" id="new-trip-form" hidden novalidate>
       <div><p class="eyebrow">New trip</p><h3>Start with your budget</h3><p class="muted">Everything else in the plan works back from this number.</p></div>
@@ -361,6 +378,7 @@
     <nav class="footer-col" aria-label="Plan">
       <h2>Plan</h2>
       <a href="#explore">Explore countries</a>
+      <a href="#where">How far can my money take me?</a>
       <a href="#itineraries">Trip ideas</a>
       <a href="#plan">Your trips</a>
       <a href="#getting-there">Buses, trains and flights</a>

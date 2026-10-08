@@ -3914,13 +3914,6 @@ window.PHOTOS = {
   "place": "milford",
   "caption": "Milford Sound"
  },
- "dish-vietnam-0": {
-  "src": "images/dish-vietnam-0.webp",
-  "alt": "Pho",
-  "credit": "SerraKnightz",
-  "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Bowl_of_Meatball_pho.jpg"
- },
  "dish-vietnam-1": {
   "src": "images/dish-vietnam-1.webp",
   "alt": "Banh mi",
@@ -3949,13 +3942,6 @@ window.PHOTOS = {
   "license": "CC BY 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Cao_l%E1%BA%A7u_H%E1%BB%99i_An_(2024).jpg"
  },
- "dish-vietnam-5": {
-  "src": "images/dish-vietnam-5.webp",
-  "alt": "Ca phe sua da",
-  "credit": "Mike Verdone",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Viet-coffee.jpg"
- },
  "dish-laos-0": {
   "src": "images/dish-laos-0.webp",
   "alt": "Laap",
@@ -3976,13 +3962,6 @@ window.PHOTOS = {
   "credit": "Takeaway",
   "license": "CC BY-SA 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:2013_Tam_Lao.jpg"
- },
- "dish-laos-3": {
-  "src": "images/dish-laos-3.webp",
-  "alt": "Sticky rice",
-  "credit": "국립국어원",
-  "license": "CC BY-SA 2.0 kr",
-  "page": "https://commons.wikimedia.org/wiki/File:Chapssal_(glutinous_rice).jpg"
  },
  "dish-laos-5": {
   "src": "images/dish-laos-5.webp",
@@ -4019,13 +3998,6 @@ window.PHOTOS = {
   "license": "CC BY-SA 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Tom_yam_kung_maenam.jpg"
  },
- "dish-thailand-5": {
-  "src": "images/dish-thailand-5.webp",
-  "alt": "Mango sticky rice",
-  "credit": "Dennis Wong from Hong Kong, Hong Kong",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Mango_sticy_rice_(3859549574).jpg"
- },
  "dish-cambodia-0": {
   "src": "images/dish-cambodia-0.webp",
   "alt": "Fish amok",
@@ -4040,26 +4012,12 @@ window.PHOTOS = {
   "license": "CC BY-SA 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Product_Shots_of_Food-Bo_Luc_Lac.jpg"
  },
- "dish-cambodia-3": {
-  "src": "images/dish-cambodia-3.webp",
-  "alt": "Kuy teav",
-  "credit": "Pwordissony",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Katieu.jpg"
- },
  "dish-cambodia-4": {
   "src": "images/dish-cambodia-4.webp",
   "alt": "Kralan",
   "credit": "Wagaung at en.wikipedia",
   "license": "CC BY-SA 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Paung_din.JPG"
- },
- "dish-cambodia-5": {
-  "src": "images/dish-cambodia-5.webp",
-  "alt": "Kampot pepper crab",
-  "credit": "Taguelmoust",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Poivre_kampot01.jpg"
  },
  "dish-indonesia-0": {
   "src": "images/dish-indonesia-0.webp",
@@ -7368,13 +7326,6 @@ window.PHOTOS = {
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Gado_gado_jakarta.jpg"
  },
- "dish-indonesia-3": {
-  "src": "images/dish-indonesia-3.webp",
-  "alt": "Rendang",
-  "credit": "Midori",
-  "license": "CC BY 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Rendang_daging_sapi_asli_Padang.JPG"
- },
  "dish-indonesia-4": {
   "src": "images/dish-indonesia-4.webp",
   "alt": "Sate",
@@ -7395,13 +7346,6 @@ window.PHOTOS = {
   "credit": "Kushal Goyal",
   "license": "CC BY-SA 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Momo_nepal.jpg"
- },
- "dish-nepal-2": {
-  "src": "images/dish-nepal-2.webp",
-  "alt": "Thukpa",
-  "credit": "m-louis from Osaka",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Thukpa,_Tibetan_noodle_in_Osaka,_Japan.jpg"
  },
  "dish-nepal-3": {
   "src": "images/dish-nepal-3.webp",
@@ -7445,13 +7389,6 @@ window.PHOTOS = {
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:%22Hyderabadi_Dum_Biryani%22.jpg"
  },
- "dish-india-5": {
-  "src": "images/dish-india-5.webp",
-  "alt": "Masala chai",
-  "credit": "Dadhichbittu007",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Chai_In_Sakora.jpg"
- },
  "dish-sri-lanka-0": {
   "src": "images/dish-sri-lanka-0.webp",
   "alt": "Rice and curry",
@@ -7487,13 +7424,6 @@ window.PHOTOS = {
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Lamprais_(2).jpg"
  },
- "dish-sri-lanka-5": {
-  "src": "images/dish-sri-lanka-5.webp",
-  "alt": "Ceylon tea",
-  "credit": "Brigade Piron",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Ceylon_Pettiagalla_Tea.jpg"
- },
  "dish-kyrgyzstan-0": {
   "src": "images/dish-kyrgyzstan-0.webp",
   "alt": "Beshbarmak",
@@ -7515,13 +7445,6 @@ window.PHOTOS = {
   "license": "CC BY-SA 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:%D0%9B%D0%B0%D0%B3%D0%BC%D0%B0%D0%BD.jpg"
  },
- "dish-kyrgyzstan-3": {
-  "src": "images/dish-kyrgyzstan-3.webp",
-  "alt": "Manti",
-  "credit": "Kızılkum",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Kayseride_bir_restoranda_Kayseri_mant%C4%B1s%C4%B1_(cropped).jpg"
- },
  "dish-kyrgyzstan-4": {
   "src": "images/dish-kyrgyzstan-4.webp",
   "alt": "Boorsok",
@@ -7529,26 +7452,12 @@ window.PHOTOS = {
   "license": "Public domain",
   "page": "https://commons.wikimedia.org/wiki/File:Boortsog.JPG"
  },
- "dish-kyrgyzstan-5": {
-  "src": "images/dish-kyrgyzstan-5.webp",
-  "alt": "Kymyz",
-  "credit": "A.Savin",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Kumys-bottle.jpg"
- },
  "dish-georgia-0": {
   "src": "images/dish-georgia-0.webp",
   "alt": "Khachapuri",
   "credit": "Vyacheslav Argenberg",
   "license": "CC BY 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Old_Tbilisi,_Georgian_khachapuri,_Georgia.jpg"
- },
- "dish-georgia-1": {
-  "src": "images/dish-georgia-1.webp",
-  "alt": "Khinkali",
-  "credit": "Sandra C from Canada",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Khinkali,_Restaurant_Aragvi.jpg"
  },
  "dish-georgia-2": {
   "src": "images/dish-georgia-2.webp",
@@ -7571,20 +7480,6 @@ window.PHOTOS = {
   "license": "CC BY-SA 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Kakheti,_Georgia_%E2%80%94_Churchkhela.jpg"
  },
- "dish-georgia-5": {
-  "src": "images/dish-georgia-5.webp",
-  "alt": "Chacha",
-  "credit": "Popo le Chien",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Chacha.jpg"
- },
- "dish-albania-0": {
-  "src": "images/dish-albania-0.webp",
-  "alt": "Byrek",
-  "credit": "Wikimedia Commons contributor",
-  "license": "CC BY-SA 2.5",
-  "page": "https://commons.wikimedia.org/wiki/File:Burek_trokut_1.png"
- },
  "dish-albania-1": {
   "src": "images/dish-albania-1.webp",
   "alt": "Tavë kosi",
@@ -7606,13 +7501,6 @@ window.PHOTOS = {
   "license": "CC BY-SA 2.5",
   "page": "https://commons.wikimedia.org/wiki/File:Koofteh_tabrizi.jpg"
  },
- "dish-albania-5": {
-  "src": "images/dish-albania-5.webp",
-  "alt": "Trileçe",
-  "credit": "@joefoodie",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Pastel_de_Tres_Leches.jpg"
- },
  "dish-poland-0": {
   "src": "images/dish-poland-0.webp",
   "alt": "Pierogi",
@@ -7633,13 +7521,6 @@ window.PHOTOS = {
   "credit": "Dr. Bernd Gross",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Bigos_(1).jpg"
- },
- "dish-poland-4": {
-  "src": "images/dish-poland-4.webp",
-  "alt": "Oscypek",
-  "credit": "Pawel Swiegoda (Paberu)",
-  "license": "CC BY-SA 2.5",
-  "page": "https://commons.wikimedia.org/wiki/File:Oscypki.jpg"
  },
  "dish-poland-5": {
   "src": "images/dish-poland-5.webp",
@@ -7711,33 +7592,12 @@ window.PHOTOS = {
   "license": "CC BY-SA 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Aj%C3%AD_de_gallina.jpg"
  },
- "dish-peru-4": {
-  "src": "images/dish-peru-4.webp",
-  "alt": "Pisco sour",
-  "credit": "Dtarazona",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Pisco_sour_20100613b.JPG"
- },
- "dish-peru-5": {
-  "src": "images/dish-peru-5.webp",
-  "alt": "Chicha morada",
-  "credit": "Dtarazona",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Chicha_morada_y_pisco_sour_20100704.JPG"
- },
  "dish-bolivia-0": {
   "src": "images/dish-bolivia-0.webp",
   "alt": "Salteña",
   "credit": "EEJCC",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Salte%C3%B1as_de_Bolivia.jpg"
- },
- "dish-bolivia-2": {
-  "src": "images/dish-bolivia-2.webp",
-  "alt": "Sopa de maní",
-  "credit": "Londonsista",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Fufu.jpg"
  },
  "dish-bolivia-3": {
   "src": "images/dish-bolivia-3.webp",
@@ -7759,13 +7619,6 @@ window.PHOTOS = {
   "credit": "https://www.kahloseyes.com/single-post/cachangas-con-api-a-simple-and-super-sati",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Api_con_cachangas,_Per%C3%BA.webp"
- },
- "dish-guatemala-0": {
-  "src": "images/dish-guatemala-0.webp",
-  "alt": "Pepián",
-  "credit": "erwin.flores69",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Cocinando_El_Pepian.jpg"
  },
  "dish-guatemala-1": {
   "src": "images/dish-guatemala-1.webp",
@@ -7795,13 +7648,6 @@ window.PHOTOS = {
   "license": "CC BY 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Hilacha.jpg"
  },
- "dish-guatemala-5": {
-  "src": "images/dish-guatemala-5.webp",
-  "alt": "Atol de elote",
-  "credit": "ottmarliebert.com",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Atole.jpg"
- },
  "dish-mexico-0": {
   "src": "images/dish-mexico-0.webp",
   "alt": "Tacos al pastor",
@@ -7829,13 +7675,6 @@ window.PHOTOS = {
   "credit": "Chris Woodrich",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Chilaquiles_at_the_Grand_Cantina,_Windsor,_Ontario,_2025-09-01_04.jpg"
- },
- "dish-mexico-4": {
-  "src": "images/dish-mexico-4.webp",
-  "alt": "Tamales",
-  "credit": "Georgina Meneses",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Tamal_oaxaque%C3%B1o.jpg"
  },
  "dish-mexico-5": {
   "src": "images/dish-mexico-5.webp",
@@ -7872,13 +7711,6 @@ window.PHOTOS = {
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Sancocho_de_espinazo_de_cerdo.jpg"
  },
- "dish-colombia-5": {
-  "src": "images/dish-colombia-5.webp",
-  "alt": "Aguapanela",
-  "credit": "William Neuheisel from DC, US",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Agua_Panela_con_Queso_Fresco_at_La_Puerta_Falsa_(5617496209).jpg"
- },
  "dish-argentina-0": {
   "src": "images/dish-argentina-0.webp",
   "alt": "Asado",
@@ -7907,13 +7739,6 @@ window.PHOTOS = {
   "license": "CC BY 2.5 ar",
   "page": "https://commons.wikimedia.org/wiki/File:Milanesa_con_fritas.png"
  },
- "dish-argentina-4": {
-  "src": "images/dish-argentina-4.webp",
-  "alt": "Dulce de leche",
-  "credit": "audinou from Paris, France",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:DulceDeLeche.jpg"
- },
  "dish-argentina-5": {
   "src": "images/dish-argentina-5.webp",
   "alt": "Mate",
@@ -7935,33 +7760,12 @@ window.PHOTOS = {
   "license": "CC BY-SA 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Falafels_2.jpg"
  },
- "dish-egypt-3": {
-  "src": "images/dish-egypt-3.webp",
-  "alt": "Hawawshi",
-  "credit": "Mkevy",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Egyptian_meatloaf.jpg"
- },
  "dish-egypt-4": {
   "src": "images/dish-egypt-4.webp",
   "alt": "Feteer",
   "credit": "Mohamed Ouda",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Egyptian-food-16.jpg"
- },
- "dish-egypt-5": {
-  "src": "images/dish-egypt-5.webp",
-  "alt": "Karkade",
-  "credit": "Emna Mizouni",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Hibiscus_tea.jpg"
- },
- "dish-jordan-0": {
-  "src": "images/dish-jordan-0.webp",
-  "alt": "Mansaf",
-  "credit": "Jktab",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Mansaf,_the_traditional_dish_of_Jordan.jpg"
  },
  "dish-jordan-2": {
   "src": "images/dish-jordan-2.webp",
@@ -7990,13 +7794,6 @@ window.PHOTOS = {
   "credit": "elif ayse",
   "license": "CC BY 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:K%C3%BCnefe.jpg"
- },
- "dish-tunisia-0": {
-  "src": "images/dish-tunisia-0.webp",
-  "alt": "Brik",
-  "credit": "Muckster",
-  "license": "CC BY 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Brikdish.jpg"
  },
  "dish-tunisia-1": {
   "src": "images/dish-tunisia-1.webp",
@@ -8040,13 +7837,6 @@ window.PHOTOS = {
   "license": "CC BY 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Okonomiyaki_001.jpg"
  },
- "dish-japan-3": {
-  "src": "images/dish-japan-3.webp",
-  "alt": "Takoyaki",
-  "credit": "加茂川の民",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%A8%E3%83%9D%E3%83%B3%E9%85%A2%E3%81%AE%E3%81%9F%E3%81%93%E7%84%BC%E3%81%8D.jpg"
- },
  "dish-japan-4": {
   "src": "images/dish-japan-4.webp",
   "alt": "Gyudon",
@@ -8074,13 +7864,6 @@ window.PHOTOS = {
   "credit": "Jessartcam",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:The_Best_Sinigang_Cuisine.jpg"
- },
- "dish-philippines-2": {
-  "src": "images/dish-philippines-2.webp",
-  "alt": "Balut",
-  "credit": "JBYBIOSA",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:The_Balut.jpg"
  },
  "dish-philippines-3": {
   "src": "images/dish-philippines-3.webp",
@@ -8130,13 +7913,6 @@ window.PHOTOS = {
   "credit": "Giddy98",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Nyonya_Laksa.jpg"
- },
- "dish-malaysia-5": {
-  "src": "images/dish-malaysia-5.webp",
-  "alt": "Teh tarik",
-  "credit": "Yu Chu Chin",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Teh_Tarik_at_the_Iskandar_Curry_House_at_One_Riverside_(DSCF0286).jpg"
  },
  "culture-thailand-0": {
   "src": "images/culture-thailand-0.webp",
@@ -8222,20 +7998,6 @@ window.PHOTOS = {
   "license": "CC BY-SA 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Danseuses_kmer_(2).JPG"
  },
- "culture-cambodia-1": {
-  "src": "images/culture-cambodia-1.webp",
-  "alt": "The krama, a checked scarf used for almost everything",
-  "credit": "Ik T",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Krama_-_%E3%81%8A%E5%9C%9F%E7%94%A3%E3%81%AB%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%AF%E3%83%AD%E3%83%9E%E3%83%BC%EF%BC%88%E3%83%9E%E3%83%95%E3%83%A9%E3%83%BC%EF%BC%89.jpg"
- },
- "culture-laos-0": {
-  "src": "images/culture-laos-0.webp",
-  "alt": "A baci ceremony, tying white strings for good luck",
-  "credit": "Dalbera",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Baci_ceremony.jpg"
- },
  "culture-laos-1": {
   "src": "images/culture-laos-1.webp",
   "alt": "Pha That Luang, Vientiane's golden stupa and national symbol",
@@ -8263,13 +8025,6 @@ window.PHOTOS = {
   "credit": "Bahnfrend",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Jeepney,_Magallanes_Drive,_Intramuros,_2018_(02).jpg"
- },
- "culture-malaysia-2": {
-  "src": "images/culture-malaysia-2.webp",
-  "alt": "The moon kite of Kelantan, a symbol of Malay craft",
-  "credit": "D.W. Fisher-Freberg",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Wau_bulan_Pasir_Gudang.JPG"
  },
  "culture-india-0": {
   "src": "images/culture-india-0.webp",
@@ -8313,20 +8068,6 @@ window.PHOTOS = {
   "license": "CC BY 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Kandy_Dance_(6493011161).jpg"
  },
- "culture-south-korea-0": {
-  "src": "images/culture-south-korea-0.webp",
-  "alt": "Hanbok, worn for Chuseok, Lunar New Year and weddings",
-  "credit": "Republic of Korea from Seoul, Republic of Korea",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Hanbok_Day_2016_29_(30467033136).jpg"
- },
- "culture-south-korea-1": {
-  "src": "images/culture-south-korea-1.webp",
-  "alt": "Talchum, a satirical masked dance drama",
-  "credit": "by lismith28 at Flickr",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Korean_mask_dance-Eunyul_talchum-03.jpg"
- },
  "culture-south-korea-2": {
   "src": "images/culture-south-korea-2.webp",
   "alt": "Bulguksa, a Silla era Buddhist temple in Gyeongju",
@@ -8341,26 +8082,12 @@ window.PHOTOS = {
   "license": "CC BY 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:IMGP0739_(19415725842).jpg"
  },
- "culture-china-1": {
-  "src": "images/culture-china-1.webp",
-  "alt": "Lion dancers bring luck at Chinese New Year",
-  "credit": "Bearictran",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:A_lion_dance_competition_in_Dallas,_Texas.jpg"
- },
  "culture-taiwan-0": {
   "src": "images/culture-taiwan-0.webp",
   "alt": "Taipei's Longshan Temple, busy with worshippers day and night",
   "credit": "This Photo was taken by Supanut Arunoprayote. Feel free to use any of my images,",
   "license": "CC BY 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Bangka_Lungshan_Temple_07.23.jpg"
- },
- "culture-taiwan-1": {
-  "src": "images/culture-taiwan-1.webp",
-  "alt": "Glove puppetry, a beloved Taiwanese folk theatre called budaixi",
-  "credit": "Wikimedia Commons contributor",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Taiwan-Puppet-Monkey-god2.jpg"
  },
  "culture-taiwan-2": {
   "src": "images/culture-taiwan-2.webp",
@@ -8390,13 +8117,6 @@ window.PHOTOS = {
   "license": "CC BY 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:The_facade_of_the_Sultan_Mosque_facing_Bussorah_Street_(Cropped).jpg"
  },
- "culture-portugal-0": {
-  "src": "images/culture-portugal-0.webp",
-  "alt": "Fado, Lisbon's soulful music of longing and saudade",
-  "credit": "José Malhoa",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Jose_malhoa_fado.jpg"
- },
  "culture-portugal-1": {
   "src": "images/culture-portugal-1.webp",
   "alt": "Painted blue tiles covering churches, stations and homes",
@@ -8411,27 +8131,6 @@ window.PHOTOS = {
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Fatima_BW_2018-10-07_10-36-14.jpg"
  },
- "culture-spain-1": {
-  "src": "images/culture-spain-1.webp",
-  "alt": "Valencia's Fallas, where giant figures burn every March",
-  "credit": "Francesc Fort",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Natura_Mare_(2).jpg"
- },
- "culture-spain-2": {
-  "src": "images/culture-spain-2.webp",
-  "alt": "Catalan human towers, built at festivals across Catalonia",
-  "credit": "Colla Vella dels Xiquets de Valls",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Colla_Vella_dels_Xiquets_de_Valls_-_Primer_2de9_amb_folre_i_manilles_descarregat_de_la_hist%C3%B2ria_-_Diada_de_Santa_%C3%9Arsula_1994.jpg"
- },
- "culture-france-2": {
-  "src": "images/culture-france-2.webp",
-  "alt": "Pétanque, the boules game played in southern squares",
-  "credit": "Wikimedia Commons contributor",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Petanque_on_a_beach_of_Nice.jpg"
- },
  "culture-italy-0": {
   "src": "images/culture-italy-0.webp",
   "alt": "Masked revellers fill Venice before Lent",
@@ -8445,20 +8144,6 @@ window.PHOTOS = {
   "credit": "Photojournalist Roberto Vicario",
   "license": "CC BY-SA 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Palio_di_Siena_2008_(2).jpg"
- },
- "culture-italy-2": {
-  "src": "images/culture-italy-2.webp",
-  "alt": "Venice's flat-bottomed boats, rowed standing up",
-  "credit": "Njsmith3",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Gondola_Ride.jpg"
- },
- "culture-greece-0": {
-  "src": "images/culture-greece-0.webp",
-  "alt": "The Evzones, presidential guards in kilted fustanella uniforms",
-  "credit": "Panos Aravantinos (1886-1930)",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Evzones,_ca._1900.jpg"
  },
  "culture-greece-1": {
   "src": "images/culture-greece-1.webp",
@@ -8480,13 +8165,6 @@ window.PHOTOS = {
   "credit": "Seanpu1",
   "license": "CC BY-SA 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Licitars2.jpg"
- },
- "culture-croatia-2": {
-  "src": "images/culture-croatia-2.webp",
-  "alt": "Sinjska alka, a knights' tournament held every August in Sinj",
-  "credit": "User:PJL",
-  "license": "CC BY-SA 2.5",
-  "page": "https://commons.wikimedia.org/wiki/File:Alkar_2_-_cropped.jpg"
  },
  "culture-uk-0": {
   "src": "images/culture-uk-0.webp",
@@ -8515,13 +8193,6 @@ window.PHOTOS = {
   "credit": "John Benson",
   "license": "CC BY 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Trinity_Academy_of_Irish_Dance.jpg"
- },
- "culture-ireland-1": {
-  "src": "images/culture-ireland-1.webp",
-  "alt": "The Aran jumper, knitted on the islands off Galway",
-  "credit": "Lisa Dusseault from USA",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Aran_cardigan.jpg"
  },
  "culture-ireland-2": {
   "src": "images/culture-ireland-2.webp",
@@ -8558,13 +8229,6 @@ window.PHOTOS = {
   "license": "CC BY 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Klompen_(Dutch_Clogs),_Wooden_Shoes_Museum_in_Drenthe.jpg"
  },
- "culture-netherlands-2": {
-  "src": "images/culture-netherlands-2.webp",
-  "alt": "Blue and white pottery made in Delft since the 1600s",
-  "credit": "Daderot",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Vase,_c._1680,_Delft,_Netherlands,_tin-glazed_earthenware_-_Art_Institute_of_Chicago_-_DSC09979.JPG"
- },
  "culture-czechia-0": {
   "src": "images/culture-czechia-0.webp",
   "alt": "Prague's medieval astronomical clock, still ticking since 1410",
@@ -8586,13 +8250,6 @@ window.PHOTOS = {
   "license": "CC BY-SA 2.5",
   "page": "https://commons.wikimedia.org/wiki/File:Busojaras-Buso_and_Son.jpg"
  },
- "culture-hungary-2": {
-  "src": "images/culture-hungary-2.webp",
-  "alt": "Csárdás, Hungary's fast, foot-stamping folk dance",
-  "credit": "Lipót Strelisky",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Cs%C3%A1rd%C3%A1s.tif"
- },
  "culture-austria-0": {
   "src": "images/culture-austria-0.webp",
   "alt": "The dirndl, traditional Alpine dress worn at festivals",
@@ -8600,26 +8257,12 @@ window.PHOTOS = {
   "license": "CC BY 3.0 de",
   "page": "https://commons.wikimedia.org/wiki/File:Volksfestumzug_in_Vilshofen_a.d._Donau_2012_(3).JPG"
  },
- "culture-austria-1": {
-  "src": "images/culture-austria-1.webp",
-  "alt": "Horned Krampus figures chasing crowds in early December",
-  "credit": "Naturpuur",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Hl._Nikolaus_in_Begleitung_des_Krampus_und_Engeln.jpg"
- },
  "culture-austria-2": {
   "src": "images/culture-austria-2.webp",
   "alt": "Vienna's grand ball season, with waltzes in the State Opera",
   "credit": "infraredhorsebite",
   "license": "CC BY 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Wiener_Staatsoper.jpg"
- },
- "culture-switzerland-0": {
-  "src": "images/culture-switzerland-0.webp",
-  "alt": "The alphorn, a long wooden horn once used by herders",
-  "credit": "Harald Fritz",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Musikinstrumenten-Museum_Berlin_-_Alphorn_in_Fis_-_1108187.jpg"
  },
  "culture-switzerland-1": {
   "src": "images/culture-switzerland-1.webp",
@@ -8635,13 +8278,6 @@ window.PHOTOS = {
   "license": "CC0",
   "page": "https://commons.wikimedia.org/wiki/File:Five_Gugge_at_Fasnacht_Basel_2024_on_Mittlere_Br%C3%BCcke_03.jpg"
  },
- "culture-iceland-0": {
-  "src": "images/culture-iceland-0.webp",
-  "alt": "The lopapeysa, a wool sweater with a patterned yoke",
-  "credit": "Freimut Bahlo",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Islandpullover_004.jpg"
- },
  "culture-iceland-1": {
   "src": "images/culture-iceland-1.webp",
   "alt": "Hallgrímskirkja, Reykjavik's church inspired by basalt columns",
@@ -8655,13 +8291,6 @@ window.PHOTOS = {
   "credit": "Kjallakr (talk)",
   "license": "CC BY-SA 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Icelandic_mens_national_costume.PNG"
- },
- "culture-norway-0": {
-  "src": "images/culture-norway-0.webp",
-  "alt": "Regional folk costumes worn on Constitution Day",
-  "credit": "Wikimedia Commons contributor",
-  "license": "Copyrighted free use",
-  "page": "https://commons.wikimedia.org/wiki/File:KinsarvikBunad.jpg"
  },
  "culture-norway-1": {
   "src": "images/culture-norway-1.webp",
@@ -8684,13 +8313,6 @@ window.PHOTOS = {
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:%CE%91%CE%BB%CE%B1%CF%84%CF%89%CF%81%CF%85%CF%87%CE%B5%CE%AF%CE%B1_%CE%92%CE%B9%CE%B5%CE%BB%CE%AF%CF%84%CF%83%CE%BA%CE%B1_5021.jpg"
  },
- "culture-poland-1": {
-  "src": "images/culture-poland-1.webp",
-  "alt": "Wycinanki, colourful Polish folk paper cutting",
-  "credit": "Unknown authorUnknown author",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Wycinanka_lubelska,_1915.jpg"
- },
  "culture-poland-2": {
   "src": "images/culture-poland-2.webp",
   "alt": "Jasna Góra, Poland's great pilgrimage shrine in Częstochowa",
@@ -8698,33 +8320,12 @@ window.PHOTOS = {
   "license": "CC BY-SA 3.0 pl",
   "page": "https://commons.wikimedia.org/wiki/File:Cz%C4%99stochowa_klasztor_Jasna_G%C3%B3ra-2162.jpg"
  },
- "culture-albania-0": {
-  "src": "images/culture-albania-0.webp",
-  "alt": "The xhubleta, a bell-shaped wool skirt from the northern highlands",
-  "credit": "Pjetër Marubi (1834-1903)",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Marubi_photograph_woman_from_Grud%C3%AB.jpg"
- },
- "culture-albania-1": {
-  "src": "images/culture-albania-1.webp",
-  "alt": "The qeleshe, the white felt cap worn by Albanian men",
-  "credit": "Arbenllapashtica",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Old_man_of_Has_of_Prizren.jpg"
- },
  "culture-albania-2": {
   "src": "images/culture-albania-2.webp",
   "alt": "Iso-polyphony, the layered folk singing of southern Albania",
   "credit": "A_traditional_male_folk_group_from_Skrapar.JPG: Gerd 72 (talk). The original upl",
   "license": "Public domain",
   "page": "https://commons.wikimedia.org/wiki/File:Fustanela_001.jpg"
- },
- "culture-georgia-0": {
-  "src": "images/culture-georgia-0.webp",
-  "alt": "The chokha, a wool coat with cartridge pockets",
-  "credit": "Pyotr Gankevich",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD_%D0%93%D0%B5%D0%BB%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8_(A).JPG"
  },
  "culture-georgia-1": {
   "src": "images/culture-georgia-1.webp",
@@ -8754,13 +8355,6 @@ window.PHOTOS = {
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Kapadokya%27dan_Nazar_Boncu%C4%9Fu.jpg"
  },
- "culture-morocco-0": {
-  "src": "images/culture-morocco-0.webp",
-  "alt": "The djellaba, a hooded robe worn by men and women",
-  "credit": "Daderot",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Morocco,_djellaba,_end_of_20th_century_-_Bunka_Gakuen_Costume_Museum_-_DSC05317.JPG"
- },
  "culture-morocco-1": {
   "src": "images/culture-morocco-1.webp",
   "alt": "Gnawa music, trance rhythms with roots in West Africa",
@@ -8789,33 +8383,12 @@ window.PHOTOS = {
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:%D8%AE%D8%A7%D9%86_%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D9%84%D9%8A_1.jpg"
  },
- "culture-uae-2": {
-  "src": "images/culture-uae-2.webp",
-  "alt": "Yowlah, a dance where performers spin and toss rifles",
-  "credit": "Kalashae",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Yowlah.jpg"
- },
- "culture-south-africa-0": {
-  "src": "images/culture-south-africa-0.webp",
-  "alt": "Kaapse Klopse troupes parading Cape Town in early January",
-  "credit": "Olga Ernst",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Cape_Minstrel_at_Cape_Town_Minstrel_Carnival_(2017).jpg"
- },
  "culture-south-africa-1": {
   "src": "images/culture-south-africa-1.webp",
   "alt": "Cape Town's colourful Cape Malay neighbourhood",
   "credit": "SkyPixels",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Boe-Kaap.jpg"
- },
- "culture-south-africa-2": {
-  "src": "images/culture-south-africa-2.webp",
-  "alt": "A stomping dance born in South Africa's gold mines",
-  "credit": "Laura SA at English Wikipedia",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Bootsa.jpg"
  },
  "culture-kenya-0": {
   "src": "images/culture-kenya-0.webp",
@@ -8873,20 +8446,6 @@ window.PHOTOS = {
   "license": "CC BY-SA 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Alebrijes_in_Oaxaca,_Mexico_2009.jpg"
  },
- "culture-guatemala-0": {
-  "src": "images/culture-guatemala-0.webp",
-  "alt": "The huipil, a woven blouse whose patterns identify each village",
-  "credit": "Daderot",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Huipil,_skirt,_belt_(c.1950),_shawl,_Ixil_Maya,_Nebaj,_mid_to_late_20th_century,_cotton_-_Textile_Museum_of_Canada_-_DSC01351.JPG"
- },
- "culture-guatemala-1": {
-  "src": "images/culture-guatemala-1.webp",
-  "alt": "Maximón, the cigar-smoking folk saint of the highlands",
-  "credit": "Aydinphotos",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Maximon_in_Santiago_Atitlan,_Guatemala.jpg"
- },
  "culture-costa-rica-0": {
   "src": "images/culture-costa-rica-0.webp",
   "alt": "Painted oxcarts, a national symbol made in Sarchí",
@@ -8907,13 +8466,6 @@ window.PHOTOS = {
   "credit": "Manuel Díaz Reyes",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Bailarines_de_rumba_cubana_en_la_plaza_de_los_trabajadores_de_Camag%C3%BCey,_Cuba.jpg"
- },
- "culture-cuba-2": {
-  "src": "images/culture-cuba-2.webp",
-  "alt": "An Afro-Haitian drum and dance tradition from eastern Cuba",
-  "credit": "Christian Pirkl",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Guant%C3%A1namo_CF9A1071.jpg"
  },
  "culture-colombia-0": {
   "src": "images/culture-colombia-0.webp",
@@ -8964,26 +8516,12 @@ window.PHOTOS = {
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Alasitas_desde_el_telef%C3%A9rico.jpg"
  },
- "culture-ecuador-0": {
-  "src": "images/culture-ecuador-0.webp",
-  "alt": "The toquilla straw hat, actually made in Ecuador",
-  "credit": "Hex",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Panama_hat.jpg"
- },
  "culture-ecuador-2": {
   "src": "images/culture-ecuador-2.webp",
   "alt": "Ingapirca, Ecuador's largest Inca and Cañari site",
   "credit": "Delphine Ménard",
   "license": "CC BY-SA 2.0 fr",
   "page": "https://commons.wikimedia.org/wiki/File:Ecuador_ingapirca_inca_ruins.jpg"
- },
- "culture-argentina-0": {
-  "src": "images/culture-argentina-0.webp",
-  "alt": "Tango, born in the port bars of Buenos Aires",
-  "credit": "Coquimbo58",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Tango_dancers_in_Montevideo.png"
  },
  "culture-argentina-2": {
   "src": "images/culture-argentina-2.webp",
@@ -8999,13 +8537,6 @@ window.PHOTOS = {
   "license": "CC BY-SA 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Cueca_en_La_Moneda.jpg"
  },
- "culture-chile-1": {
-  "src": "images/culture-chile-1.webp",
-  "alt": "Painted wooden churches built by Chiloé islanders",
-  "credit": "Rodrigo Basaure",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Iglesia_de_Achao-fachada.jpg"
- },
  "culture-chile-2": {
   "src": "images/culture-chile-2.webp",
   "alt": "The giant stone moai of Rapa Nui, Easter Island",
@@ -9019,13 +8550,6 @@ window.PHOTOS = {
   "credit": "Agência Brasil/Marco Antonio Cavalcanti",
   "license": "CC BY 3.0 br",
   "page": "https://commons.wikimedia.org/wiki/File:Mangueira_2013_130211.jpg"
- },
- "culture-brazil-1": {
-  "src": "images/culture-brazil-1.webp",
-  "alt": "Capoeira, a mix of martial art, music and dance",
-  "credit": "Johann Moritz Rugendas",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Rugendasroda.jpg"
  },
  "culture-usa-1": {
   "src": "images/culture-usa-1.webp",
@@ -9054,34 +8578,6 @@ window.PHOTOS = {
   "credit": "Ansgar Walk",
   "license": "CC BY-SA 2.5",
   "page": "https://commons.wikimedia.org/wiki/File:Inuksukjuaq_Foxe-PI_2002-07-26.jpg"
- },
- "culture-canada-2": {
-  "src": "images/culture-canada-2.webp",
-  "alt": "Quebec's maple sugar shacks, busy every spring",
-  "credit": "Wikimedia Commons contributor",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Sugar_house.jpg"
- },
- "culture-australia-2": {
-  "src": "images/culture-australia-2.webp",
-  "alt": "Anzac Day, with dawn services across the country each April",
-  "credit": "Gnangarra",
-  "license": "CC BY 2.5 au",
-  "page": "https://commons.wikimedia.org/wiki/File:Dawn_service_gnangarra_03.jpg"
- },
- "culture-new-zealand-0": {
-  "src": "images/culture-new-zealand-0.webp",
-  "alt": "The haka, a Māori challenge and ceremonial dance",
-  "credit": "Merrett, Joseph Jenner, 1816-1854.",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:MaoriWardanceKahuroa.jpg"
- },
- "culture-new-zealand-1": {
-  "src": "images/culture-new-zealand-1.webp",
-  "alt": "Tā moko, traditional Māori tattooing of face and body",
-  "credit": "Thomas Chambers / After Sydney Parkinson",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:MaoriChief1784.jpg"
  },
  "culture-new-zealand-2": {
   "src": "images/culture-new-zealand-2.webp",
@@ -9118,20 +8614,6 @@ window.PHOTOS = {
   "license": "CC BY-SA 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Iksan_City_48_Korean_Style_Fried_chicken.jpg"
  },
- "dish-south-korea-4": {
-  "src": "images/dish-south-korea-4.webp",
-  "alt": "Samgyeopsal",
-  "credit": "jinsoo jang",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Samgyeopsal-gui.jpg"
- },
- "dish-south-korea-5": {
-  "src": "images/dish-south-korea-5.webp",
-  "alt": "Hotteok",
-  "credit": "Korea.net / Korean Culture and Information Service",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Hotteok.jpg"
- },
  "dish-china-0": {
   "src": "images/dish-china-0.webp",
   "alt": "Jiaozi",
@@ -9159,20 +8641,6 @@ window.PHOTOS = {
   "credit": "ZhengZhou",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Chen_Mapo_Tofu.jpg"
- },
- "dish-china-4": {
-  "src": "images/dish-china-4.webp",
-  "alt": "Hot pot",
-  "credit": "Praneeth Thalla",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Hot_Pot.jpg"
- },
- "dish-china-5": {
-  "src": "images/dish-china-5.webp",
-  "alt": "Baozi",
-  "credit": "Popo le Chien",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Baozi_Chengdu.JPG"
  },
  "dish-taiwan-0": {
   "src": "images/dish-taiwan-0.webp",
@@ -9209,13 +8677,6 @@ window.PHOTOS = {
   "license": "CC0",
   "page": "https://commons.wikimedia.org/wiki/File:Stinkender_Tofu_1.JPG"
  },
- "dish-singapore-0": {
-  "src": "images/dish-singapore-0.webp",
-  "alt": "Hainanese chicken rice",
-  "credit": "No machine-readable author provided. Terence assumed (based on copyright claims)",
-  "license": "CC BY 2.5",
-  "page": "https://commons.wikimedia.org/wiki/File:Hainanese_Chicken_Rice.jpg"
- },
  "dish-singapore-3": {
   "src": "images/dish-singapore-3.webp",
   "alt": "Chilli crab",
@@ -9244,13 +8705,6 @@ window.PHOTOS = {
   "license": "CC BY-SA 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Bacalhau_a_Bras.jpg"
  },
- "dish-portugal-2": {
-  "src": "images/dish-portugal-2.webp",
-  "alt": "Francesinha",
-  "credit": "TheRealDapperDan",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Francesinha_Sandwich_(cropped).jpg"
- },
  "dish-portugal-3": {
   "src": "images/dish-portugal-3.webp",
   "alt": "Bifana",
@@ -9258,33 +8712,12 @@ window.PHOTOS = {
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Porto-style_Bifana_sandwich_with_egg.jpg"
  },
- "dish-portugal-4": {
-  "src": "images/dish-portugal-4.webp",
-  "alt": "Caldo verde",
-  "credit": "Mateus Hidalgo",
-  "license": "CC BY-SA 2.5 br",
-  "page": "https://commons.wikimedia.org/wiki/File:Caldo_verde.jpg"
- },
- "dish-portugal-5": {
-  "src": "images/dish-portugal-5.webp",
-  "alt": "Ginjinha",
-  "credit": "MiguelAlanCS",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Ginjinha_2020.jpg"
- },
  "dish-spain-0": {
   "src": "images/dish-spain-0.webp",
   "alt": "Tortilla española",
   "credit": "Kent Wang",
   "license": "CC BY-SA 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Tortilla_de_patata_-_San_Sebasti%C3%A1n.jpg"
- },
- "dish-spain-1": {
-  "src": "images/dish-spain-1.webp",
-  "alt": "Patatas bravas",
-  "credit": "Krista",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Patatas_bravas_madrid.jpg"
  },
  "dish-spain-2": {
   "src": "images/dish-spain-2.webp",
@@ -9306,13 +8739,6 @@ window.PHOTOS = {
   "credit": "Cantabrucu",
   "license": "CC0",
   "page": "https://commons.wikimedia.org/wiki/File:Jamon_iberico_de_bellota_2_(cinco_jotas).jpg"
- },
- "dish-spain-5": {
-  "src": "images/dish-spain-5.webp",
-  "alt": "Gazpacho",
-  "credit": "Haydn Blackey",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Gazpacho_Malague%C3%B1o_con_su_%E2%80%9Cpica%C3%ADto%E2%80%9D_-_Moreno,_Playa_Burriana_(cropped).jpg"
  },
  "dish-france-0": {
   "src": "images/dish-france-0.webp",
@@ -9384,13 +8810,6 @@ window.PHOTOS = {
   "license": "Public domain",
   "page": "https://commons.wikimedia.org/wiki/File:Pizza_al_taglio.jpg"
  },
- "dish-italy-4": {
-  "src": "images/dish-italy-4.webp",
-  "alt": "Gelato",
-  "credit": "EquipmentAndConcepts",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Delicious_Gelato_on_display.jpg"
- },
  "dish-italy-5": {
   "src": "images/dish-italy-5.webp",
   "alt": "Spritz",
@@ -9447,13 +8866,6 @@ window.PHOTOS = {
   "license": "CC BY-SA 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Cevapi_s_kajmakom.jpg"
  },
- "dish-croatia-3": {
-  "src": "images/dish-croatia-3.webp",
-  "alt": "Zagorski štrukli",
-  "credit": "Bonč",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:%C5%A0trukli_iz_Okrugljaka.jpg"
- },
  "dish-croatia-4": {
   "src": "images/dish-croatia-4.webp",
   "alt": "Pašticada",
@@ -9496,13 +8908,6 @@ window.PHOTOS = {
   "license": "CC BY-SA 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Cornish_Pasty_(cropped).jpeg"
  },
- "dish-uk-5": {
-  "src": "images/dish-uk-5.webp",
-  "alt": "Haggis",
-  "credit": "Chris Brown",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Scotland_Haggis.jpg"
- },
  "dish-ireland-0": {
   "src": "images/dish-ireland-0.webp",
   "alt": "Irish stew",
@@ -9517,26 +8922,12 @@ window.PHOTOS = {
   "license": "CC BY-SA 3.0 at",
   "page": "https://commons.wikimedia.org/wiki/File:Full_English_breakfast_(cropped).jpg"
  },
- "dish-ireland-2": {
-  "src": "images/dish-ireland-2.webp",
-  "alt": "Soda bread",
-  "credit": "w:en:User:Canterbury Tail",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Ben_W_Bell_Soda_Bread_Farl_05_June_2007.jpg"
- },
  "dish-ireland-3": {
   "src": "images/dish-ireland-3.webp",
   "alt": "Boxty",
   "credit": "さえぼー",
   "license": "CC0",
   "page": "https://commons.wikimedia.org/wiki/File:Boxty_triangle.jpg"
- },
- "dish-ireland-4": {
-  "src": "images/dish-ireland-4.webp",
-  "alt": "Spice bag",
-  "credit": "Sean Zissou",
-  "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Spice_Bag_(cropped).jpg"
  },
  "dish-ireland-5": {
   "src": "images/dish-ireland-5.webp",
@@ -9558,5 +8949,59 @@ window.PHOTOS = {
   "credit": "Sundar1",
   "license": "CC BY-SA 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:BrezelnSalz02_(cropped).JPG"
+ },
+ "vibe-beach": {
+  "src": "images/vibe-beach.webp",
+  "alt": "Maya Bay, Koh Phi Phi, Thailand",
+  "credit": "Nicolas Vollmer",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/nicolas_vollmer_photo/13333176654/",
+  "source": "flickr",
+  "hd": "images/hd/vibe-beach.webp"
+ },
+ "vibe-trekking": {
+  "src": "images/vibe-trekking.webp",
+  "alt": "Poon Hill, Annapurna, Nepal",
+  "credit": "Matt Zimmerman",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/mattzim/15057650650/",
+  "source": "flickr",
+  "hd": "images/hd/vibe-trekking.webp"
+ },
+ "vibe-food": {
+  "src": "images/vibe-food.webp",
+  "alt": "Raohe Night Market, Taipei, Taiwan",
+  "credit": "a.canvas.of.light",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/jhlau/38781014661/",
+  "source": "flickr",
+  "hd": "images/hd/vibe-food.webp"
+ },
+ "vibe-culture": {
+  "src": "images/vibe-culture.webp",
+  "alt": "Hoi An old town, Vietnam",
+  "credit": "Loi Nguyen Duc",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/85675121@N04/12810913854/",
+  "source": "flickr",
+  "hd": "images/hd/vibe-culture.webp"
+ },
+ "vibe-offbeat": {
+  "src": "images/vibe-offbeat.webp",
+  "alt": "Ushguli, Svaneti, Georgia",
+  "credit": "Arian Zwegers",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/azwegers/35923023802/",
+  "source": "flickr",
+  "hd": "images/hd/vibe-offbeat.webp"
+ },
+ "vibe-city": {
+  "src": "images/vibe-city.webp",
+  "alt": "Shibuya Crossing, Tokyo, Japan",
+  "credit": "Abubakr Saeed (Busy)",
+  "license": "CC BY 2.0",
+  "page": "https://www.flickr.com/photos/51110738@N04/52546982006/",
+  "source": "flickr",
+  "hd": "images/hd/vibe-city.webp"
  }
 };
