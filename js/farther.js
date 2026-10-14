@@ -93,7 +93,9 @@
 
   /* Quick book: pick a place and dates, get flights, beds and things to do with the dates filled in. */
   const qb = $("#qb-form");
-  if (qb) {
+  // It is only booking links, so it hides while partner links are switched off (js/affiliates.js).
+  if (qb && window.partnersOn && !window.partnersOn()) $("#quick-book").hidden = true;
+  else if (qb) {
     const places = F.C.filter(c => !c.advisory).flatMap(c => F.popularOf(c).slice(0, 4));
     const label = d => `${d.name}, ${d.country}`;
     const byLabel = new Map(places.map(d => [label(d).toLowerCase(), d]));

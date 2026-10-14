@@ -2654,3 +2654,7 @@ body, button, input, select, textarea { font-family: var(--font-body); }
 .sw-s { color: var(--muted); font-size: 0.9rem; }
 .start-way:first-child { background: var(--sun-soft); border-color: var(--sun); }
 @media (max-width: 760px) { .start-ways { grid-template-columns: 1fr; } }
+
+/* Country cost card, shown in place of the booking dock while partner links are off. */
+.bd-plain span { display: inline-flex; gap: 6px; align-items: baseline; padding: 5px 12px; border-radius: 999px; background: var(--bg); border: 2px solid var(--line, rgba(42, 22, 8, .15)); font-weight: 700; font-size: .9rem; }
+.bd-plain b { color: var(--orange-deep); }

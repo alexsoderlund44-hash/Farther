@@ -2,6 +2,8 @@
   "use strict";
 
   const D = window.DESTINATIONS = window.buildDestinations();
+  // Partner links are switched off site-wide in js/affiliates.js; sections that only held links hide with them.
+  const LINKS_ON = window.partnersOn ? window.partnersOn() : true;
   const MAX_BUDGET = 150; // the daily budget slider's top value, meaning "any"
   const C = window.COUNTRIES;
   const byId = Object.fromEntries(D.map(d => [d.id, d]));
@@ -98,7 +100,7 @@
         <h3>${esc(d.name)}</h3>
         <p class="card-desc">${esc(d.highlight)}</p>
         <div class="tags">${d.tags.map(t => `<span class="tag">${tagLabel(t)}</span>`).join("")}</div>
-        ${countryById[d.countryId].advisory ? "" : `<p class="row-beds">Beds from about <strong class="num">${money(d.daily.bed)}</strong>: ${partnersFor("stays", d).map(k => partnerLink(k, d)).join(" · ")}</p>`}
+        ${countryById[d.countryId].advisory ? "" : `<p class="row-beds">Beds from about <strong class="num">${money(d.daily.bed)}</strong>${LINKS_ON ? `: ${partnersFor("stays", d).map(k => partnerLink(k, d)).join(" · ")}` : " a night"}</p>`}
       </div>
       <div class="place-side">
         <div class="price"><strong>${money(perDay(d))}</strong><span>per day</span>${costBar(d)}</div>
@@ -958,7 +960,7 @@
       `<h3 class="story-kicker">The dishes to try</h3><ol class="dish-list">${food.map(dishRow).join("")}</ol>
         ${(g.eat_beats || []).length ? `<h3 class="story-kicker">Eat like a local</h3>${beats(g.eat_beats, pic, 3)}` : ""}
         ${(g.drinks || []).length ? `<h3 class="story-kicker">What to drink</h3><div class="drinks">${g.drinks.map(d => `<div class="drink"><h4>${esc(d.name)}</h4><p>${beatText(d.desc)}</p></div>`).join("")}</div>` : ""}
-        ${open ? `<p class="g-cta">Hungry for more? ${partnerLink("getyourguide", top, null, `Find a food tour in ${esc(top.name)}`)}</p>` : ""}`,
+        ${open && LINKS_ON ? `<p class="g-cta">Hungry for more? ${partnerLink("getyourguide", top, null, `Find a food tour in ${esc(top.name)}`)}</p>` : ""}`,
       foodCosts.length ? sideBox("Food money per day", `<ul class="food-costs">${foodCosts.map(d => `<li><span>${esc(d.name)}</span><b class="num">${money(d.daily.food)}</b></li>`).join("")}</ul><p class="muted small">Three cheap local meals and a drink or two, per person.</p>`) : "");
     // Culture: short sections (greetings, dress, the table, faith) with photos of the customs themselves,
     // a pocket phrasebook, then the do's and don'ts.
@@ -982,12 +984,12 @@
     out.sleep = story(banner("sleep", "Where to sleep", `Cheap beds in ${esc(c.name)}`, lead(g.sleep)),
       `<h3 class="story-kicker">Good to know</h3>${beats(rest(g.sleep), pic, 4)}
         ${open ? popular.slice(0, 4).filter(d => (picksOf(d).hostels || []).length).map(d => `<div class="g-hostels"><h3>Popular hostels in ${esc(d.name)}</h3>${hostelCards(d)}</div>`).join("") : ""}`,
-      open ? sideBox("Compare beds", popular.slice(0, 4).map(d => `<div class="g-bedrow"><strong>${esc(d.name)}</strong><span class="muted small">from about ${money(d.daily.bed)} a night</span><p class="g-links">${partnersFor("stays", d).map(k => partnerLink(k, d)).join("")}</p></div>`).join("")) : "");
+      open ? sideBox(LINKS_ON ? "Compare beds" : "Bed prices", popular.slice(0, 4).map(d => `<div class="g-bedrow"><strong>${esc(d.name)}</strong><span class="muted small">from about ${money(d.daily.bed)} a night</span>${LINKS_ON ? `<p class="g-links">${partnersFor("stays", d).map(k => partnerLink(k, d)).join("")}</p>` : ""}</div>`).join("")) : "");
     out.safety = story(banner("safety", "Safety and data", `Staying safe and connected in ${esc(c.name)}`, lead(g.safety) || "What to watch for, and how to stay online."),
       `${g.heads_up ? `<div class="g-heads"><strong>Heads up.</strong> ${beatText(g.heads_up)}</div>` : ""}
         ${rest(g.safety).length ? `<h3 class="story-kicker">Staying safe</h3>${beats(rest(g.safety), pic)}` : ""}
         <h3 class="story-kicker">Phone and data</h3>${beats(sentences(g.data))}`,
-      open ? sideBox("Sort it before you go", `<p class="g-links">${partnerLink("airalo", top, null, `eSIM for ${esc(c.name)}`)}${partnerLink("safetywing", top, null, "Travel insurance")}</p>`) : "");
+      open && LINKS_ON ? sideBox("Sort it before you go", `<p class="g-links">${partnerLink("airalo", top, null, `eSIM for ${esc(c.name)}`)}${partnerLink("safetywing", top, null, "Travel insurance")}</p>`) : "");
     return out;
   }
 
@@ -997,13 +999,16 @@
     bed: '<svg viewBox="0 0 24 24"><path d="M3 18V7m0 7h18v4M21 14v-2.5A3.5 3.5 0 0 0 17.5 8H11v6"/><circle cx="7" cy="10.5" r="1.8"/></svg>',
     ticket: '<svg viewBox="0 0 24 24"><path d="M3 8a2 2 0 0 0 0 4v0a2 2 0 0 1 0 4v2h18v-2a2 2 0 0 1 0-4 2 2 0 0 0 0-4V6H3z" transform="translate(0 -1)"/><path d="M14 5v12" stroke-dasharray="2 2"/></svg>',
     sim: '<svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><rect x="9.5" y="11" width="6" height="6" rx="1"/></svg>',
-    shield: '<svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6z"/><path d="m9 12 2 2 4-4"/></svg>'
+    shield: '<svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6z"/><path d="m9 12 2 2 4-4"/></svg>',
+    food: '<svg viewBox="0 0 24 24"><path d="M7 3v8m-3-8v5a3 3 0 0 0 6 0V3M7 11v10"/><path d="M17 21V3c-2.5 1.5-3.5 4-3.5 7.5H17"/></svg>',
+    bus: '<svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="15" rx="2.5"/><path d="M5 11h14M8 21v-3m8 3v-3"/><circle cx="8.5" cy="14.5" r="1"/><circle cx="15.5" cy="14.5" r="1"/></svg>'
   };
   window.DOCK_IC = DOCK_IC;
   // Booking shortcuts for a country, as one dock: flights, beds, things to do, then the extras.
   function countryBooking(c, popular) {
     const top = popular.slice(0, 4);
     if (!top.length) return "";
+    if (!LINKS_ON) return countryCosts(c, top);
     const bedKey = d => partnersFor("stays", d)[0];
     const home = homeCity();
     const row = (ic, title, sub, links, main) => `<div class="bd-row${main ? " bd-main" : ""}"><span class="bd-ic" aria-hidden="true">${DOCK_IC[ic]}</span>
@@ -1024,34 +1029,49 @@
   const PRODUCTS = window.PRODUCTS || { places: {} };
   const picksOf = d => PRODUCTS.places[d.id] || {};
   const STAR = '<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg>';
+  // While partner links are off, the dock becomes a plain card of what a day there costs, per place.
+  function countryCosts(c, top) {
+    const ps = top.filter(d => d.daily); if (!ps.length) return "";
+    const med = k => { const v = ps.map(d => d.daily[k]).sort((a, b) => a - b); return v[Math.floor(v.length / 2)]; };
+    const row = (ic, title, sub, list) => `<div class="bd-row bd-main"><span class="bd-ic" aria-hidden="true">${DOCK_IC[ic]}</span>
+      <div class="bd-text"><strong>${title}</strong><span class="bd-sub">${sub}</span>${list ? `<span class="bd-links bd-plain">${list}</span>` : ""}</div></div>`;
+    return `<div class="book-trip country-book book-dock">
+        <div class="bd-head"><h3>What ${esc(c.name)} costs</h3><p>Typical prices for one person on a budget.</p></div>
+        ${row("bed", "Beds", `Dorms and guesthouses from about ${money(Math.min(...ps.map(d => d.daily.bed)))} a night`, ps.map(d => `<span>${esc(d.name)} <b class="num">${money(d.daily.bed)}</b></span>`).join(""))}
+        ${row("food", "Food", `About ${money(med("food"))} a day eating where locals eat`)}
+        ${row("bus", "Getting around", `About ${money(med("transport"))} a day on local transport`)}
+        ${row("ticket", "Sights and extras", `About ${money(med("extras"))} a day for entry fees, tours and the odd treat`)}
+      </div>`;
+  }
+
   function hostelCards(d, o = {}) {
     const hs = picksOf(d).hostels || [], when = o.when || null;
-    if (!hs.length) return o.fallback === false ? "" : `<p class="pick-fallback">We haven't hand-picked hostels in ${esc(d.name)} yet. ${partnersFor("stays", d).map(k => partnerLink(k, d, null, `Browse beds on ${AFFILIATES[k].name}`, when)).join(" ")}</p>`;
+    if (!hs.length) return o.fallback === false ? "" : `<p class="pick-fallback">We haven't hand-picked hostels in ${esc(d.name)} yet.${LINKS_ON ? "" : ` Beds there start at about ${money(d.daily.bed)} a night.`} ${partnersFor("stays", d).map(k => partnerLink(k, d, null, `Browse beds on ${AFFILIATES[k].name}`, when)).join(" ")}</p>`;
     return `<div class="picks hostels">${hs.map((h, i) => `<article class="pick">
         <div class="pick-top"><h4>${esc(h.name)}</h4>${h.rating ? `<span class="score" title="${esc(h.rating_source || "")} rating"><b class="num">${(+h.rating).toFixed(1)}</b><small>/10</small></span>` : ""}</div>
         <p class="pick-meta">${h.area ? esc(h.area) : ""}${h.from_usd ? `${h.area ? " · " : ""}dorms from <strong class="num">${money(h.from_usd)}</strong>` : ""}</p>
         ${h.vibe ? `<p class="pick-note">${esc(h.vibe)}</p>` : ""}
-        <div class="pick-actions"><a class="btn small" href="${esc(productUrl("booking", h.name, d, when))}" target="_blank" rel="${productRel("booking")}" data-partner="booking">Check prices</a>
+        <div class="pick-actions">${LINKS_ON ? `<a class="btn small" href="${esc(productUrl("booking", h.name, d, when))}" target="_blank" rel="${productRel("booking")}" data-partner="booking">Check prices</a>` : ""}
           ${o.plan ? `<button class="btn ghost small" type="button" data-pick-hostel="${i}" aria-pressed="${!!(o.stay && o.stay.name === h.name)}">${o.stay && o.stay.name === h.name ? "In your budget" : "Use in my budget"}</button>` : ""}</div>
       </article>`).join("")}</div>
-      <p class="pick-foot">Prices and scores are indicative, checked ${esc(PRODUCTS.checked)}. ${partnerLink("hostelworld", d, null, `More hostels in ${esc(d.name)}`)}</p>`;
+      <p class="pick-foot">Prices and scores are indicative, checked ${esc(PRODUCTS.checked)}.${LINKS_ON ? ` ${partnerLink("hostelworld", d, null, `More hostels in ${esc(d.name)}`)}` : ""}</p>`;
   }
   function expCards(d, o = {}) {
     const xs = picksOf(d).experiences || [];
-    if (!xs.length) return o.fallback === false ? "" : `<p class="pick-fallback">Tours and day trips around ${esc(d.name)}: ${partnersFor("experiences", d).map(k => partnerLink(k, d, null, `Browse on ${AFFILIATES[k].name}`)).join(" ")}</p>`;
+    if (!xs.length) return o.fallback === false ? "" : LINKS_ON ? `<p class="pick-fallback">Tours and day trips around ${esc(d.name)}: ${partnersFor("experiences", d).map(k => partnerLink(k, d, null, `Browse on ${AFFILIATES[k].name}`)).join(" ")}</p>` : `<p class="pick-fallback">We haven't hand-picked tours around ${esc(d.name)} yet.</p>`;
     return `<div class="picks exps">${xs.map((x, i) => expCard(d, x, i, o)).join("")}</div>
       <p class="pick-foot">Prices and ratings are indicative, checked ${esc(PRODUCTS.checked)}.</p>`;
   }
   function expCard(d, x, i, o = {}) {
     const ph = PHOTOS[`exp-${d.id}-${i}`], key = x.provider === "viator" ? "viator" : "getyourguide";
         return `<article class="pick exp">
-        <a class="exp-photo" href="${esc(productUrl(key, x.title, d))}" target="_blank" rel="${productRel(key)}" data-partner="${key}" tabindex="-1" aria-hidden="true">${ph ? `<img class="card-art" src="${esc(ph.src)}" alt="" title="Photo: ${esc(ph.credit)}" loading="lazy">` : illustration({ id: `${d.id}-${i}`, tags: d.tags })}
-          ${x.from_usd ? `<span class="exp-price">from <b class="num">${money(x.from_usd)}</b></span>` : ""}</a>
+        <${LINKS_ON ? `a class="exp-photo" href="${esc(productUrl(key, x.title, d))}" target="_blank" rel="${productRel(key)}" data-partner="${key}" tabindex="-1"` : `div class="exp-photo"`} aria-hidden="true">${ph ? `<img class="card-art" src="${esc(ph.src)}" alt="" title="Photo: ${esc(ph.credit)}" loading="lazy">` : illustration({ id: `${d.id}-${i}`, tags: d.tags })}
+          ${x.from_usd ? `<span class="exp-price">from <b class="num">${money(x.from_usd)}</b></span>` : ""}</${LINKS_ON ? "a" : "div"}>
         <div class="exp-body">
           <h4>${esc(x.title)}</h4>
           <p class="pick-meta">${[x.duration && esc(x.duration), x.rating && `<span class="stars">${STAR}<b class="num">${(+x.rating).toFixed(1)}</b></span>`].filter(Boolean).join(" · ")}</p>
           ${x.note ? `<p class="pick-note">${esc(x.note)}</p>` : ""}
-          <div class="pick-actions"><a class="btn small" href="${esc(productUrl(key, x.title, d))}" target="_blank" rel="${productRel(key)}" data-partner="${key}">Book on ${AFFILIATES[key].name}</a>
+          <div class="pick-actions">${LINKS_ON ? `<a class="btn small" href="${esc(productUrl(key, x.title, d))}" target="_blank" rel="${productRel(key)}" data-partner="${key}">Book on ${AFFILIATES[key].name}</a>` : ""}
             ${o.plan ? `<button class="btn ghost small" type="button" data-pick-exp="${i}"${o.has && o.has(x.title) ? " disabled" : ""}>${o.has && o.has(x.title) ? "Added" : "Add to plan"}</button>` : ""}</div>
           ${o.where ? `<p class="exp-where">${esc(d.name)}</p>` : ""}
         </div></article>`;
@@ -1062,7 +1082,7 @@
     if (!items.length) return "";
     return `<section class="country-exps"><div class="section-head"><div><p class="eyebrow">Things to do</p><h2>Popular experiences in ${esc(c.name)}</h2></div></div>
       <div class="picks exps snap">${items.map(([d, x, i]) => expCard(d, x, i, { where: true })).join("")}</div>
-      <p class="pick-foot">Prices and ratings are indicative, checked ${esc(PRODUCTS.checked)}. Booking through these links supports Farther at no extra cost to you.</p></section>`;
+      <p class="pick-foot">Prices and ratings are indicative, checked ${esc(PRODUCTS.checked)}.${LINKS_ON ? " Booking through these links supports Farther at no extra cost to you." : ""}</p></section>`;
   }
 
   function showDetail(id) {
@@ -1088,9 +1108,9 @@
         ${countryById[d.countryId].advisory ? "" : `<section class="detail-picks"><h3>Popular hostels in ${esc(d.name)}</h3>${hostelCards(d)}</section>
         <section class="detail-picks"><h3>Popular experiences in the area</h3>${expCards(d)}</section>`}
         ${(() => { const js = journeysFrom(d.id).slice(0, 4); return js.length ? `<section class="detail-picks"><h3>Getting here</h3><ul class="tx-mini">${js.map(o => `<li><a href="${goHref(o, d.id)}"><strong>From ${esc(byId[o].name)}</strong><span class="muted small">${journeyLine(o, d.id)}</span></a></li>`).join("")}</ul></section>` : ""; })()}
-        <div class="book-trip">
+        ${LINKS_ON ? `<div class="book-trip">
           <p class="search-links">Flights: ${partnersFor("flights", d).map(k => partnerLink(k, d, null, null, { fromName: homeCity() })).join(" · ")}</p>
-        </div>
+        </div>` : ""}
         ${(() => { const tw = cheaperTwin(d), n = lasts(perDay(d));
           return tw ? `<p class="dc-swap">Similar but cheaper: <button type="button" class="linkish" data-detail="${tw.id}">${esc(tw.name)}</button> at ${money(perDay(tw))} a day, ${money(perDay(d) - perDay(tw))} less than here.</p>` : ""; })()}
         <p class="note">A week here runs about <strong class="num">${money(perDay(d) * 7)}</strong> before getting in and out.${(() => { const c = countryById[d.countryId], code = c && fxCode(c), r = code && RATES[code];
@@ -1176,7 +1196,7 @@
       </li>`).join("")}</ul>
       ${(() => { const save = fareMid(fastest) - fareMid(cheapest), g = lasts(perDay(to), save);
         return fastest !== cheapest && save >= 10 ? `<p class="tx-save"><b>Save ${money(save)}</b> Going by ${modeName(cheapest.mode).toLowerCase()} instead of ${modeName(fastest.mode).toLowerCase()} costs about ${money(save)} less${g >= 1 ? `, that's ${plural(g, "day")} in ${esc(to.name)} at ${money(perDay(to))} a day` : ""}.</p>` : ""; })()}
-      <p class="tx-foot muted small">${j.curated ? `One-way prices per person, indicative as of ${esc(TR.checked)}.` : `Rough estimate from the ${j.km.toLocaleString("en-US")} km distance. Check times for real prices.`} Booking through these links supports Farther at no extra cost to you.</p>
+      <p class="tx-foot muted small">${j.curated ? `One-way prices per person, indicative as of ${esc(TR.checked)}.` : `Rough estimate from the ${j.km.toLocaleString("en-US")} km distance. Check times for real prices.`}${LINKS_ON ? " Booking through these links supports Farther at no extra cost to you." : ""}</p>
     </div>`;
   }
   // A one-line summary of a journey: the cheapest fare and the quickest time.
@@ -1670,6 +1690,7 @@
   const tripFrom = () => (trip && trip.from) || homeCity();
   function flightLinks(to, when, date, lead) {
     const w = Object.assign({}, when, date ? { date: isoLocal(date) } : {});
+    if (!LINKS_ON) return "";
     return `<p class="search-links">${lead}: ${partnersFor("flights", to).map(k => partnerLink(k, to, null, null, w)).join(" · ")}</p>`;
   }
   // The trip's flights out and home, with search links and a booked tick for each.
@@ -1684,7 +1705,7 @@
     const home = from ? { name: from, country: "", region: first.d.region } : null;
     const leg = (key, title, date, links) => `<div class="flight-leg ${fb[key] ? "is-booked" : ""}">
         <p><strong>${title}</strong>${date ? ` · ${fmtDate(date)}` : ""}</p>
-        ${fb[key] ? "" : `<div class="book-btns">${links}</div>`}
+        ${fb[key] || !links ? "" : `<div class="book-btns">${links}</div>`}
         <label class="booked-check"><input type="checkbox" data-flight="${key}"${fb[key] ? " checked" : ""}> Booked</label>
       </div>`;
     const out = partnersFor("flights", first.d).map(k => asButton(partnerLink(k, first.d, null, `Search ${PARTNER_NAMES[k]}`,
@@ -1692,7 +1713,7 @@
     const ret = home ? partnersFor("flights", first.d).map(k => asButton(partnerLink(k, home, null, `Search ${PARTNER_NAMES[k]}`,
       { fromName: last.d.name, fromPlace: last.d, date: back ? isoLocal(back) : "" }))).join("") : "";
     box.innerHTML = `<div class="flight-legs-grid">${leg("out", `${from ? esc(from) : "Home"} to ${esc(first.d.name)}`, first.from, out)
-      + leg("back", `${esc(last.d.name)} to ${from ? esc(from) : "home"}`, back, ret || `<p class="note">Add where you're flying from to search the flight home.</p>`)}</div>`
+      + leg("back", `${esc(last.d.name)} to ${from ? esc(from) : "home"}`, back, ret || (LINKS_ON ? `<p class="note">Add where you're flying from to search the flight home.</p>` : ""))}</div>`
       + `<p class="note">Add what you pay for both flights to "Flights" in the trip details.</p>`;
   }
   // The trip flows stop to stop. Between two stop cards sits a quiet connector: how people usually
@@ -1747,7 +1768,7 @@
     return `<div class="stop-sleep ${s.booked ? "is-booked" : ""}">
         <span class="sleep-text">${s.booked ? `Bed booked${s.stay && s.stay.name ? `: ${esc(s.stay.name)}` : ""}`
           : `Beds up to <strong class="num">${money(max)}</strong> a night${(() => { const h = (picksOf(d).hostels || []).find(x => !x.from_usd || x.from_usd <= max) || (picksOf(d).hostels || [])[0];
-              return h && !s.stay ? `. Top pick: <a href="${esc(productUrl("booking", h.name, d, stayWhen(r)))}" target="_blank" rel="${productRel("booking")}">${esc(h.name)}</a>${h.from_usd ? ` from ${money(h.from_usd)}` : ""}${h.rating ? `, ${(+h.rating).toFixed(1)}/10` : ""}` : ""; })()}`}</span>
+              return h && !s.stay ? `. Top pick: ${LINKS_ON ? `<a href="${esc(productUrl("booking", h.name, d, stayWhen(r)))}" target="_blank" rel="${productRel("booking")}">${esc(h.name)}</a>` : `<strong>${esc(h.name)}</strong>`}${h.from_usd ? ` from ${money(h.from_usd)}` : ""}${h.rating ? `, ${(+h.rating).toFixed(1)}/10` : ""}` : ""; })()}`}</span>
         ${s.booked ? own : `<span class="sleep-links">${own ? own + " · " : ""}${links}</span>`}
         <label class="booked-check"><input type="checkbox" data-f="booked"${s.booked ? " checked" : ""}> Booked</label>
       </div>`;
@@ -1982,11 +2003,11 @@
         links: own ? `<a class="btn small soft" href="${esc(s.stay.link)}" target="_blank" rel="noopener">Book ${esc(s.stay.name || "your pick")}</a>`
           : partnersFor("stays", d).map(k => asButton(partnerLink(k, d, null, PARTNER_NAMES[k], Object.assign({}, stayWhen(r), { maxPrice: max })))).join("") });
       s.exps.forEach((e, j) => out.push({ key: `ex:${s.key}:${j}`, kind: "exp", title: esc(e.name), sub: `In ${esc(d.name)}`, cost: e.cost || 0, done: !!e.booked,
-        links: `<a class="btn small soft" href="${esc(productUrl("getyourguide", e.name, d))}" target="_blank" rel="${productRel("getyourguide")}">Find on GetYourGuide</a>` }));
+        links: LINKS_ON ? `<a class="btn small soft" href="${esc(productUrl("getyourguide", e.name, d))}" target="_blank" rel="${productRel("getyourguide")}">Find on GetYourGuide</a>` : "" }));
     });
     out.push({ key: "fl:back", kind: "flight", title: from ? `Flight home to ${esc(from)}` : "Flight home", sub: `From ${esc(last.d.name)}${back ? `, ${fmtDate(back)}` : ""}`,
       cost: half, done: !!fb.back, links: from ? flightLinks({ name: from, country: "", region: first.d.region }, { fromName: last.d.name, fromPlace: last.d, date: back ? isoLocal(back) : "" })
-        : `<span class="note">Add where you fly from in the Plan step to search this.</span>` });
+        : LINKS_ON ? `<span class="note">Add where you fly from in the Plan step to search this.</span>` : "" });
     const countries = [...new Map(rows.map(r => [r.d.countryId, r.d])).values()];
     out.push({ key: "xt:insurance", kind: "extra", title: "Travel insurance", sub: "Covers you for the whole trip", cost: 0, done: !!xb.insurance,
       links: asButton(partnerLink("safetywing", first.d, null, "Get a SafetyWing quote")) });
@@ -2008,7 +2029,7 @@
     const sum = l => l.reduce((a, x) => a + (x.cost || 0), 0), pct = items.length ? done.length / items.length * 100 : 0;
     box.innerHTML = `<div class="book-step">
         <div class="bk-head"><div><p class="eyebrow">Step 3</p><h3>Book your trip</h3>
-          <p class="muted">Everything to book, in the order you'll need it. Dates come from your plan, so each link opens on the right days. Tick things off as you go.</p></div>
+          <p class="muted">Everything to book, in the order you'll need it. ${LINKS_ON ? "Dates come from your plan, so each link opens on the right days." : "Dates and prices come from your plan."} Tick things off as you go.</p></div>
           <div class="bk-prog"><p><strong class="num">${done.length} of ${items.length}</strong> booked</p><div class="meter"><i style="width:${pct.toFixed(1)}%"></i></div>
             <small>${sum(done) ? `About ${money(sum(done))} of ${money(sum(items))} locked in` : `About ${money(sum(items))} to book in all`}</small></div></div>
         <ol class="bk-list">${items.map(x => `<li class="bk-row${x.done ? " is-booked" : ""}">

@@ -7,6 +7,12 @@
 //         Partnerize, CJ): a URL with {url} where the encoded destination link goes.
 //         When set, `wrap` is used instead of `param`. Partners with an empty `param`
 //         (Skyscanner, Kiwi, Hostelworld, Omio, Airalo) only track through `wrap`.
+// The master switch. While it is false, no booking or partner link appears anywhere on the site:
+// the buttons go, and the hostel names, prices, tours and route comparisons they sat next to stay as
+// plain information. Set it to true to bring every partner link back. The static country pages bake
+// their links in, so run `node tools/build_pages.js` again after changing it.
+window.PARTNERS_ON = false;
+
 window.AFFILIATES = {
   // Flights
   skyscanner:   { name: "Skyscanner",      kind: "flights",     id: "", param: "",            wrap: "" },
@@ -92,11 +98,14 @@ window.AFFILIATES = {
     return url + (url.includes("?") ? "&" : "?") + `${a.param}=${q(a.id)}`;
   }
 
-  window.isTracked = key => !!(A[key] && (A[key].wrap || (A[key].id && A[key].param)));
+  const ON = () => window.PARTNERS_ON !== false;
+  window.partnersOn = ON;
+  window.isTracked = key => ON() && !!(A[key] && (A[key].wrap || (A[key].id && A[key].param)));
   window.anyTracked = () => Object.keys(A).some(window.isTracked);
 
   // Which partners to offer for a kind of booking at a place.
   window.partnersFor = (kind, p, from) => {
+    if (!ON()) return [];
     const r = p.region;
     switch (kind) {
       case "flights":     return ["skyscanner", "kiwi", "googleflights"];
@@ -116,6 +125,7 @@ window.AFFILIATES = {
   // listing with the traveller's dates where the partner accepts them. Used for the curated picks in
   // js/products.js until partner APIs give direct product links.
   window.productUrl = (key, name, p, when) => {
+    if (!ON()) return "";
     const where = base(p);
     switch (key) {
       case "booking":      return track(key, `https://www.booking.com/searchresults.html?ss=${q(`${name}, ${where}`)}` +
@@ -131,6 +141,7 @@ window.AFFILIATES = {
 
   // An <a> to a partner, marked sponsored when it carries an affiliate id.
   window.partnerLink = (key, p, from, label, when) => {
+    if (!ON()) return "";
     const ok = when && ((when.checkin && when.checkout) || when.date || when.fromName || when.fromPlace || when.maxPrice);
     const url = track(key, URLS[key](p, from, ok ? when : null));
     const rel = window.isTracked(key) ? "sponsored noopener" : "noopener";
